@@ -1,0 +1,78 @@
+name: keepalive
+
+# GitHub disables scheduled workflows in public repositories after 60 days of
+# repository inactivity, and emails the owner shortly before it does.
+#
+# Read this before trusting this workflow:
+#
+#   Commits pushed using the default GITHUB_TOKEN are attributed to
+#   github-actions[bot] and do NOT reliably reset that inactivity clock. Since
+#   poll.yml commits with exactly that token, a repository whose only activity is
+#   its own poller can still be disabled after 60 days — which is precisely the
+#   failure this file exists to prevent, and precisely the failure it cannot
+#   fully prevent on its own.
+#
+# So this workflow is belt and braces, not a guarantee:
+#
+#   1. Set a KEEPALIVE_TOKEN secret to a fine-grained PAT with "Contents: write"
+#      on this repository. Commits made with a PAT are attributed to a real user
+#      and do reset the clock. This is the only reliable path.
+#   2. Without that secret the job still runs and still commits, which is
+#      harmless and gives a visible monthly heartbeat in the log, but should not
+#      be relied on to keep the schedule alive.
+#   3. Either way, make sure GitHub's warning email reaches a human who will act
+#      on it, and remember that `workflow_dispatch` on poll.yml re-enables a
+#      disabled schedule in one click.
+
+on:
+  schedule:
+    # 09:07 UTC on the 1st and 15th. Twice a month leaves room for one run to be
+    # dropped without approaching the 60-day limit.
+    - cron: "7 9 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.KEEPALIVE_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Record a keepalive marker
+        # HAS_PAT is the boolean result of comparing the secret to empty, never
+        # the secret itself. Interpolating a secret into a shell script would put
+        # its value in the command line, where `set -x`, a process listing, or an
+        # error message could expose it.
+        env:
+          HAS_PAT: ${{ secrets.KEEPALIVE_TOKEN != '' }}
+        run: |
+          set -euo pipefail
+          mkdir -p state
+          NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          printf '%s scheduled-workflow keepalive\n' "$NOW" >> state/keepalive.txt
+
+          if [ "$HAS_PAT" = "true" ]; then
+            echo "Using KEEPALIVE_TOKEN; this commit resets the 60-day clock."
+          else
+            echo "::warning::No KEEPALIVE_TOKEN secret set. This commit is" \
+                 "authored by github-actions[bot] and may NOT reset the 60-day" \
+                 "inactivity clock. See the comments in this workflow file."
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/keepalive.txt
+          git commit -m "chore: keepalive ${NOW}"
+          git push origin HEAD

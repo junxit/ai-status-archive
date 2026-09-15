@@ -1,0 +1,71 @@
+name: poll
+
+# Five minutes is GitHub's hard minimum for cron granularity.
+#
+# The offset is deliberate: scheduled runs are best-effort and are dropped or
+# delayed most often at the top of the hour, when everyone else's `*/5` jobs
+# queue at once. Starting at :03 puts this job in a quieter part of the minute
+# space. Runs still drift — sometimes by 15 minutes or more — which is exactly
+# why `fetched_at` records the real HTTP completion time rather than the
+# schedule. Recording the intended time would silently corrupt the timeline.
+on:
+  schedule:
+    - cron: "3-58/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print what would be written without committing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Overlapping runs racing on a git push would corrupt the archive. Queue rather
+# than cancel: a cancelled run loses an observation, and gaps are the one thing
+# this dataset cannot tolerate.
+concurrency:
+  group: poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth 1 is fine and intentional: committed state is read with
+          # `git show HEAD:<path>`, which only needs the tip. Nothing in this
+          # project walks history at poll time — that is why the heartbeat
+          # timestamp is stored inside state/last_poll.json rather than derived
+          # from `git log`, which returns empty under a shallow checkout.
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        # PyYAML is the only runtime dependency. Keeping it at one package is
+        # what makes this job finish in well under a minute.
+        run: python -m pip install --quiet --disable-pip-version-check "PyYAML>=6.0"
+
+      - name: Poll and commit on change
+        # Every workflow value reaches the shell through env rather than being
+        # interpolated into the script text, so nothing from the event context
+        # is ever parsed as shell.
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          args=(--run-url "$RUN_URL")
+          if [ "${DRY_RUN:-false}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python runners/github_actions.py "${args[@]}"

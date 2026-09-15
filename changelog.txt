@@ -2,11 +2,52 @@ ai-status-archive — changelog
 
 All notable changes to this project are recorded here. Newest first.
 
-## [Unreleased]
+## [1.0.0] — 2026-09-15
+
+Initial build. Polls OpenAI, Anthropic, and Google Cloud status endpoints every
+five minutes and commits only when normalized state changes.
 
 ### Added
-- Initial project scaffold: pyproject (Python 3.12, PyYAML only), proprietary
-  LICENSE, .gitattributes (LF normalization, union-merge for history/*.jsonl,
-  linguist-generated for archive paths).
-- Recorded live upstream fixtures for OpenAI, Anthropic, and Google Cloud
-  captured 2026-09-15.
+- Normalized schema shared across all providers, with fully deterministic
+  serialization (sorted keys, 2-space indent, trailing newline, no floats) and
+  an allowlist-based content hash.
+- Statuspage adapter covering both generations in use, and a Google Cloud
+  adapter that derives per-product state from open incidents.
+- Pure decision layer: collect.py, diff.py, plan.py, serialize.py perform no
+  filesystem, git, environment, or logging access. Enforced by AST guards in
+  tests/test_purity.py so the Lambda seam cannot rot.
+- GitHub Actions runner with --dry-run, per-provider filtering, clean-tree
+  guard, and push-with-rebase-retry.
+- scripts/at.py: resolves recorded status at any past instant and flags
+  coverage gaps from the heartbeat rather than the commit date.
+- scripts/backfill.py: pulls provider-published history into a separate
+  namespace with a provenance banner.
+- runners/lambda_handler.py: documented stub sketching the S3/DynamoDB path.
+- 148 tests covering idempotence, failure isolation, byte stability, hash
+  scope, adapter fidelity against live-recorded fixtures, and mixed outcomes.
+- poll.yml (cron 3-58/5, offset to dodge top-of-hour drops) and keepalive.yml.
+
+### Upstream facts verified by fetching, not assumed
+- OpenAI runs a rebuilt Statuspage generation: incidents carry no components[],
+  started_at, resolved_at, or shortlink; /scheduled-maintenances.json and
+  /incidents/unresolved.json both 404; no ETag or Last-Modified is sent.
+- OpenAI stamps one identical bulk updated_at across all 25 components.
+- Anthropic is the only provider honoring conditional requests (real 304).
+- Google advertises Last-Modified but ignores If-Modified-Since.
+- Google is mid-rebrand from "Vertex AI" to "Agent Platform"; 14 catalog
+  entries already have a current_title differing from title.
+- Google's incidents.json is a rolling window (6 incidents), not a deep archive.
+
+### Deviations from the original specification
+- affected_components is always empty for OpenAI (upstream omission).
+- scheduled_maintenances is always empty for OpenAI (endpoint absent).
+- Added "baseline" change_type: one marker on first observation instead of one
+  event per component, which would be indistinguishable from a mass outage.
+- Added "component_renamed" change_type, since Google is actively renaming.
+- Content hash covers an explicit allowlist rather than "everything but fetch",
+  so OpenAI's bulk updated_at cannot trigger spurious commits.
+- Heartbeat cadence uses UTC hour buckets and stores heartbeat_committed_at
+  inside state/last_poll.json; deriving it from `git log` breaks under
+  actions/checkout's default fetch-depth of 1.
+- Google requires a second request (products.json) to resolve stable IDs to
+  display names.
