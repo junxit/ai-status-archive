@@ -1,0 +1,424 @@
+{
+  "active_incidents": [],
+  "components": [
+    {
+      "group": null,
+      "id": "1UYAL6urhdrrr6emD8ce",
+      "name": "Vertex AI AutoML Image",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "2Xt4Wt8rVvbz3UPsHBvx",
+      "name": "Text-to-Speech",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "2iFHW5WNBkTWjX5k3jnZ",
+      "name": "Vertex AI Matching Engine",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "3e2H6fMaAhGSPSSPb8CV",
+      "name": "AI Platform Training",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "5CfpoAfoMxWT4zGzX4yW",
+      "name": "Vertex AI AutoML Tabular",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "5ca2HM3qzeRulGMXksCD",
+      "name": "Provisioned Throughput",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "5f5oET9B3whnSFHfwy4d",
+      "name": "Speech-to-Text",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "7Nbc1kZUvPLiihodettN",
+      "name": "Colab Enterprise",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "99nYJQyC6XLw3vTrQaXo",
+      "name": "Cloud Natural Language API",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "9TtWTtvEUYnPidW2z4aM",
+      "name": "Agent Platform Tensor Board",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "BTKKe3nMmYnmor61RveN",
+      "name": "AutoML Natural Language",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "BnCicQdHSdxaCv8Ya6Vm",
+      "name": "Dialogflow CX",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "FJ8YR1L7CvooMVxbTSD4",
+      "name": "Vertex AI Explainable AI",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "GWuqLi6DKb1DkzyRtRuD",
+      "name": "Document AI",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "GewfNoG6JvJ1kjnL9jb8",
+      "name": "Agent Platform Workbench Instances",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "JK2HmU4x2QTbdVBVceqV",
+      "name": "Lending DocAI",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "KszDabrY6XLwow9r8PgZ",
+      "name": "Recommender",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "NzlvAZEU5D7gveMcRvfr",
+      "name": "Customer Experience Agent Studio",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "RBJadi3nW3S2otn65RRG",
+      "name": "AI Commerce Search",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "SNSm5dv1cRELFSGhuvpc",
+      "name": "Vertex AI Vizier",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "T3mQNvrm8YJVLM11N4bq",
+      "name": "Vertex AI Data Labeling",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "U213XEHGhALownYuxpFM",
+      "name": "Model Registry on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "VXydUfMqEtvZxXJFm56a",
+      "name": "Cloud Talent Solution - Job Search",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "WYJx5eWkh8ZrCSQUcP4i",
+      "name": "Contact Center Insights",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "YnURkwq775FEfCuFsviG",
+      "name": "Agent Gateway",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "Z0FZJAMvEB4j3NbCJs6B",
+      "name": "Gemini on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "baQeYW2fsPA2vvLCqN93",
+      "name": "Agent Platform Managed Training",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "cxUh24jPxEXgyRlaVhuk",
+      "name": "Gemini Enterprise",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "dSJF5QyYo4BLY7hHHtHc",
+      "name": "AutoML Video",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "deUeOEPYanfJ9w8cpyBJ",
+      "name": "Gemini Code Assist",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "e1FVLhzB42AENtV9BZ7X",
+      "name": "AutoML Vision",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "eFCqAnWci3AZiqsz1NjQ",
+      "name": "AI Platform Prediction",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "eSAGSSEKoxh8tTJucdYg",
+      "name": "Contact Center AI Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "eUntUKqUrHdbBLNcVVXq",
+      "name": "Agent Assist",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "gCLTpLXcWqCKtcyUyHCF",
+      "name": "Cloud Translation",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "gWWqvMgwnZ1a5VQ2kjUw",
+      "name": "Vertex AI AutoML Video",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "h5DuWxu8KdW1qipvwBta",
+      "name": "Vertex AI AutoML Text",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "hpVHo7CE4koq9UQLV3W0",
+      "name": "Model Armor",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "jWSoZzR1kkyiDi9C5GMM",
+      "name": "Recommendation AI",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "jgyDXnasZm6pwoCR1uif",
+      "name": "Agent Platform Pipelines",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "khZkkfZshNi7aiJGRoND",
+      "name": "AutoML Tables",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "p5rCvyraXdeC6HFE8XJJ",
+      "name": "Veo on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "pDkm4vkHrT54mm7iSVHm",
+      "name": "Cloud Vision",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "qnhcw8D1c8iMEwP8TzkA",
+      "name": "Agent Platform Feature Store",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "qrU1jFoSMYvoEZG8c76T",
+      "name": "AutoML Translation",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "s0huLpuA7LiYVMlVc8lv",
+      "name": "Vertex AI Agent Engine",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "sQqrYvhjMT5crPHKWJFY",
+      "name": "Dialogflow ES",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "sWNXmWFmBKpXg2xeTNkH",
+      "name": "Agent Platform ML Metadata",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "sdXM79fz1FS6ekNpu37K",
+      "name": "Agent Platform Online Inference",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "t8Vzas4iWLRcCyNYcvpN",
+      "name": "Model Monitoring on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "uteGYrvV7DSzcC8Yc5fi",
+      "name": "Procurement DocAI",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "uu5hjNKf41zvsFyn98ry",
+      "name": "Document AI Warehouse",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "uvfRdNTRepWCCQ7j6TnH",
+      "name": "Video Intelligence API",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "vNncXxtSVvqyhvSkQ6PJ",
+      "name": "Agent Search on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "yVW8aiPWipjd3j67XzDL",
+      "name": "Agent Platform Batch Inference",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "z9PfKanGZYvYNUbnKzRJ",
+      "name": "Cloud Machine Learning",
+      "status": "operational",
+      "updated_at": null
+    },
+    {
+      "group": null,
+      "id": "zeBmbgdSyHGTvPAiXwVS",
+      "name": "Imagen on Agent Platform",
+      "status": "operational",
+      "updated_at": null
+    }
+  ],
+  "fetch": {
+    "content_hash": "sha256:120bfbeb0e31c9ac9c2cb6ad6c0830aa7abdc306eb070a0da01b67e0310ce68d",
+    "elapsed_ms": 161,
+    "error": null,
+    "etag": null,
+    "fetched_at": "2026-09-15T12:19:11Z",
+    "http_status": 200,
+    "last_modified": "Tue, 15 Sep 2026 12:17:47 GMT",
+    "ok": true
+  },
+  "overall": {
+    "description": "All tracked AI products operational",
+    "indicator": "none"
+  },
+  "provider": "google",
+  "provider_name": "Google Cloud (Vertex AI / Agent Platform)",
+  "scheduled_maintenances": [],
+  "schema_version": 1,
+  "source_platform": "google_cloud",
+  "source_url": "https://status.cloud.google.com/incidents.json"
+}

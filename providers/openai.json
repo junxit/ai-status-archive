@@ -1,0 +1,200 @@
+{
+  "active_incidents": [],
+  "components": [
+    {
+      "group": null,
+      "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
+      "name": "File uploads",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBNJXGGT5SR5DB9J7GYY48",
+      "name": "Voice mode",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBNJXGKKP51D4DEJ2HZJ8Q",
+      "name": "Search",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFE4MAP2BHSJNZ787WX",
+      "name": "Images",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFE5ESNNV8JDHVCGSRD",
+      "name": "Batch",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEKVBWKK82B44QFMCE",
+      "name": "Audio",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEMZK0HPK19RYET250",
+      "name": "Fine-tuning",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEQW613TFE89F45035",
+      "name": "Realtime",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFESJCBGJR10PDD3WCQ",
+      "name": "Files",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEV0AJ0VVS68N9CD6R",
+      "name": "Embeddings",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEVZ7E0X9GD9FWR9WX",
+      "name": "Moderations",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JNKS9D9S72PMP1938PVFFQN4",
+      "name": "Compliance API",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
+      "name": "Agent",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JSM5RTJWHRWDTS6Q604VEW3B",
+      "name": "Login",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JSYVYQSWMJ9QG35XHP08BHA7",
+      "name": "Deep Research",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01JVCV8YSWZFRSM1G5CVP253SK",
+      "name": "Codex Web",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01K6TVGGGDCP0PPGCHXAG3AQX8",
+      "name": "Connectors/Apps",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01K8C008QVXHA6JX98PAS42VPD",
+      "name": "ChatGPT Atlas",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01K9G527YRPY1EFRMHTKB5BKT5",
+      "name": "Sora",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KKAD7C71MCCH3FTREMJH4AAS",
+      "name": "FedRAMP",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
+      "name": "Codex in ChatGPT Desktop",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KMP3KP5M8X0EBTVW6KN327EE",
+      "name": "VS Code extension",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KMP3KP5MGE23B80K1EK4S8PV",
+      "name": "Codex API",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KVR95C58GGWHV7RYBT32NP11",
+      "name": "Ads API",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
+      "id": "01KX45G1SHQQ9DTAX9S4W7FV8G",
+      "name": "Sites",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    }
+  ],
+  "fetch": {
+    "content_hash": "sha256:d7c24e8a1a45b2eae59f337a6c6176c1d4b7a202ed4960ee2e2311fed3214f32",
+    "elapsed_ms": 424,
+    "error": null,
+    "etag": null,
+    "fetched_at": "2026-09-15T12:19:08Z",
+    "http_status": 200,
+    "last_modified": null,
+    "ok": true
+  },
+  "overall": {
+    "description": "All Systems Operational",
+    "indicator": "none"
+  },
+  "provider": "openai",
+  "provider_name": "OpenAI",
+  "scheduled_maintenances": [],
+  "schema_version": 1,
+  "source_platform": "statuspage",
+  "source_url": "https://status.openai.com/api/v2/summary.json"
+}

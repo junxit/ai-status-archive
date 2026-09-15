@@ -1,0 +1,107 @@
+{
+  "components": [
+    {
+      "created_at": "2023-07-11T17:52:24.275Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "rwppv331jlwc",
+      "name": "claude.ai",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 1,
+      "showcase": true,
+      "start_date": "2023-07-11",
+      "status": "operational",
+      "updated_at": "2026-09-15T11:14:44.298Z"
+    },
+    {
+      "created_at": "2023-07-11T17:52:49.982Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "0qbwn08sd68x",
+      "name": "Claude Console (platform.claude.com)",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 2,
+      "showcase": true,
+      "start_date": "2023-07-11",
+      "status": "operational",
+      "updated_at": "2026-09-02T01:24:22.227Z"
+    },
+    {
+      "created_at": "2023-07-11T17:53:10.880Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "k8w3r06qmzrp",
+      "name": "Claude API (api.anthropic.com)",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 3,
+      "showcase": true,
+      "start_date": "2023-07-11",
+      "status": "operational",
+      "updated_at": "2026-09-15T11:14:44.316Z"
+    },
+    {
+      "created_at": "2025-05-22T21:35:29.822Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "yyzkbfz2thpt",
+      "name": "Claude Code",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 4,
+      "showcase": true,
+      "start_date": "2025-02-06",
+      "status": "operational",
+      "updated_at": "2026-09-15T11:14:44.332Z"
+    },
+    {
+      "created_at": "2026-04-01T17:39:47.692Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "bpp5gb3hpjcl",
+      "name": "Claude Cowork",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 5,
+      "showcase": true,
+      "start_date": "2026-04-01",
+      "status": "operational",
+      "updated_at": "2026-09-15T11:14:44.350Z"
+    },
+    {
+      "created_at": "2026-02-17T23:24:51.249Z",
+      "description": null,
+      "group": false,
+      "group_id": null,
+      "id": "0scnb50nvy53",
+      "name": "Claude for Government",
+      "only_show_if_degraded": false,
+      "page_id": "tymt9n04zgry",
+      "position": 6,
+      "showcase": true,
+      "start_date": "2026-02-17",
+      "status": "operational",
+      "updated_at": "2026-06-30T14:45:50.487Z"
+    }
+  ],
+  "incidents": [],
+  "page": {
+    "id": "tymt9n04zgry",
+    "name": "Claude",
+    "time_zone": "Etc/UTC",
+    "updated_at": "2026-09-15T11:14:48.639Z",
+    "url": "https://status.claude.com"
+  },
+  "scheduled_maintenances": [],
+  "status": {
+    "description": "All Systems Operational",
+    "indicator": "none"
+  }
+}
