@@ -1,0 +1,251 @@
+{
+  "page": {
+    "id": "tymt9n04zgry",
+    "name": "Claude",
+    "time_zone": "Etc/UTC",
+    "updated_at": "2026-09-15T11:14:48.639Z",
+    "url": "https://status.claude.com"
+  },
+  "scheduled_maintenances": [
+    {
+      "components": [
+        {
+          "created_at": "2023-07-11T17:52:24.275Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "rwppv331jlwc",
+          "name": "claude.ai",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 1,
+          "showcase": true,
+          "start_date": "2023-07-11",
+          "status": "operational",
+          "updated_at": "2026-09-15T11:14:44.298Z"
+        }
+      ],
+      "created_at": "2025-08-29T01:23:38.417Z",
+      "id": "x017628t2rl5",
+      "impact": "maintenance",
+      "incident_updates": [
+        {
+          "affected_components": null,
+          "body": "The scheduled maintenance has been completed.",
+          "created_at": "2025-08-29T02:40:21.277Z",
+          "custom_tweet": null,
+          "deliver_notifications": false,
+          "display_at": "2025-08-29T02:40:21.277Z",
+          "id": "3qx5tz7c0jqk",
+          "incident_id": "x017628t2rl5",
+          "status": "completed",
+          "tweet_id": null,
+          "updated_at": "2025-08-29T02:40:21.277Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "operational",
+              "old_status": "operational"
+            }
+          ],
+          "body": "Verification is currently underway for the maintenance items.",
+          "created_at": "2025-08-29T02:14:00.733Z",
+          "custom_tweet": null,
+          "deliver_notifications": false,
+          "display_at": "2025-08-29T02:14:00.733Z",
+          "id": "rm3hbmfrv949",
+          "incident_id": "x017628t2rl5",
+          "status": "verifying",
+          "tweet_id": null,
+          "updated_at": "2025-08-29T02:14:00.733Z"
+        },
+        {
+          "affected_components": null,
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "created_at": "2025-08-29T01:25:21.416Z",
+          "custom_tweet": null,
+          "deliver_notifications": false,
+          "display_at": "2025-08-29T01:25:21.416Z",
+          "id": "9wb0pcykckj5",
+          "incident_id": "x017628t2rl5",
+          "status": "in_progress",
+          "tweet_id": null,
+          "updated_at": "2025-08-29T01:25:21.416Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "operational",
+              "old_status": "operational"
+            }
+          ],
+          "body": "We are currently applying updates to systems used to store Connector Authentication.",
+          "created_at": "2025-08-29T01:23:38.479Z",
+          "custom_tweet": null,
+          "deliver_notifications": false,
+          "display_at": "2025-08-29T01:23:38.479Z",
+          "id": "z8fbqfhw5wn5",
+          "incident_id": "x017628t2rl5",
+          "status": "scheduled",
+          "tweet_id": null,
+          "updated_at": "2025-08-29T01:23:38.479Z"
+        }
+      ],
+      "monitoring_at": "2025-08-29T02:14:00.733Z",
+      "name": "Upgrades to Connector Auth Storage",
+      "page_id": "tymt9n04zgry",
+      "resolved_at": "2025-08-29T02:40:21.277Z",
+      "scheduled_for": "2025-08-29T01:25:00.000Z",
+      "scheduled_until": "2025-08-29T02:40:00.000Z",
+      "shortlink": "https://stspg.io/kzxt8ykxyx3j",
+      "started_at": "2025-08-29T01:23:38.412Z",
+      "status": "completed",
+      "updated_at": "2025-08-29T02:40:21.294Z"
+    },
+    {
+      "components": [
+        {
+          "created_at": "2023-07-11T17:52:24.275Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "rwppv331jlwc",
+          "name": "claude.ai",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 1,
+          "showcase": true,
+          "start_date": "2023-07-11",
+          "status": "operational",
+          "updated_at": "2026-09-15T11:14:44.298Z"
+        },
+        {
+          "created_at": "2023-07-11T17:52:49.982Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "0qbwn08sd68x",
+          "name": "Claude Console (platform.claude.com)",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 2,
+          "showcase": true,
+          "start_date": "2023-07-11",
+          "status": "operational",
+          "updated_at": "2026-09-02T01:24:22.227Z"
+        }
+      ],
+      "created_at": "2024-12-13T18:39:41.950Z",
+      "id": "16z0qdmy3qv2",
+      "impact": "maintenance",
+      "incident_updates": [
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "operational",
+              "old_status": "under_maintenance"
+            },
+            {
+              "code": "0qbwn08sd68x",
+              "name": "console.anthropic.com",
+              "new_status": "operational",
+              "old_status": "under_maintenance"
+            }
+          ],
+          "body": "The scheduled maintenance has been completed.",
+          "created_at": "2024-12-15T01:26:47.953Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2024-12-15T01:26:47.953Z",
+          "id": "qp1t5kznmp7n",
+          "incident_id": "16z0qdmy3qv2",
+          "status": "completed",
+          "tweet_id": null,
+          "updated_at": "2024-12-15T01:26:47.953Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "under_maintenance",
+              "old_status": "operational"
+            },
+            {
+              "code": "0qbwn08sd68x",
+              "name": "console.anthropic.com",
+              "new_status": "under_maintenance",
+              "old_status": "operational"
+            }
+          ],
+          "body": "Scheduled maintenance is currently in progress. We will provide updates as necessary.",
+          "created_at": "2024-12-15T01:00:21.436Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2024-12-15T01:00:21.436Z",
+          "id": "mgy6x1vplj2c",
+          "incident_id": "16z0qdmy3qv2",
+          "status": "in_progress",
+          "tweet_id": null,
+          "updated_at": "2024-12-15T01:00:21.436Z"
+        },
+        {
+          "affected_components": null,
+          "body": "Maintenance will begin as scheduled in 60 minutes.",
+          "created_at": "2024-12-15T00:00:21.174Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2024-12-15T00:00:21.174Z",
+          "id": "m1hcn9wlkgy3",
+          "incident_id": "16z0qdmy3qv2",
+          "status": "scheduled",
+          "tweet_id": null,
+          "updated_at": "2024-12-15T00:00:21.174Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "operational",
+              "old_status": "operational"
+            },
+            {
+              "code": "0qbwn08sd68x",
+              "name": "console.anthropic.com",
+              "new_status": "operational",
+              "old_status": "operational"
+            }
+          ],
+          "body": "From 17:00–17:30 PT, we will be performing a scheduled maintenance of backend services supporting Claude.ai and the Anthropic Console. The Anthropic API will not be affected.",
+          "created_at": "2024-12-13T18:39:42.009Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2024-12-13T18:39:42.009Z",
+          "id": "3jtk44bb2jvt",
+          "incident_id": "16z0qdmy3qv2",
+          "status": "scheduled",
+          "tweet_id": null,
+          "updated_at": "2024-12-13T18:39:42.009Z"
+        }
+      ],
+      "monitoring_at": null,
+      "name": "Scheduled maintenance for Claude.ai and Anthropic Console",
+      "page_id": "tymt9n04zgry",
+      "resolved_at": "2024-12-15T01:26:47.953Z",
+      "scheduled_for": "2024-12-15T01:00:00.000Z",
+      "scheduled_until": "2024-12-15T01:30:00.000Z",
+      "shortlink": "https://stspg.io/6g6xhf17sbrb",
+      "started_at": "2024-12-13T18:39:41.944Z",
+      "status": "completed",
+      "updated_at": "2024-12-15T01:26:47.971Z"
+    }
+  ]
+}

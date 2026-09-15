@@ -1,0 +1,12 @@
+ai-status-archive — changelog
+
+All notable changes to this project are recorded here. Newest first.
+
+## [Unreleased]
+
+### Added
+- Initial project scaffold: pyproject (Python 3.12, PyYAML only), proprietary
+  LICENSE, .gitattributes (LF normalization, union-merge for history/*.jsonl,
+  linguist-generated for archive paths).
+- Recorded live upstream fixtures for OpenAI, Anthropic, and Google Cloud
+  captured 2026-09-15.

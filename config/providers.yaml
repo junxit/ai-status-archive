@@ -1,0 +1,161 @@
+# Provider registry for ai-status-archive.
+#
+# Adding a provider that runs on an already-supported platform is an edit to this
+# file and nothing else. Adding a new platform means one new adapter module plus
+# one line in src/aistatus/adapters/__init__.py.
+#
+# Fields
+#   name            Short key; also the filename stem under providers/, raw/, history/.
+#   display_name    Human-readable provider name.
+#   platform        Adapter key: "statuspage" or "google_cloud".
+#   url             Primary endpoint polled every cycle.
+#   catalog_url     Optional secondary endpoint for resolving stable IDs to names.
+#   api_components  Component IDs considered API-relevant. Affects only the commit
+#                   subject line and scripts/at.py's headline verdict, never what
+#                   gets archived.
+#   product_ids     Stable upstream product IDs to track (google_cloud only).
+#
+# IDs in this file were captured from the live endpoints on 2026-09-15. Display
+# names in comments are for human orientation only and may already be stale --
+# that is precisely why they are comments and the IDs are the data.
+
+providers:
+  # ---------------------------------------------------------------------------
+  # OpenAI -- Atlassian Statuspage (rebuilt generation, ULID identifiers).
+  #
+  # Caveats verified against the live endpoint:
+  #   * /api/v2/scheduled-maintenances.json and /api/v2/incidents/unresolved.json
+  #     both 404. summary.json has no scheduled_maintenances key at all.
+  #   * Incidents carry no components[], started_at, resolved_at, or shortlink,
+  #     so affected_components is always empty for OpenAI.
+  #   * No ETag and no Last-Modified, so conditional requests are impossible.
+  #   * There is no component named "API". The list below is our own judgment
+  #     about which of the 25 surfaces are API-relevant; all 25 are archived.
+  # ---------------------------------------------------------------------------
+  - name: openai
+    display_name: OpenAI
+    platform: statuspage
+    url: https://status.openai.com/api/v2/summary.json
+    api_components:
+      - "01KVR95C58GGWHV7RYBT32NP11"  # Ads API
+      - "01JSG1XMJ9RVJJQ0E85NVSJ2AZ"  # Agent
+      - "01JMXBRMFEKVBWKK82B44QFMCE"  # Audio
+      - "01JMXBRMFE5ESNNV8JDHVCGSRD"  # Batch
+      - "01KMP3KP5MGE23B80K1EK4S8PV"  # Codex API
+      - "01JNKS9D9S72PMP1938PVFFQN4"  # Compliance API
+      - "01JMXBRMFEV0AJ0VVS68N9CD6R"  # Embeddings
+      - "01JMXBNJXG1YMQPPCPCQX3MPA2"  # File uploads
+      - "01JMXBRMFESJCBGJR10PDD3WCQ"  # Files
+      - "01JMXBRMFEMZK0HPK19RYET250"  # Fine-tuning
+      - "01JMXBRMFE4MAP2BHSJNZ787WX"  # Images
+      - "01JMXBRMFEVZ7E0X9GD9FWR9WX"  # Moderations
+      - "01JMXBRMFEQW613TFE89F45035"  # Realtime
+      - "01JMXBNJXGKKP51D4DEJ2HZJ8Q"  # Search
+
+  # ---------------------------------------------------------------------------
+  # Anthropic -- Atlassian Statuspage (classic generation).
+  #
+  # status.anthropic.com redirects to status.claude.com and the page is titled
+  # "Claude". We poll the canonical host directly to skip the redirect hop.
+  # This is the only one of the three that honors conditional requests: it sends
+  # a real ETag and returns a genuine 304.
+  # ---------------------------------------------------------------------------
+  - name: anthropic
+    display_name: Anthropic
+    platform: statuspage
+    url: https://status.claude.com/api/v2/summary.json
+    api_components:
+      - "k8w3r06qmzrp"  # Claude API (api.anthropic.com)
+      - "0qbwn08sd68x"  # Claude Console (platform.claude.com)
+
+  # ---------------------------------------------------------------------------
+  # Google Cloud -- custom incident feed, not Statuspage.
+  #
+  # The feed is incident-oriented and platform-wide across all of GCP, so the
+  # adapter derives per-product state from which incidents are open. The product
+  # list below is the component set: it is an allowlist, not discovered from the
+  # feed, so that components do not blink in and out of existence between polls.
+  #
+  # Filtering is on stable IDs, never display names. Google's own published
+  # schema says id "is stable" while title "is unstable and could change without
+  # warning" -- and they are mid-rebrand from "Vertex AI" to "Agent Platform"
+  # right now. Comments below show "old -> new" where a rename is already in
+  # flight, which is the live proof that name-based filtering would have broken.
+  #
+  # Note: products.json is fetched every cycle to resolve IDs to current names.
+  # If that request fails, the whole provider is treated as failed rather than
+  # falling back to bare IDs, which would churn every component name.
+  # ---------------------------------------------------------------------------
+  - name: google
+    display_name: Google Cloud (Vertex AI / Agent Platform)
+    platform: google_cloud
+    url: https://status.cloud.google.com/incidents.json
+    catalog_url: https://status.cloud.google.com/products.json
+    product_ids:
+      # -- Vertex AI / Agent Platform (20)
+      - "s0huLpuA7LiYVMlVc8lv"  # Vertex AI Agent Engine
+      - "1UYAL6urhdrrr6emD8ce"  # Vertex AI AutoML Image
+      - "5CfpoAfoMxWT4zGzX4yW"  # Vertex AI AutoML Tabular
+      - "h5DuWxu8KdW1qipvwBta"  # Vertex AI AutoML Text
+      - "gWWqvMgwnZ1a5VQ2kjUw"  # Vertex AI AutoML Video
+      - "yVW8aiPWipjd3j67XzDL"  # Vertex AI Batch Prediction -> Agent Platform Batch Inference
+      - "T3mQNvrm8YJVLM11N4bq"  # Vertex AI Data Labeling
+      - "FJ8YR1L7CvooMVxbTSD4"  # Vertex AI Explainable AI
+      - "qnhcw8D1c8iMEwP8TzkA"  # Vertex AI Feature Store -> Agent Platform Feature Store
+      - "sWNXmWFmBKpXg2xeTNkH"  # Vertex AI ML Metadata -> Agent Platform ML Metadata
+      - "2iFHW5WNBkTWjX5k3jnZ"  # Vertex AI Matching Engine
+      - "t8Vzas4iWLRcCyNYcvpN"  # Vertex AI Model Monitoring -> Model Monitoring on Agent Platform
+      - "U213XEHGhALownYuxpFM"  # Vertex AI Model Registry -> Model Registry on Agent Platform
+      - "sdXM79fz1FS6ekNpu37K"  # Vertex AI Online Prediction -> Agent Platform Online Inference
+      - "jgyDXnasZm6pwoCR1uif"  # Vertex AI Pipelines -> Agent Platform Pipelines
+      - "vNncXxtSVvqyhvSkQ6PJ"  # Vertex AI Search -> Agent Search on Agent Platform
+      - "9TtWTtvEUYnPidW2z4aM"  # Vertex AI TensorBoard -> Agent Platform Tensor Board
+      - "baQeYW2fsPA2vvLCqN93"  # Vertex AI Training -> Agent Platform Managed Training
+      - "SNSm5dv1cRELFSGhuvpc"  # Vertex AI Vizier
+      - "GewfNoG6JvJ1kjnL9jb8"  # Vertex AI Workbench User Managed Notebooks -> Agent Platform Workbench Instances
+      # -- Generative model APIs (5)
+      - "deUeOEPYanfJ9w8cpyBJ"  # Gemini Code Assist
+      - "cxUh24jPxEXgyRlaVhuk"  # Gemini Enterprise
+      - "Z0FZJAMvEB4j3NbCJs6B"  # Vertex Gemini API -> Gemini on Agent Platform
+      - "zeBmbgdSyHGTvPAiXwVS"  # Vertex Imagen API -> Imagen on Agent Platform
+      - "p5rCvyraXdeC6HFE8XJJ"  # Vertex Veo API -> Veo on Agent Platform
+      # -- Legacy ML platform (4)
+      - "eFCqAnWci3AZiqsz1NjQ"  # AI Platform Prediction
+      - "3e2H6fMaAhGSPSSPb8CV"  # AI Platform Training
+      - "z9PfKanGZYvYNUbnKzRJ"  # Cloud Machine Learning
+      - "5ca2HM3qzeRulGMXksCD"  # Provisioned Throughput
+      # -- Legacy AutoML (5)
+      - "BTKKe3nMmYnmor61RveN"  # AutoML Natural Language
+      - "khZkkfZshNi7aiJGRoND"  # AutoML Tables
+      - "qrU1jFoSMYvoEZG8c76T"  # AutoML Translation
+      - "dSJF5QyYo4BLY7hHHtHc"  # AutoML Video
+      - "e1FVLhzB42AENtV9BZ7X"  # AutoML Vision
+      # -- Pretrained inference APIs (7)
+      - "99nYJQyC6XLw3vTrQaXo"  # Cloud Natural Language API
+      - "gCLTpLXcWqCKtcyUyHCF"  # Cloud Translation
+      - "pDkm4vkHrT54mm7iSVHm"  # Cloud Vision
+      - "GWuqLi6DKb1DkzyRtRuD"  # Document AI
+      - "5f5oET9B3whnSFHfwy4d"  # Speech-to-Text
+      - "2Xt4Wt8rVvbz3UPsHBvx"  # Text-to-Speech
+      - "uvfRdNTRepWCCQ7j6TnH"  # Video Intelligence API
+      # -- Document AI family (3)
+      - "uu5hjNKf41zvsFyn98ry"  # Document AI Warehouse
+      - "JK2HmU4x2QTbdVBVceqV"  # Lending DocAI
+      - "uteGYrvV7DSzcC8Yc5fi"  # Procurement DocAI
+      # -- Conversational AI (7)
+      - "eUntUKqUrHdbBLNcVVXq"  # Agent Assist
+      - "YnURkwq775FEfCuFsviG"  # Agent Gateway
+      - "eSAGSSEKoxh8tTJucdYg"  # Contact Center AI Platform
+      - "WYJx5eWkh8ZrCSQUcP4i"  # Contact Center Insights
+      - "NzlvAZEU5D7gveMcRvfr"  # Customer Experience Agent Studio
+      - "BnCicQdHSdxaCv8Ya6Vm"  # Dialogflow CX
+      - "sQqrYvhjMT5crPHKWJFY"  # Dialogflow ES
+      # -- Recommendation / commerce (3)
+      - "jWSoZzR1kkyiDi9C5GMM"  # Recommendation AI
+      - "KszDabrY6XLwow9r8PgZ"  # Recommender
+      - "RBJadi3nW3S2otn65RRG"  # Retail API -> AI Commerce Search
+      # -- Other AI surfaces (3)
+      - "VXydUfMqEtvZxXJFm56a"  # Cloud Talent Solution - Job Search
+      - "7Nbc1kZUvPLiihodettN"  # Colab Enterprise
+      - "hpVHo7CE4koq9UQLV3W0"  # Model Armor
+

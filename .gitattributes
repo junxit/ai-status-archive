@@ -1,0 +1,19 @@
+# Normalize line endings everywhere. Archive files are byte-compared to decide
+# whether to commit, so a CRLF slipping in would look like a status change.
+* text=auto eol=lf
+
+# Append-only change logs. A delayed poll run can collide with the next one and
+# both will have appended their own lines; union merge keeps both instead of
+# raising a conflict the unattended runner cannot resolve.
+history/*.jsonl merge=union
+
+# Machine-written archive data. Marking it generated collapses it by default in
+# pull request diffs and keeps GitHub's language stats from reporting this as a
+# 99%-JSON repository.
+providers/** linguist-generated=true
+raw/**       linguist-generated=true
+history/**   linguist-generated=true
+state/**     linguist-generated=true
+
+# Recorded upstream payloads used as test fixtures; same reasoning.
+tests/fixtures/** linguist-generated=true
