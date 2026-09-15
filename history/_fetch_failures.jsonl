@@ -1,0 +1,1 @@
+{"at":"2026-09-15T12:26:34Z","detail":"connection: [Errno 8] nodename nor servname provided, or not known for https://status.claude.com.invalid/api/v2/summary.json","http_status":null,"kind":"connection","provider":"anthropic"}
