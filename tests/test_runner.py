@@ -358,33 +358,73 @@ class TestProviderFilter:
 
 
 class TestConditionalRequests:
-    def test_validators_from_committed_state_are_sent_on_the_next_poll(
-        self, repo, responses, monkeypatch
-    ):
-        captured: list[FakeFetcher] = []
+    """The heartbeat fires every 5 minutes; the re-sync must stay hourly.
 
-        def _run(*extra: str) -> int:
-            fetcher = FakeFetcher(dict(responses))
-            captured.append(fetcher)
-            monkeypatch.setattr(runner, "UrllibFetcher", lambda **_k: fetcher)
-            monkeypatch.setattr(runner.time, "sleep", lambda _s: None)
-            return runner.main(
-                ["--config", CONFIG, "--repo-root", str(repo), "--no-push", *extra]
-            )
+    These were once the same hourly flag. Re-coupling them would mean validators
+    are discarded on every poll, permanently disabling Anthropic's genuine 304 —
+    the only working conditional-request path across the three providers — while
+    every test above would still pass.
+    """
 
-        # Seed committed state carrying an ETag, the way Anthropic really replies.
+    @pytest.fixture
+    def seeded(self, responses):
+        """Responses where Anthropic replies with an ETag, as it really does."""
         responses[ANTHROPIC_URL] = RawResponse(
             status_code=200,
             body=fixture_bytes("anthropic_summary.json"),
             url=ANTHROPIC_URL,
             headers={"etag": 'W/"seeded"'},
         )
-        _run()
-        _run()
+        return responses
 
-        # The second poll happens inside the same UTC hour as the first only if
-        # the hour has not rolled; when it has, validators are deliberately
-        # dropped for a full re-sync. Accept either, but if one was sent it must
-        # be the committed value rather than something invented.
-        sent = dict((url, etag) for url, etag, _lm in captured[1].calls)
-        assert sent.get(ANTHROPIC_URL) in (None, 'W/"seeded"')
+    @pytest.fixture
+    def run_at(self, repo, monkeypatch):
+        """Invoke the runner with a pinned clock, returning the fetcher used."""
+
+        def _run_at(when: str, responses: dict) -> FakeFetcher:
+            fetcher = FakeFetcher(dict(responses))
+            monkeypatch.setattr(runner, "UrllibFetcher", lambda **_k: fetcher)
+            monkeypatch.setattr(runner, "utcnow_z", lambda: when)
+            monkeypatch.setattr(runner.time, "sleep", lambda _s: None)
+            runner.main(
+                ["--config", CONFIG, "--repo-root", str(repo), "--no-push", "--allow-dirty"]
+            )
+            return fetcher
+
+        return _run_at
+
+    def _etag_sent(self, fetcher: FakeFetcher) -> str | None:
+        return next(
+            (etag for url, etag, _lm in fetcher.calls if url == ANTHROPIC_URL), None
+        )
+
+    def test_validator_is_sent_on_a_later_poll_in_the_same_hour(self, seeded, run_at):
+        run_at("2026-09-15T03:08:00Z", seeded)
+        later = run_at("2026-09-15T03:14:00Z", seeded)
+        # Six minutes later: a new heartbeat bucket but the same hour bucket, so
+        # the committed ETag must still be offered.
+        assert self._etag_sent(later) == 'W/"seeded"'
+
+    def test_validator_is_dropped_once_the_hour_rolls(self, seeded, run_at):
+        run_at("2026-09-15T03:52:00Z", seeded)
+        next_hour = run_at("2026-09-15T04:03:00Z", seeded)
+        # One deliberate full re-sync per hour, bounding how long a buggy
+        # upstream ETag could hide a real change.
+        assert self._etag_sent(next_hour) is None
+
+    def test_the_resync_does_not_repeat_within_the_hour(self, seeded, run_at):
+        run_at("2026-09-15T03:52:00Z", seeded)
+        run_at("2026-09-15T04:03:00Z", seeded)
+        after = run_at("2026-09-15T04:09:00Z", seeded)
+        assert self._etag_sent(after) == 'W/"seeded"'
+
+    def test_heartbeat_commits_between_hourly_resyncs(self, repo, seeded, run_at):
+        # The other half of the decoupling: five-minute liveness proof continues
+        # regardless of where the hourly re-sync falls.
+        run_at("2026-09-15T03:08:00Z", seeded)
+        before = int(
+            git("rev-list", "--count", "HEAD", repo=repo).strip()
+        )
+        run_at("2026-09-15T03:14:00Z", seeded)
+        after = int(git("rev-list", "--count", "HEAD", repo=repo).strip())
+        assert after == before + 1

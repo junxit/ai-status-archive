@@ -1,0 +1,75 @@
+name: ci
+
+# Validates the software. Deliberately blind to the archive it produces.
+#
+# The paths-ignore list is load-bearing, not tidiness: the poller commits up to
+# 288 times a day and every one of those commits touches providers/, raw/,
+# history/, or state/. Without the filter this workflow would run ~288 times a
+# day to re-test code that did not change, cost more compute than the thing it
+# tests, and bury genuine failures under thousands of green runs nobody reads.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "providers/**"
+      - "raw/**"
+      - "history/**"
+      - "state/**"
+  pull_request:
+    paths-ignore:
+      - "providers/**"
+      - "raw/**"
+      - "history/**"
+      - "state/**"
+  workflow_dispatch:
+
+# CI reads; it never writes to the repository.
+permissions:
+  contents: read
+
+# Unlike the poller — where cancelling a run loses an observation forever —
+# superseding an in-flight CI run is exactly what you want.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --group dev --frozen
+
+      - name: Run tests
+        run: uv run pytest -q
+
+      - name: Validate provider configuration
+        # Catches a malformed or duplicated providers.yaml before it reaches the
+        # poller, where the failure would be a silent gap in the archive rather
+        # than a red build.
+        run: |
+          uv run python -c "
+          import pathlib, sys
+          sys.path.insert(0, 'src')
+          from aistatus.collect import load_providers
+          from aistatus.adapters import get_adapter
+          configs = load_providers(pathlib.Path('config/providers.yaml').read_text())
+          for c in configs:
+              get_adapter(c.platform)
+              print(f'{c.name:10} {c.platform:13} api_components={len(c.api_components):2} product_ids={len(c.product_ids)}')
+          print(f'{len(configs)} provider(s) OK')
+          "

@@ -40,12 +40,12 @@ concurrency:
 
 jobs:
   keepalive:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
 
     steps:
       - name: Check out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.KEEPALIVE_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true

@@ -32,12 +32,13 @@ from aistatus.fetch import UrllibFetcher, utcnow_z  # noqa: E402
 from aistatus.models import ProviderConfig  # noqa: E402
 from aistatus.plan import (  # noqa: E402
     HEARTBEAT_PATH,
+    RESYNC_BUCKET_SECONDS,
     Outcome,
     RunContext,
     RunPlan,
     WriteOp,
-    hour_bucket,
     plan_run,
+    time_bucket,
 )
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -392,11 +393,21 @@ def main(argv: Sequence[str] | None = None) -> int:
     # Once an hour, deliberately discard cache validators and take a full
     # response. A 304 asserts "unchanged" on the origin's authority rather than
     # on a hash we computed ourselves; this bounds how long a buggy or overeager
-    # ETag could hide a real change. It reuses the heartbeat's hour bucket, so it
-    # needs no extra state and no extra clock.
-    heartbeat_due = hour_bucket(
-        (heartbeat or {}).get("heartbeat_committed_at")
-    ) != hour_bucket(now)
+    # ETag could hide a real change.
+    #
+    # This is computed against its own bucket width, independent of the
+    # heartbeat. The two were once the same hourly value, but the heartbeat now
+    # fires every five minutes — reusing it here would discard validators on
+    # every poll and permanently disable Anthropic's 304, the only working
+    # conditional-request path across the three providers.
+    #
+    # It still needs no extra state: within an hour the committed heartbeat and
+    # now fall in the same hour bucket so validators are sent; on the first run
+    # after an hour boundary they differ, one full re-sync fires, and the
+    # heartbeat timestamp then advances into the current hour.
+    resync_due = time_bucket(
+        (heartbeat or {}).get("heartbeat_committed_at"), RESYNC_BUCKET_SECONDS
+    ) != time_bucket(now, RESYNC_BUCKET_SECONDS)
 
     outcomes: tuple[CollectOutcome, ...] = collect_all(
         configs,
@@ -404,7 +415,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         now=utcnow_z,
         sleep=time.sleep,
         validators=build_validators(
-            configs, previous_docs, force_unconditional=heartbeat_due
+            configs, previous_docs, force_unconditional=resync_due
         ),
     )
 

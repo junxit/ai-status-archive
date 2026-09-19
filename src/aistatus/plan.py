@@ -14,21 +14,24 @@ Two things fall out of that shape:
   :attr:`WriteOp.path` is a plain repo-relative string rather than a filesystem
   path.
 
-The three commit triggers are a union; any one fires a commit:
+Two commit triggers, as a union; either one fires a commit:
 
 a. Some provider's normalized state changed (or was seen for the first time).
-b. The heartbeat is due, meaning the UTC hour has rolled over since it was last
-   committed. Commit-on-change alone cannot distinguish "stable for nine days"
-   from "the poller died nine days ago", and that ambiguity is exactly what
-   ruins a forensic dataset.
-c. A provider's failure streak crossed the zero boundary in either direction.
-   Without this, a multi-hour upstream outage would be recorded only by hourly
-   heartbeats, and because the runner is ephemeral, uncommitted failure lines
-   would simply evaporate. This costs at most two extra commits per episode.
+b. The heartbeat is due — a new :data:`HEARTBEAT_BUCKET_SECONDS` bucket has been
+   entered since it was last committed. Commit-on-change alone cannot
+   distinguish "stable for nine days" from "the poller died nine days ago", and
+   that ambiguity is exactly what ruins a forensic dataset.
+
+Trigger (b) also subsumes what used to be a third trigger for failure-streak
+transitions: at a five-minute heartbeat, every run commits, so failure lines
+appended to ``history/_fetch_failures.jsonl`` are durably recorded without a
+special case. ``consecutive_failures`` is still tracked, because the counter is
+what distinguishes a single blip from a sustained outage.
 """
 
 from __future__ import annotations
 
+import datetime as _dt
 from dataclasses import dataclass, field, replace
 from enum import StrEnum
 from typing import Any, Mapping, Sequence
@@ -52,6 +55,25 @@ FAILURES_PATH = "history/_fetch_failures.jsonl"
 
 #: Subject lines longer than this are truncated with a "+N more" suffix.
 SUBJECT_MAX_CHARS = 72
+
+#: How often the liveness heartbeat is committed, in seconds.
+#:
+#: Every Actions run is a fresh checkout, so ``state/last_poll.json`` is rewritten
+#: on every poll but **vanishes unless committed**. Coverage resolution therefore
+#: equals this value, not the poll interval. At 300s it matches the five-minute
+#: cron, so essentially every run commits — roughly 288 commits/day. Raise it to
+#: 3600 to trade coverage resolution for a quieter log.
+HEARTBEAT_BUCKET_SECONDS = 300
+
+#: How often cache validators are deliberately discarded, in seconds.
+#:
+#: Kept independent of the heartbeat on purpose. A ``304`` asserts "unchanged" on
+#: the origin's authority rather than on a hash we computed, so we periodically
+#: take a full body to bound how long a buggy or overeager upstream ETag could
+#: hide a real change. Tying this to the heartbeat would mean discarding
+#: validators on every poll, which would permanently disable the only working
+#: conditional-request path we have (Anthropic's).
+RESYNC_BUCKET_SECONDS = 3600
 
 
 class Outcome(StrEnum):
@@ -178,23 +200,68 @@ class RunContext:
     run_url: str | None = None
 
 
-def hour_bucket(timestamp: str | None) -> str | None:
-    """Reduce a timestamp to its UTC hour.
+def time_bucket(timestamp: str | None, seconds: int) -> int | None:
+    """Floor a timestamp to a bucket of ``seconds`` width.
 
-    Heartbeat cadence is decided by comparing hour buckets rather than by
-    measuring elapsed minutes. A ``>= 60 minutes`` test ratchets forward under
-    cron drift — 61 minutes, then 65, then 71 — and undershoots the intended
-    24 commits per day unpredictably. Flooring to the hour is exact.
+    Cadence decisions compare buckets rather than measuring elapsed time. A
+    ``>= N seconds`` test ratchets forward under cron drift — 301 seconds, then
+    340, then 380 — and undershoots the intended rate unpredictably. Flooring is
+    exact, and being pure it is directly testable.
 
     Args:
         timestamp: An RFC 3339 UTC timestamp, or ``None``.
+        seconds: Bucket width. Must be positive.
 
     Returns:
-        ``YYYY-MM-DDTHH``, or ``None`` if the input was empty or too short.
+        The bucket index, or ``None`` when the input is missing or unparseable.
+        Returning ``None`` for bad input makes a caller's ``!=`` comparison treat
+        it as "due", which is the safe direction: we would rather commit a
+        redundant heartbeat than silently skip proving liveness.
     """
-    if not timestamp or len(timestamp) < 13:
+    if not timestamp or seconds <= 0:
         return None
-    return timestamp[:13]
+    text = timestamp[:-1] + "+00:00" if timestamp.endswith(("Z", "z")) else timestamp
+    try:
+        parsed = _dt.datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=_dt.UTC)
+    return int(parsed.timestamp()) // seconds
+
+
+def _stale_api_tags(cfg: ProviderConfig, snapshot: Snapshot) -> list[str]:
+    """Report configured ``api_components`` IDs the provider no longer publishes.
+
+    These tags rot silently and fast. Between 2026-09-15 and 2026-09-18 OpenAI
+    removed three components that were tagged here (Batch, Audio, Moderations)
+    and added three others, holding the total at 25 — so nothing looked wrong,
+    the config still parsed, and the commit subject line simply stopped being
+    able to describe those surfaces.
+
+    Deliberately a warning rather than an error. A provider reshuffling their
+    status page must never fail a poll or block a commit: the archived data is
+    still correct, only our editorial tagging is stale.
+
+    Args:
+        cfg: Provider configuration carrying the tags.
+        snapshot: Freshly collected state.
+
+    Returns:
+        Zero or one warning strings, naming every missing ID.
+    """
+    if not cfg.api_components:
+        return []
+    live = {component.id for component in snapshot.components}
+    missing = sorted(cfg.api_components - live)
+    if not missing:
+        return []
+    return [
+        f"{cfg.name}: {len(missing)} of {len(cfg.api_components)} configured "
+        f"api_components no longer exist upstream: {', '.join(missing)}. "
+        "Commit subjects can no longer describe those surfaces; update "
+        "config/providers.yaml."
+    ]
 
 
 def _previous_snapshot(ctx: RunContext, name: str) -> Snapshot | None:
@@ -320,7 +387,6 @@ def plan_run(
     warnings: list[str] = []
     summaries: list[str] = []
     all_events: list[ChangeEvent] = []
-    streak_crossed = False
 
     for outcome in outcomes:
         cfg = outcome.cfg
@@ -333,8 +399,6 @@ def plan_run(
             kind = getattr(outcome.error, "kind", type(outcome.error).__name__)
             detail = str(outcome.error)
             streak = prior_failures + 1
-            if prior_failures == 0:
-                streak_crossed = True
 
             # The critical rule: a failed fetch never touches providers/{name}.json.
             # Writing "unknown" there would be indistinguishable from a real
@@ -366,9 +430,6 @@ def plan_run(
             )
             continue
 
-        if prior_failures > 0:
-            streak_crossed = True
-
         if outcome.not_modified or outcome.snapshot is None:
             results.append(
                 ProviderResult(
@@ -384,6 +445,7 @@ def plan_run(
         snapshot = outcome.snapshot
         current_hash = content_hash(snapshot)
         stamped = _stamp_hash(snapshot, current_hash)
+        warnings.extend(_stale_api_tags(cfg, snapshot))
 
         if previous_hash == current_hash:
             results.append(
@@ -449,10 +511,17 @@ def plan_run(
         )
 
     changed = bool(summaries)
-    heartbeat_due = hour_bucket(
-        (ctx.heartbeat_doc or {}).get("heartbeat_committed_at")
-    ) != hour_bucket(ctx.now)
-    committing = changed or heartbeat_due or streak_crossed
+
+    # At a 300-second bucket against a five-minute cron this is true on nearly
+    # every run, which is the point: an uncommitted heartbeat does not survive
+    # the ephemeral runner, so coverage can only be proven as finely as it is
+    # committed. It is not *unconditionally* true — two runs landing inside one
+    # bucket, which happens when GitHub delays one, produce a single heartbeat.
+    heartbeat_due = time_bucket(
+        (ctx.heartbeat_doc or {}).get("heartbeat_committed_at"),
+        HEARTBEAT_BUCKET_SECONDS,
+    ) != time_bucket(ctx.now, HEARTBEAT_BUCKET_SECONDS)
+    committing = changed or heartbeat_due
 
     if committing:
         writes.append(
@@ -462,11 +531,7 @@ def plan_run(
                 data=pretty_bytes(
                     _heartbeat_doc(ctx, results, outcomes, committing=True)
                 ),
-                reason=(
-                    "status changed"
-                    if changed
-                    else ("hour rolled over" if heartbeat_due else "failure streak changed")
-                ),
+                reason="status changed" if changed else "heartbeat interval elapsed",
             )
         )
 
@@ -544,7 +609,9 @@ def _body(events: Sequence[ChangeEvent], ctx: RunContext) -> str:
 
 __all__ = [
     "FAILURES_PATH",
+    "HEARTBEAT_BUCKET_SECONDS",
     "HEARTBEAT_PATH",
+    "RESYNC_BUCKET_SECONDS",
     "SUBJECT_MAX_CHARS",
     "CommitPlan",
     "Outcome",
@@ -552,6 +619,6 @@ __all__ = [
     "RunContext",
     "RunPlan",
     "WriteOp",
-    "hour_bucket",
     "plan_run",
+    "time_bucket",
 ]

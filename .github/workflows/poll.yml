@@ -20,6 +20,7 @@ on:
 
 permissions:
   contents: write
+  issues: write # only for opening a failure issue; see the notify step
 
 # Overlapping runs racing on a git push would corrupt the archive. Queue rather
 # than cancel: a cancelled run loses an observation, and gaps are the one thing
@@ -30,12 +31,12 @@ concurrency:
 
 jobs:
   poll:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
 
     steps:
       - name: Check out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           # fetch-depth 1 is fine and intentional: committed state is read with
           # `git show HEAD:<path>`, which only needs the tip. Nothing in this
@@ -46,7 +47,7 @@ jobs:
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -69,3 +70,72 @@ jobs:
             args+=(--dry-run)
           fi
           python runners/github_actions.py "${args[@]}"
+
+      - name: Ping the dead-man's switch
+        # Only this outbound ping can detect the failure modes that matter most:
+        # the schedule being auto-disabled at 60 days, the workflow being
+        # deleted, the repo being renamed, or the keepalive PAT expiring.
+        # Anything that lives inside the repo dies with it.
+        #
+        # continue-on-error because a monitoring outage is not a poller outage —
+        # failing the run here would turn a healthy poll into a false alarm and,
+        # worse, open a failure issue.
+        if: success()
+        continue-on-error: true
+        env:
+          HEALTHCHECK_URL: ${{ secrets.HEALTHCHECK_URL }}
+        run: |
+          set -euo pipefail
+          if [ -z "${HEALTHCHECK_URL:-}" ]; then
+            echo "HEALTHCHECK_URL secret is not set; skipping the liveness ping."
+            echo "Nothing outside this repository is currently watching the poller."
+            exit 0
+          fi
+          curl -fsS -m 10 --retry 3 --retry-delay 2 -o /dev/null "$HEALTHCHECK_URL"
+          echo "Pinged the dead-man's switch."
+
+      - name: Open or update a failure issue
+        # Granularity is inherited from the runner's exit codes and is the
+        # intended granularity: exit 0 on a PARTIAL provider failure (already
+        # recorded in history/_fetch_failures.jsonl), exit 2 only when every
+        # provider fails — which points at our own network or configuration, not
+        # theirs. A workflow-level failure such as a rejected push also lands
+        # here. One flaky status page will not open an issue.
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          gh label create poller-failure \
+            --color B60205 \
+            --description "The status poller failed a run" >/dev/null 2>&1 || true
+
+          NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          EXISTING="$(gh issue list \
+            --label poller-failure --state open --limit 1 \
+            --json number --jq '.[0].number // empty')"
+
+          if [ -n "$EXISTING" ]; then
+            # Comment rather than opening a duplicate, so a multi-hour outage
+            # produces one issue with N comments instead of N issues.
+            gh issue comment "$EXISTING" --body "Still failing as of \`${NOW}\`. [Run](${RUN_URL})"
+            echo "Commented on existing issue #${EXISTING}."
+          else
+            gh issue create \
+              --title "Poller failing since ${NOW}" \
+              --label poller-failure \
+              --body "$(printf '%s\n' \
+                "The status poller failed a run at \`${NOW}\`." \
+                "" \
+                "[Failed run](${RUN_URL})" \
+                "" \
+                "This fires when **every** provider failed, or when the workflow" \
+                "itself failed (a rejected push, a crash). A single unreachable" \
+                "status page does not open an issue — those are recorded in" \
+                "\`history/_fetch_failures.jsonl\` and left for later analysis." \
+                "" \
+                "Close this issue once resolved; the next failure will open a new one.")"
+            echo "Opened a new failure issue."
+          fi
