@@ -1,53 +1,109 @@
 ai-status-archive — changelog
 
 All notable changes to this project are recorded here. Newest first.
+Dates are UTC. Versions follow semantic versioning.
 
-## [1.0.0] — 2026-09-15
+Note on scope: this file tracks changes to the *software*. It does not track
+changes to the archived status data — that is what git history, history/*.jsonl,
+and scripts/at.py are for.
 
-Initial build. Polls OpenAI, Anthropic, and Google Cloud status endpoints every
-five minutes and commits only when normalized state changes.
 
-### Added
-- Normalized schema shared across all providers, with fully deterministic
-  serialization (sorted keys, 2-space indent, trailing newline, no floats) and
-  an allowlist-based content hash.
-- Statuspage adapter covering both generations in use, and a Google Cloud
-  adapter that derives per-product state from open incidents.
-- Pure decision layer: collect.py, diff.py, plan.py, serialize.py perform no
-  filesystem, git, environment, or logging access. Enforced by AST guards in
-  tests/test_purity.py so the Lambda seam cannot rot.
-- GitHub Actions runner with --dry-run, per-provider filtering, clean-tree
-  guard, and push-with-rebase-retry.
-- scripts/at.py: resolves recorded status at any past instant and flags
-  coverage gaps from the heartbeat rather than the commit date.
-- scripts/backfill.py: pulls provider-published history into a separate
-  namespace with a provenance banner.
-- runners/lambda_handler.py: documented stub sketching the S3/DynamoDB path.
-- 148 tests covering idempotence, failure isolation, byte stability, hash
-  scope, adapter fidelity against live-recorded fixtures, and mixed outcomes.
-- poll.yml (cron 3-58/5, offset to dodge top-of-hour drops) and keepalive.yml.
+================================================================================
+## [Unreleased]
+
+### Known issues
+- api_components tags rot silently. Between 2026-09-15 and 2026-09-18, OpenAI
+  removed three components that were tagged as API-relevant (Batch, Audio,
+  Moderations) and added three others (Login under a NEW id, CLI, Ads Manager).
+  Nothing warned. The tags are still valid YAML and still parse; they just point
+  at ids that no longer exist, so the commit subject line has quietly stopped
+  being able to speak about those surfaces. Needs a validation pass that warns
+  when a tagged id is absent from the live component set.
+- No CI. Nothing runs pytest on push or pull request, so a change that breaks an
+  adapter is only discovered when the data goes wrong.
+- scripts/at.py and scripts/backfill.py have no test coverage. at.py is the
+  payoff script for the entire project.
+- actions/checkout@v4 and actions/setup-python@v5 target Node.js 20, which
+  GitHub has deprecated; runs currently emit a warning and are forced onto
+  Node 24.
+- ubuntu-latest migrates to Ubuntu 26 beginning 2026-10-19.
+- KEEPALIVE_TOKEN secret is not set, so keepalive commits are authored by
+  github-actions[bot] and may not reset the 60-day inactivity clock.
+
+
+================================================================================
+## [1.0.0] — 2026-09-19
+
+First public release. Repository created at github.com/junxit/ai-status-archive
+and the five-minute poller went live.
+
+### Added — collection
+- Normalized schema shared by all providers, with fully deterministic
+  serialization (sorted keys, two-space indent, trailing newline, floats
+  rejected outright) and an allowlist-based content hash.
+- Statuspage adapter covering both generations in use (OpenAI's rebuilt
+  ULID-identified generation and Anthropic's classic one) as a single
+  defensive parser.
+- Google Cloud adapter deriving per-product state from open incidents, filtered
+  to 57 configured product ids.
+- fetch.py: urllib only, 10s timeouts, at most 2 retries with exponential
+  backoff and jitter, honors Retry-After, sends conditional request validators,
+  and identifies itself with a descriptive User-Agent.
+
+### Added — decision layer
+- plan.py returns a RunPlan of byte-level write operations plus an optional
+  commit; the runner only executes it. This is what makes --dry-run a single
+  branch with no duplicated logic.
+- Three commit triggers: a provider's state changed, the UTC hour rolled over,
+  or a provider's failure streak crossed zero in either direction.
+- Fetch failures never overwrite last-known-good state; they append to
+  history/_fetch_failures.jsonl instead.
+
+### Added — tooling
+- scripts/at.py resolves recorded status at any past instant and judges coverage
+  from the heartbeat rather than the commit date.
+- scripts/backfill.py pulls provider-published history into a separate namespace
+  with a provenance banner.
+- runners/lambda_handler.py: documented stub sketching an S3/DynamoDB path.
+- 148 tests covering idempotence, failure isolation, byte stability, hash scope,
+  adapter fidelity against live-recorded fixtures, and mixed outcomes.
+- Purity guards walk the AST of the pure modules for ambient imports and
+  wall-clock calls, so the Lambda seam cannot rot unnoticed.
+
+### Added — operations
+- poll.yml on cron 3-58/5, deliberately offset off the top of the hour where
+  scheduled runs are dropped most often.
+- keepalive.yml, with honest documentation of what it can and cannot guarantee.
+- Repository Actions token permission raised from read to write. Without this
+  the workflow's own `permissions: contents: write` cannot take effect, because
+  a workflow may only reduce below the repository maximum, never elevate — the
+  poller would have failed its push with a 403 on every run.
 
 ### Upstream facts verified by fetching, not assumed
 - OpenAI runs a rebuilt Statuspage generation: incidents carry no components[],
   started_at, resolved_at, or shortlink; /scheduled-maintenances.json and
-  /incidents/unresolved.json both 404; no ETag or Last-Modified is sent.
+  /incidents/unresolved.json both return 404; no ETag or Last-Modified is sent.
 - OpenAI stamps one identical bulk updated_at across all 25 components.
-- Anthropic is the only provider honoring conditional requests (real 304).
+- OpenAI's component roster is not stable: three components were replaced
+  within a three-day window.
+- Anthropic is the only provider honoring conditional requests (a real 304).
 - Google advertises Last-Modified but ignores If-Modified-Since.
 - Google is mid-rebrand from "Vertex AI" to "Agent Platform"; 14 catalog
-  entries already have a current_title differing from title.
+  entries already carry a current_title differing from title.
 - Google's incidents.json is a rolling window (6 incidents), not a deep archive.
 
 ### Deviations from the original specification
-- affected_components is always empty for OpenAI (upstream omission).
+- affected_components is always empty for OpenAI (upstream omission, not a
+  shortcut here).
 - scheduled_maintenances is always empty for OpenAI (endpoint absent).
-- Added "baseline" change_type: one marker on first observation instead of one
-  event per component, which would be indistinguishable from a mass outage.
+- Added "baseline" change_type: one marker on first observation rather than one
+  event per component, which would otherwise be indistinguishable from a mass
+  outage and would skew every "count the outages" query by the bootstrap.
 - Added "component_renamed" change_type, since Google is actively renaming.
-- Content hash covers an explicit allowlist rather than "everything but fetch",
-  so OpenAI's bulk updated_at cannot trigger spurious commits.
-- Heartbeat cadence uses UTC hour buckets and stores heartbeat_committed_at
-  inside state/last_poll.json; deriving it from `git log` breaks under
+- The content hash covers an explicit allowlist rather than "everything except
+  fetch", so OpenAI's shared bulk updated_at cannot trigger spurious commits.
+- Heartbeat cadence uses UTC hour buckets, and heartbeat_committed_at is stored
+  inside state/last_poll.json; deriving it from `git log` breaks silently under
   actions/checkout's default fetch-depth of 1.
-- Google requires a second request (products.json) to resolve stable IDs to
+- Google requires a second request (products.json) to resolve stable ids to
   display names.
