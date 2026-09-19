@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-      "impact": "none",
-      "latest_update": "We are still implementing the mitigation.",
-      "latest_update_id": "01M2VKAQ62GZSZFS58290F995F",
-      "latest_update_sha12": "bb43f86a58c0",
-      "name": "Overbilling for OpenAI-hosted containers in the Agent API",
-      "resolved_at": null,
-      "started_at": "2026-09-18T22:29:53Z",
-      "status": "identified",
-      "updated_at": "2026-09-19T01:08:42Z",
-      "url": "https://status.openai.com/incidents/01M2VA7X37P1ASADSNZ1CG4N4D"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -193,11 +178,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:6cf652dacf64c2af176a50d7821e29e98726bb638f48b0edf282ff3d1354f6cd",
-    "elapsed_ms": 489,
+    "content_hash": "sha256:434add89577fc1efe9e0885e0814bc9df7de00a1e3a19acfe8b2cfabe71b949e",
+    "elapsed_ms": 227,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-19T03:41:55Z",
+    "fetched_at": "2026-09-19T08:18:05Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

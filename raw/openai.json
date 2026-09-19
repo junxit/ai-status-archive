@@ -226,50 +226,10 @@
       "updated_at": "2026-07-09T19:25:56Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-09-18T22:29:53Z",
-      "id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-      "impact": "none",
-      "incident_updates": [
-        {
-          "body": "We are still implementing the mitigation.",
-          "created_at": "2026-09-19T01:08:42Z",
-          "display_at": "2026-09-19T01:08:42Z",
-          "id": "01M2VKAQ62GZSZFS58290F995F",
-          "incident_id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-          "status": "identified",
-          "updated_at": "2026-09-19T01:08:42Z"
-        },
-        {
-          "body": "We’re continuing to work on a fix for the container overbilling issue.\n\nWe’re also reviewing affected usage to identify impacted customers and calculate refunds.",
-          "created_at": "2026-09-18T23:22:34Z",
-          "display_at": "2026-09-18T23:22:34Z",
-          "id": "01M2VD8C53X3MDRF74GB0WVYE8",
-          "incident_id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-          "status": "investigating",
-          "updated_at": "2026-09-18T23:22:34Z"
-        },
-        {
-          "body": "We’re investigating an issue causing higher-than-expected charges for OpenAI-hosted containers in the Agent API.\n\nWe’re working on a fix and preparing refunds for affected customers. We’ll share further updates as we make progress.",
-          "created_at": "2026-09-18T22:29:53Z",
-          "display_at": "2026-09-18T22:29:53Z",
-          "id": "01M2VA7X37ZJNGMP4MB8PJA913",
-          "incident_id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-          "status": "investigating",
-          "updated_at": "2026-09-18T22:29:53Z"
-        }
-      ],
-      "name": "Overbilling for OpenAI-hosted containers in the Agent API",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "identified",
-      "updated_at": "2026-09-19T01:08:42Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-09-19T01:08:42Z",
+    "updated_at": "2026-07-09T19:25:56Z",
     "url": "https://status.openai.com/"
   },
   "status": {

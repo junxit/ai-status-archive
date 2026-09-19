@@ -6,3 +6,4 @@
 {"at":"2026-09-19T03:41:55Z","change_type":"component_status","component_id":"01KMKFAMWKNQ84Z1766MV08ZDE","from":null,"incident_id":null,"provider":"openai","to":"operational"}
 {"at":"2026-09-19T03:41:55Z","change_type":"component_status","component_id":"01KTQBYVARFJ5KMCSECM06VKCF","from":null,"incident_id":null,"provider":"openai","to":"operational"}
 {"at":"2026-09-19T03:41:55Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M2VA7X37P1ASADSNZ1CG4N4D","provider":"openai","to":"identified"}
+{"at":"2026-09-19T08:18:05Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"01M2VA7X37P1ASADSNZ1CG4N4D","provider":"openai","to":"resolved"}
