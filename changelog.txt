@@ -12,23 +12,79 @@ and scripts/at.py are for.
 ## [Unreleased]
 
 ### Known issues
-- api_components tags rot silently. Between 2026-09-15 and 2026-09-18, OpenAI
-  removed three components that were tagged as API-relevant (Batch, Audio,
-  Moderations) and added three others (Login under a NEW id, CLI, Ads Manager).
-  Nothing warned. The tags are still valid YAML and still parse; they just point
-  at ids that no longer exist, so the commit subject line has quietly stopped
-  being able to speak about those surfaces. Needs a validation pass that warns
-  when a tagged id is absent from the live component set.
-- No CI. Nothing runs pytest on push or pull request, so a change that breaks an
-  adapter is only discovered when the data goes wrong.
 - scripts/at.py and scripts/backfill.py have no test coverage. at.py is the
   payoff script for the entire project.
-- actions/checkout@v4 and actions/setup-python@v5 target Node.js 20, which
-  GitHub has deprecated; runs currently emit a warning and are forced onto
-  Node 24.
-- ubuntu-latest migrates to Ubuntu 26 beginning 2026-10-19.
 - KEEPALIVE_TOKEN secret is not set, so keepalive commits are authored by
-  github-actions[bot] and may not reset the 60-day inactivity clock.
+  github-actions[bot] and may not reset the 60-day inactivity clock. Requires a
+  fine-grained PAT (Contents: write on this repo only); `gh` cannot mint one.
+  NOTE: whatever PAT is eventually set WILL expire, at which point keepalive
+  silently reverts to bot attribution and the 60-day clock quietly resumes.
+  Nothing inside the repo can detect that. Record the expiry date here when the
+  secret is created.
+- HEALTHCHECK_URL secret is not set, so nothing outside this repository is
+  watching the poller. Until it is, an auto-disabled schedule would go unnoticed
+  except by the absence of commits.
+- config/providers.yaml still tags three OpenAI component ids that no longer
+  exist (Batch, Audio, Moderations). The poller now warns about this on every
+  run; the tags themselves have not been revised, since whether to re-tag the
+  replacements (CLI, Ads Manager, the new Login id) is an editorial call.
+
+
+================================================================================
+## [1.1.0] — 2026-09-19
+
+Hardening pass. The poller now proves liveness at five-minute resolution, tests
+itself, and tells somebody when it breaks.
+
+### Changed
+- Heartbeat commits every 5 minutes rather than hourly, raising coverage
+  resolution from 1 hour to 5 minutes at a cost of ~288 commits/day. An
+  uncommitted heartbeat does not survive the ephemeral Actions runner, so
+  liveness can only be proven as finely as it is committed.
+- hour_bucket() replaced by time_bucket(ts, seconds), with the cadence split
+  into two independent constants, HEARTBEAT_BUCKET_SECONDS=300 and
+  RESYNC_BUCKET_SECONDS=3600. These were previously one hourly flag driving two
+  unrelated behaviors; retuning the heartbeat without splitting them would have
+  discarded cache validators on every poll and permanently disabled Anthropic's
+  304 — the only working conditional-request path across the three providers —
+  silently, with every existing test still green.
+- Dropped the failure-streak commit trigger. At a five-minute heartbeat every
+  run commits, so failure lines are durably recorded without it.
+  consecutive_failures is still tracked, since the counter is what separates a
+  single blip from a sustained outage.
+- Bumped actions/checkout v4->v5 and actions/setup-python v5->v6 (Node.js 20
+  deprecation), and pinned ubuntu-24.04 ahead of the ubuntu-latest migration to
+  Ubuntu 26 on 2026-10-19.
+
+### Added
+- Warning when a configured api_components id no longer exists upstream. Between
+  2026-09-15 and 2026-09-18 OpenAI removed Batch, Audio, and Moderations and
+  added Login under a NEW id, plus CLI and Ads Manager — holding the total at 25,
+  so nothing looked wrong and the YAML still parsed. Deliberately a warning and
+  not an error: a provider reshuffling their status page must never fail a poll,
+  because the archived data is still correct and only the tagging is stale.
+- ci.yml: runs pytest and validates providers.yaml on push and pull request. The
+  paths-ignore list covering providers/, raw/, history/, and state/ is
+  load-bearing — without it the poller's 288 daily commits would each trigger a
+  run and bury genuine failures under thousands of green ones.
+- poll.yml opens one GitHub Issue labelled poller-failure on failure and
+  comments on it thereafter, so a multi-hour outage produces one issue with N
+  comments rather than N issues.
+- poll.yml pings an optional dead-man's switch (HEALTHCHECK_URL) on success.
+  This is the only component that can detect the schedule being auto-disabled,
+  the workflow being deleted, or the repo being renamed, since anything living
+  inside the repository dies with it.
+- tests/test_runner.py::TestConditionalRequests guards the heartbeat/re-sync
+  decoupling in both directions. Verified by mutation: setting
+  RESYNC_BUCKET_SECONDS to 300 fails exactly the two tests meant to catch it.
+
+### Operational
+- Repository Actions token permission raised from read to write at creation
+  time. Without it, every scheduled run would have polled correctly and then
+  failed its push with a 403 — the workflow file looks right and the archive
+  simply never grows.
+
+163 tests passing (was 148).
 
 
 ================================================================================

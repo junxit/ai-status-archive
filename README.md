@@ -336,6 +336,9 @@ git log -p --follow -- providers/anthropic.json
 # Compact index of every status commit.
 git log --format='%H %cI %s' -- providers/
 
+# Real changes only, hiding the ~288 daily heartbeat commits.
+git log --oneline --invert-grep --grep='heartbeat'
+
 # Every recorded incident opening, across all providers.
 git log -S'"change_type":"incident_opened"' --format='%cI %s'
 
@@ -360,7 +363,7 @@ git log --format='%cI' --since=2026-09-01 --until=2026-09-02 -- state/last_poll.
 ## Test
 
 ```bash
-uv run pytest              # full suite, ~150 tests, a few seconds
+uv run pytest              # full suite, 163 tests, a few seconds
 uv run pytest -v           # verbose
 uv run pytest tests/test_plan.py    # just the commit state machine
 ```
@@ -443,18 +446,16 @@ A name-based filter would silently start matching nothing partway through.
 
 ## Commit policy
 
-**Commit only when state changes.** At 288 runs/day across 3 providers,
-committing unconditionally would produce roughly 100,000 junk commits a year.
+**Status data is written only when state changes.** Committing the full payload
+set unconditionally would produce roughly 100,000 junk data commits a year.
 
-Three triggers, any one of which fires a commit:
+Two triggers, either of which fires a commit:
 
 1. **Some provider's normalized state changed** (or was seen for the first time).
-2. **The heartbeat is due** — the UTC hour rolled over since the last committed
-   heartbeat. Caps heartbeat commits at 24/day.
-3. **A provider's failure streak crossed zero** in either direction. Without this,
-   a multi-hour upstream outage would be recorded only by hourly heartbeats, and
-   the ephemeral runner would discard the uncommitted failure lines entirely.
-   Bounded at two extra commits per episode.
+   This is the only trigger that rewrites `providers/`, `raw/`, or `history/`.
+2. **The heartbeat is due** — a new `HEARTBEAT_BUCKET_SECONDS` window (300s) has
+   been entered since the last committed heartbeat. Touches only
+   `state/last_poll.json`.
 
 ### Why a heartbeat at all
 
@@ -463,15 +464,54 @@ from *"the poller died nine days ago"* — exactly the ambiguity that ruins a
 forensic dataset. `state/last_poll.json` records the last successful fetch per
 provider and proves continuous coverage.
 
-`heartbeat_committed_at` is stored **inside** that file rather than derived from
-`git log`. This is not stylistic: `actions/checkout` defaults to `fetch-depth: 1`,
-where `git log -1 -- state/last_poll.json` returns empty whenever the last change
-to that path predates the single fetched commit. Deriving cadence from commit
-metadata would break silently as soon as the repo had history.
+### Why the heartbeat commits every five minutes
 
-Hour buckets are used rather than a 60-minute delta because a delta ratchets
-forward under cron drift (61 → 65 → 71 minutes) and undershoots 24/day
-unpredictably.
+Every Actions run is a fresh checkout. `state/last_poll.json` is rewritten on
+every poll but **vanishes unless committed**, so coverage resolution equals
+heartbeat *commit* frequency, not poll frequency. Proving liveness at
+five-minute resolution therefore requires committing at five-minute intervals —
+there is no way around it on an ephemeral runner short of pushing state to an
+external store.
+
+The cost is ~288 heartbeat commits/day, ~105k/year. It is bearable because only
+the 862-byte heartbeat file is involved, never the 180KB payloads, and git delta-
+compresses near-identical files well. **Forensic queries are unaffected**:
+heartbeat commits never touch `providers/`, so a path-filtered
+`git rev-list -1 --before=T -- providers/anthropic.json` never sees one. For
+human browsing, filter them out:
+
+```bash
+git log --oneline --invert-grep --grep='heartbeat'
+```
+
+Raise `HEARTBEAT_BUCKET_SECONDS` in `src/aistatus/plan.py` to trade coverage
+resolution for a quieter log.
+
+### Two cadences, deliberately independent
+
+`HEARTBEAT_BUCKET_SECONDS` (300s) and `RESYNC_BUCKET_SECONDS` (3600s) are
+separate constants. The second governs how often cache validators are
+deliberately discarded so a full body is taken — bounding how long a buggy or
+overeager upstream ETag could hide a real change.
+
+These were once a single hourly flag. Coupling them again would discard
+validators on *every* poll and permanently disable Anthropic's 304, the only
+working conditional-request path across the three providers — silently, with
+every other test still green. `tests/test_runner.py::TestConditionalRequests`
+guards both directions.
+
+### Why buckets rather than elapsed time
+
+A `>= N seconds` test ratchets forward under cron drift (301s, then 340, then
+380) and undershoots the intended rate unpredictably. Flooring is exact, and
+being pure it is directly testable.
+
+`heartbeat_committed_at` is stored **inside** `state/last_poll.json` rather than
+derived from `git log`. This is not stylistic: `actions/checkout` defaults to
+`fetch-depth: 1`, where `git log -1 -- state/last_poll.json` returns empty
+whenever the last change to that path predates the single fetched commit.
+Deriving cadence from commit metadata would break silently as soon as the repo
+had history.
 
 ### Fetch failures are not status changes
 
@@ -530,6 +570,33 @@ These will bite whoever inherits this.
   rebase after a collision merges concurrent appends instead of raising a
   conflict the unattended runner cannot resolve.
 
+### Monitoring the monitor
+
+Two layers, because neither alone is sufficient:
+
+- **In-repo**: `poll.yml` opens a GitHub Issue labelled `poller-failure` when a
+  run fails, and comments on the existing issue thereafter — one issue per
+  episode, not one per run. This inherits the runner's exit codes, which is the
+  intended granularity: a *single* unreachable status page exits `0` and is
+  recorded in `history/_fetch_failures.jsonl` without alerting; only an
+  all-providers failure or a workflow-level failure (rejected push, crash)
+  opens an issue. Alerting on every flaky status page would train you to ignore
+  the alert.
+- **External**: an optional ping to a dead-man's switch on every successful run,
+  via the `HEALTHCHECK_URL` secret. **This is the only layer that can detect the
+  failure modes that matter most** — the schedule being auto-disabled at 60
+  days, the workflow being deleted, the repo being renamed, or the keepalive PAT
+  expiring. Anything living inside the repo dies with it. The ping is
+  `continue-on-error`, because a monitoring outage is not a poller outage.
+
+Recommended dead-man's switch config: **period 1h, grace 30m**. Tighter settings
+look appealing but GitHub's scheduled runs are routinely delayed 15+ minutes and
+dropped under load, so a 5-minute period would generate false alarms. This is a
+"did my poller die" check, not a latency alert.
+
+Both secrets are optional; the workflows run correctly without them and log a
+warning that nothing is watching.
+
 ### Politeness
 
 A descriptive `User-Agent` identifying this repo is sent on every request, never
@@ -567,7 +634,7 @@ deep archive, so its backfill is thin by upstream design.
 ## Repository layout
 
 ```
-.github/workflows/    poll.yml (*/5 cron) and keepalive.yml
+.github/workflows/    poll.yml (5-min cron), ci.yml, keepalive.yml
 config/providers.yaml the provider registry — adding one is an edit here
 src/aistatus/
   models.py           normalized schema types, all frozen dataclasses
@@ -606,12 +673,13 @@ tests/fixtures/       real payloads recorded 2026-09-15
   tree. If a run writes its files and then dies before committing, comparing
   against the working tree would conclude "unchanged" on the next pass and lose
   that transition permanently.
-- **One UTC hour is an acceptable liveness resolution.** Heartbeat commits prove
-  coverage to within an hour; individual polls are recorded at five-minute
-  resolution inside `state/last_poll.json` only for the most recent poll.
+- **A noisy commit log is an acceptable price for five-minute liveness proof.**
+  ~288 heartbeat commits/day is the deliberate trade; `--invert-grep` makes the
+  log readable again and path-filtered queries never see them.
 - **Providers do not require authentication** for these endpoints, and none is
-  configured. No secrets are needed to run this, except the optional
-  `KEEPALIVE_TOKEN`.
+  configured. Both secrets are optional and the workflows run correctly without
+  them: `KEEPALIVE_TOKEN` (fights the 60-day auto-disable) and
+  `HEALTHCHECK_URL` (the external dead-man's switch).
 - **57 Google product IDs is the right AI surface.** Broad by choice; three
   substring artifacts (*Cont**ai**ner Registry*, *Cloud Dom**ai**ns*, *Unified
   M**ai**ntenance*) were excluded from a naive keyword sweep.
