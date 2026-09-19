@@ -1,6 +1,28 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M2VA7X37P1ASADSNZ1CG4N4D",
+      "impact": "none",
+      "latest_update": "We are still implementing the mitigation.",
+      "latest_update_id": "01M2VKAQ62GZSZFS58290F995F",
+      "latest_update_sha12": "bb43f86a58c0",
+      "name": "Overbilling for OpenAI-hosted containers in the Agent API",
+      "resolved_at": null,
+      "started_at": "2026-09-18T22:29:53Z",
+      "status": "identified",
+      "updated_at": "2026-09-19T01:08:42Z",
+      "url": "https://status.openai.com/incidents/01M2VA7X37P1ASADSNZ1CG4N4D"
+    }
+  ],
   "components": [
+    {
+      "group": null,
+      "id": "01JMXBNJXG1S2D9V65P1ZZTD94",
+      "name": "Login",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
     {
       "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
@@ -31,20 +53,6 @@
     },
     {
       "group": null,
-      "id": "01JMXBRMFE5ESNNV8JDHVCGSRD",
-      "name": "Batch",
-      "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
-    },
-    {
-      "group": null,
-      "id": "01JMXBRMFEKVBWKK82B44QFMCE",
-      "name": "Audio",
-      "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
-    },
-    {
-      "group": null,
       "id": "01JMXBRMFEMZK0HPK19RYET250",
       "name": "Fine-tuning",
       "status": "operational",
@@ -68,13 +76,6 @@
       "group": null,
       "id": "01JMXBRMFEV0AJ0VVS68N9CD6R",
       "name": "Embeddings",
-      "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
-    },
-    {
-      "group": null,
-      "id": "01JMXBRMFEVZ7E0X9GD9FWR9WX",
-      "name": "Moderations",
       "status": "operational",
       "updated_at": "2026-07-09T19:25:56Z"
     },
@@ -143,6 +144,13 @@
     },
     {
       "group": null,
+      "id": "01KMKFAMWKNQ84Z1766MV08ZDE",
+      "name": "CLI",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
       "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
       "name": "Codex in ChatGPT Desktop",
       "status": "operational",
@@ -164,6 +172,13 @@
     },
     {
       "group": null,
+      "id": "01KTQBYVARFJ5KMCSECM06VKCF",
+      "name": "Ads Manager",
+      "status": "operational",
+      "updated_at": "2026-07-09T19:25:56Z"
+    },
+    {
+      "group": null,
       "id": "01KVR95C58GGWHV7RYBT32NP11",
       "name": "Ads API",
       "status": "operational",
@@ -178,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:d7c24e8a1a45b2eae59f337a6c6176c1d4b7a202ed4960ee2e2311fed3214f32",
-    "elapsed_ms": 424,
+    "content_hash": "sha256:6cf652dacf64c2af176a50d7821e29e98726bb638f48b0edf282ff3d1354f6cd",
+    "elapsed_ms": 489,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-15T12:19:08Z",
+    "fetched_at": "2026-09-19T03:41:55Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
