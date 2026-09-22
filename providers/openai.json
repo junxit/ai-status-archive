@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M34TAFM9WBGEBE3G1GBH4SE8",
+      "impact": "minor",
+      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
+      "latest_update_id": "01M34VKVSQ8VEEN02VT334H01X",
+      "latest_update_sha12": "7e1d1e3b045c",
+      "name": "Elevated Error Rates for ChatGPT Work, across Plus, Pro, Business, Enterprise and Education plans.",
+      "resolved_at": null,
+      "started_at": "2026-09-22T15:04:05Z",
+      "status": "monitoring",
+      "updated_at": "2026-09-22T15:26:41Z",
+      "url": "https://status.openai.com/incidents/01M34TAFM9WBGEBE3G1GBH4SE8"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:434add89577fc1efe9e0885e0814bc9df7de00a1e3a19acfe8b2cfabe71b949e",
-    "elapsed_ms": 227,
+    "content_hash": "sha256:3b3465052b9cb51801dab79f40ee6ed2a6ee3d97f8633a1b3854ce89653ee3ea",
+    "elapsed_ms": 247,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-19T08:18:05Z",
+    "fetched_at": "2026-09-22T15:34:53Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
