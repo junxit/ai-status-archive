@@ -12,8 +12,8 @@
       "position": 1,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "partial_outage",
-      "updated_at": "2026-09-22T00:57:26.167Z"
+      "status": "operational",
+      "updated_at": "2026-09-22T02:11:43.697Z"
     },
     {
       "created_at": "2023-07-11T17:52:49.982Z",
@@ -42,8 +42,8 @@
       "position": 3,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "partial_outage",
-      "updated_at": "2026-09-22T00:57:26.184Z"
+      "status": "operational",
+      "updated_at": "2026-09-22T02:11:43.710Z"
     },
     {
       "created_at": "2025-05-22T21:35:29.822Z",
@@ -57,8 +57,8 @@
       "position": 4,
       "showcase": true,
       "start_date": "2025-02-06",
-      "status": "partial_outage",
-      "updated_at": "2026-09-22T00:57:26.200Z"
+      "status": "operational",
+      "updated_at": "2026-09-22T02:11:43.723Z"
     },
     {
       "created_at": "2026-04-01T17:39:47.692Z",
@@ -72,8 +72,8 @@
       "position": 5,
       "showcase": true,
       "start_date": "2026-04-01",
-      "status": "partial_outage",
-      "updated_at": "2026-09-22T00:57:26.216Z"
+      "status": "operational",
+      "updated_at": "2026-09-22T02:11:43.736Z"
     },
     {
       "created_at": "2026-02-17T23:24:51.249Z",
@@ -91,134 +91,17 @@
       "updated_at": "2026-06-30T14:45:50.487Z"
     }
   ],
-  "incidents": [
-    {
-      "components": [
-        {
-          "created_at": "2023-07-11T17:52:24.275Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "rwppv331jlwc",
-          "name": "claude.ai",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 1,
-          "showcase": true,
-          "start_date": "2023-07-11",
-          "status": "partial_outage",
-          "updated_at": "2026-09-22T00:57:26.167Z"
-        },
-        {
-          "created_at": "2023-07-11T17:53:10.880Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "k8w3r06qmzrp",
-          "name": "Claude API (api.anthropic.com)",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 3,
-          "showcase": true,
-          "start_date": "2023-07-11",
-          "status": "partial_outage",
-          "updated_at": "2026-09-22T00:57:26.184Z"
-        },
-        {
-          "created_at": "2025-05-22T21:35:29.822Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "yyzkbfz2thpt",
-          "name": "Claude Code",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 4,
-          "showcase": true,
-          "start_date": "2025-02-06",
-          "status": "partial_outage",
-          "updated_at": "2026-09-22T00:57:26.200Z"
-        },
-        {
-          "created_at": "2026-04-01T17:39:47.692Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "bpp5gb3hpjcl",
-          "name": "Claude Cowork",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 5,
-          "showcase": true,
-          "start_date": "2026-04-01",
-          "status": "partial_outage",
-          "updated_at": "2026-09-22T00:57:26.216Z"
-        }
-      ],
-      "created_at": "2026-09-22T00:57:26.126Z",
-      "id": "7g1qpkyz5gxh",
-      "impact": "major",
-      "incident_updates": [
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            },
-            {
-              "code": "k8w3r06qmzrp",
-              "name": "Claude API (api.anthropic.com)",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            },
-            {
-              "code": "yyzkbfz2thpt",
-              "name": "Claude Code",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            },
-            {
-              "code": "bpp5gb3hpjcl",
-              "name": "Claude Cowork",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            }
-          ],
-          "body": "We are investigating elevated errors on requests to Claude Mythos 5.1, Claude Fable 5.1, and Claude Opus 5. We will provide an update as soon as possible.",
-          "created_at": "2026-09-22T00:57:26.256Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-09-22T00:57:26.256Z",
-          "id": "wc6fvw33hdr3",
-          "incident_id": "7g1qpkyz5gxh",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-09-22T00:57:26.256Z"
-        }
-      ],
-      "monitoring_at": null,
-      "name": "Elevated errors for multiple models",
-      "page_id": "tymt9n04zgry",
-      "reminder_intervals": null,
-      "resolved_at": null,
-      "shortlink": "https://stspg.io/90s4l9yywzbk",
-      "started_at": "2026-09-22T00:57:26.117Z",
-      "status": "investigating",
-      "updated_at": "2026-09-22T00:57:26.258Z"
-    }
-  ],
+  "incidents": [],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-09-22T00:57:26.262Z",
+    "updated_at": "2026-09-22T04:54:19.632Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Minor Service Outage",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }
