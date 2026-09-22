@@ -9,3 +9,5 @@
 {"at":"2026-09-19T08:18:05Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"01M2VA7X37P1ASADSNZ1CG4N4D","provider":"openai","to":"resolved"}
 {"at":"2026-09-22T15:34:53Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"openai","to":"minor"}
 {"at":"2026-09-22T15:34:53Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M34TAFM9WBGEBE3G1GBH4SE8","provider":"openai","to":"monitoring"}
+{"at":"2026-09-22T19:05:40Z","change_type":"overall_indicator","component_id":null,"from":"minor","incident_id":null,"provider":"openai","to":"none"}
+{"at":"2026-09-22T19:05:40Z","change_type":"incident_resolved","component_id":null,"from":"monitoring","incident_id":"01M34TAFM9WBGEBE3G1GBH4SE8","provider":"openai","to":"resolved"}
