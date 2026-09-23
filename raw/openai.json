@@ -226,36 +226,14 @@
       "updated_at": "2026-07-09T19:25:56Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-09-23T09:13:00Z",
-      "id": "01M36RMC01ZFWQ861WYJKC4XE1",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "We have identified that users are experiencing elevated errors for the impacted services.\n\nWe are working on implementing a mitigation.",
-          "created_at": "2026-09-23T09:13:00Z",
-          "display_at": "2026-09-23T09:13:00Z",
-          "id": "01M36RMC018PT9PG53KA9ENB6Z",
-          "incident_id": "01M36RMC01ZFWQ861WYJKC4XE1",
-          "status": "identified",
-          "updated_at": "2026-09-23T09:13:00Z"
-        }
-      ],
-      "name": "Elevated Error Rates for ChatGPT across Plus and Pro plans.",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "identified",
-      "updated_at": "2026-09-23T09:13:00Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-09-23T09:13:00Z",
+    "updated_at": "2026-07-09T19:25:56Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }
