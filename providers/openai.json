@@ -6,183 +6,183 @@
       "id": "01JMXBNJXG1S2D9V65P1ZZTD94",
       "name": "Login",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXGGT5SR5DB9J7GYY48",
       "name": "Voice mode",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXGKKP51D4DEJ2HZJ8Q",
       "name": "Search",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFE4MAP2BHSJNZ787WX",
       "name": "Images",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEMZK0HPK19RYET250",
       "name": "Fine-tuning",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEQW613TFE89F45035",
       "name": "Realtime",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFESJCBGJR10PDD3WCQ",
       "name": "Files",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEV0AJ0VVS68N9CD6R",
       "name": "Embeddings",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JNKS9D9S72PMP1938PVFFQN4",
       "name": "Compliance API",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
+    },
+    {
+      "group": null,
+      "id": "01JQ7EKW990MSPSWVXC7VPV2ZJ",
+      "name": "Image Generation",
+      "status": "operational",
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JSFK5QX36ZRW0TW0ZV0ZYFXQ",
       "name": "GPTs",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
       "name": "Agent",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JSM5RTJWHRWDTS6Q604VEW3B",
       "name": "Login",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JSYVYQSWMJ9QG35XHP08BHA7",
       "name": "Deep Research",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01JVCV8YSWZFRSM1G5CVP253SK",
       "name": "Codex Web",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01K6TVGGGDCP0PPGCHXAG3AQX8",
       "name": "Connectors/Apps",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01K8C008QVXHA6JX98PAS42VPD",
       "name": "ChatGPT Atlas",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
-    },
-    {
-      "group": null,
-      "id": "01K9G527YRPY1EFRMHTKB5BKT5",
-      "name": "Sora",
-      "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KKAD7C71MCCH3FTREMJH4AAS",
       "name": "FedRAMP",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KMKFAMWKNQ84Z1766MV08ZDE",
       "name": "CLI",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KMP3KP5M8X0EBTVW6KN327EE",
       "name": "VS Code extension",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KMP3KP5MGE23B80K1EK4S8PV",
       "name": "Codex API",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KTQBYVARFJ5KMCSECM06VKCF",
       "name": "Ads Manager",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     },
     {
       "group": null,
       "id": "01KVR95C58GGWHV7RYBT32NP11",
       "name": "Ads API",
       "status": "operational",
-      "updated_at": "2026-07-09T19:25:56Z"
+      "updated_at": "2026-09-24T23:39:27Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:ea96e67bc909e510e9488604c9ce5a38c37d18761cbcad162bea91134312b067",
-    "elapsed_ms": 274,
+    "content_hash": "sha256:0263687493dcdf73c69c87e7888aadf48c134534fbf6a554c7038771586982b7",
+    "elapsed_ms": 298,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-23T23:58:36Z",
+    "fetched_at": "2026-09-24T23:59:32Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
