@@ -1,195 +1,224 @@
 {
-  "active_incidents": [],
-  "components": [
+  "active_incidents": [
     {
-      "group": null,
-      "id": "01JMXBNJXG1S2D9V65P1ZZTD94",
-      "name": "Login",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "affected_components": [],
+      "id": "01M3Q4HMNP8SZ27DTZKW6F5BJ4",
+      "impact": "none",
+      "latest_update": "Our Help Center is available, but support chat remains unavailable. If you need assistance, you can browse the Help Center or email [support@openai.com](mailto:support@openai.com \"support@openai.com\").",
+      "latest_update_id": "01M3Q4X0946G4SRQZJ9EWWBD20",
+      "latest_update_sha12": "a1f7e9a3e5db",
+      "name": "Support chat unavailable",
+      "resolved_at": null,
+      "started_at": "2026-09-29T17:49:05Z",
+      "status": "investigating",
+      "updated_at": "2026-09-29T17:55:17Z",
+      "url": "https://status.openai.com/incidents/01M3Q4HMNP8SZ27DTZKW6F5BJ4"
     },
+    {
+      "affected_components": [],
+      "id": "01M3Q4RK1SM4EMK445GGPG7C0N",
+      "impact": "minor",
+      "latest_update": "We’re investigating elevated errors affecting ChatGPT, Codex, and the API including the Agents API.\n\nSome users may experience failed requests, difficulty logging in or signing up, and tasks that do not complete. We’ll share updates as we learn more.",
+      "latest_update_id": "01M3Q6J3T2220NEB407NX63SS9",
+      "latest_update_sha12": "35bbf68ab64c",
+      "name": "Elevated errors across ChatGPT, Codex, and the API including the Agents API",
+      "resolved_at": null,
+      "started_at": "2026-09-29T17:52:52Z",
+      "status": "investigating",
+      "updated_at": "2026-09-29T18:24:17Z",
+      "url": "https://status.openai.com/incidents/01M3Q4RK1SM4EMK445GGPG7C0N"
+    }
+  ],
+  "components": [
     {
       "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01JMXBNJXGGT5SR5DB9J7GYY48",
-      "name": "Voice mode",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXGKKP51D4DEJ2HZJ8Q",
       "name": "Search",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFE4MAP2BHSJNZ787WX",
       "name": "Images",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFE5ESNNV8JDHVCGSRD",
+      "name": "Batch",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFE6N2NNT7DG6XZQ6PW",
+      "name": "Chat Completions",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEKVBWKK82B44QFMCE",
+      "name": "Audio",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEMZK0HPK19RYET250",
       "name": "Fine-tuning",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEQW613TFE89F45035",
       "name": "Realtime",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFESJCBGJR10PDD3WCQ",
       "name": "Files",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFEV0AJ0VVS68N9CD6R",
       "name": "Embeddings",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBRMFEVZ7E0X9GD9FWR9WX",
+      "name": "Moderations",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JNKS9D9S72PMP1938PVFFQN4",
       "name": "Compliance API",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
+      "name": "Responses",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JQ7EKW990MSPSWVXC7VPV2ZJ",
       "name": "Image Generation",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JSFK5QX36ZRW0TW0ZV0ZYFXQ",
       "name": "GPTs",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
       "name": "Agent",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01JSM5RTJWHRWDTS6Q604VEW3B",
       "name": "Login",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01JSYVYQSWMJ9QG35XHP08BHA7",
-      "name": "Deep Research",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01JVCV8YSWZFRSM1G5CVP253SK",
-      "name": "Codex Web",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01K6TVGGGDCP0PPGCHXAG3AQX8",
       "name": "Connectors/Apps",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01K8C008QVXHA6JX98PAS42VPD",
-      "name": "ChatGPT Atlas",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01KKAD7C71MCCH3FTREMJH4AAS",
-      "name": "FedRAMP",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01KMKFAMWKNQ84Z1766MV08ZDE",
       "name": "CLI",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01KMP3KP5M8X0EBTVW6KN327EE",
-      "name": "VS Code extension",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01KMP3KP5MGE23B80K1EK4S8PV",
-      "name": "Codex API",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
-    },
-    {
-      "group": null,
-      "id": "01KTQBYVARFJ5KMCSECM06VKCF",
-      "name": "Ads Manager",
-      "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01KVR95C58GGWHV7RYBT32NP11",
       "name": "Ads API",
       "status": "operational",
-      "updated_at": "2026-09-24T23:39:27Z"
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01KX45G1SH21AX5DT93D4HMF0P",
+      "name": "ChatGPT Work",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01M3Q6NERHVE2WPPAQRHBAC6XB",
+      "name": "dots",
+      "status": "operational",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01M3Q6W0262E8VW5DE1MJMMN0T",
+      "name": "Decisions",
+      "status": "operational",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01M3Q6W0264T1RJS1YEM47CAQJ",
+      "name": "Agents",
+      "status": "degraded_performance",
+      "updated_at": "2026-09-29T18:29:41Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:0263687493dcdf73c69c87e7888aadf48c134534fbf6a554c7038771586982b7",
-    "elapsed_ms": 298,
+    "content_hash": "sha256:ea2b618f60eb5d55a46e9713bc708be62511e6a0d4c7f5bf4cf6b6e03e5641fd",
+    "elapsed_ms": 294,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-24T23:59:32Z",
+    "fetched_at": "2026-09-29T18:42:55Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
