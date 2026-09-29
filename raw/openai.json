@@ -233,6 +233,42 @@
       "impact": "minor",
       "incident_updates": [
         {
+          "body": "We have applied the mitigation and are monitoring the recovery.",
+          "created_at": "2026-09-29T22:03:22Z",
+          "display_at": "2026-09-29T22:03:22Z",
+          "id": "01M3QK38JKQ8GDGPW0D93FSKVN",
+          "incident_id": "01M3Q4RK1SM4EMK445GGPG7C0N",
+          "status": "monitoring",
+          "updated_at": "2026-09-29T22:03:22Z"
+        },
+        {
+          "body": "We have applied the mitigation and are monitoring the recovery.",
+          "created_at": "2026-09-29T21:09:11Z",
+          "display_at": "2026-09-29T21:09:11Z",
+          "id": "01M3QG0220NEVW56ST31MCTJXE",
+          "incident_id": "01M3Q4RK1SM4EMK445GGPG7C0N",
+          "status": "monitoring",
+          "updated_at": "2026-09-29T21:09:11Z"
+        },
+        {
+          "body": "We have applied the mitigation and are monitoring the recovery.",
+          "created_at": "2026-09-29T19:39:36Z",
+          "display_at": "2026-09-29T19:39:36Z",
+          "id": "01M3QAW0PGZ6Z35MWA7CKJDMPH",
+          "incident_id": "01M3Q4RK1SM4EMK445GGPG7C0N",
+          "status": "monitoring",
+          "updated_at": "2026-09-29T19:39:36Z"
+        },
+        {
+          "body": "We’re still investigating elevated errors affecting ChatGPT, Codex, and the API including the Agents API.\n\nSome users may experience failed requests, difficulty logging in or signing up, and tasks that do not complete. We’ll share updates as we learn more.",
+          "created_at": "2026-09-29T19:08:39Z",
+          "display_at": "2026-09-29T19:08:39Z",
+          "id": "01M3Q93AV8RWSC34VKNF9VX43Q",
+          "incident_id": "01M3Q4RK1SM4EMK445GGPG7C0N",
+          "status": "investigating",
+          "updated_at": "2026-09-29T19:08:39Z"
+        },
+        {
           "body": "We’re investigating elevated errors affecting ChatGPT, Codex, and the API including the Agents API.\n\nSome users may experience failed requests, difficulty logging in or signing up, and tasks that do not complete. We’ll share updates as we learn more.",
           "created_at": "2026-09-29T18:24:17Z",
           "display_at": "2026-09-29T18:24:17Z",
@@ -251,16 +287,35 @@
           "updated_at": "2026-09-29T17:52:52Z"
         }
       ],
+      "monitoring_at": "2026-09-29T19:39:36Z",
       "name": "Elevated errors across ChatGPT, Codex, and the API including the Agents API",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "investigating",
-      "updated_at": "2026-09-29T18:24:17Z"
+      "status": "monitoring",
+      "updated_at": "2026-09-29T22:03:22Z"
     },
     {
       "created_at": "2026-09-29T17:49:05Z",
       "id": "01M3Q4HMNP8SZ27DTZKW6F5BJ4",
       "impact": "none",
       "incident_updates": [
+        {
+          "body": "We have applied the mitigation and are monitoring the recovery.",
+          "created_at": "2026-09-29T21:50:57Z",
+          "display_at": "2026-09-29T21:50:57Z",
+          "id": "01M3QJCGFSZY69NFZ4JC80F313",
+          "incident_id": "01M3Q4HMNP8SZ27DTZKW6F5BJ4",
+          "status": "monitoring",
+          "updated_at": "2026-09-29T21:50:57Z"
+        },
+        {
+          "body": "Our Help Center is available, but support chat remains unavailable. If you need assistance, you can browse the Help Center or email [support@openai.com](mailto:support@openai.com \"support@openai.com\").",
+          "created_at": "2026-09-29T18:50:38Z",
+          "display_at": "2026-09-29T18:50:38Z",
+          "id": "01M3Q82B8JBVGEQGPDEHATTCPQ",
+          "incident_id": "01M3Q4HMNP8SZ27DTZKW6F5BJ4",
+          "status": "investigating",
+          "updated_at": "2026-09-29T18:50:38Z"
+        },
         {
           "body": "Our Help Center is available, but support chat remains unavailable. If you need assistance, you can browse the Help Center or email [support@openai.com](mailto:support@openai.com \"support@openai.com\").",
           "created_at": "2026-09-29T17:55:17Z",
@@ -280,16 +335,17 @@
           "updated_at": "2026-09-29T17:49:05Z"
         }
       ],
-      "name": "Support chat unavailable",
+      "monitoring_at": "2026-09-29T21:50:57Z",
+      "name": "Support available via email",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "investigating",
-      "updated_at": "2026-09-29T17:55:17Z"
+      "status": "monitoring",
+      "updated_at": "2026-09-29T21:50:57Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-09-29T18:29:41Z",
+    "updated_at": "2026-09-29T22:03:22Z",
     "url": "https://status.openai.com/"
   },
   "status": {

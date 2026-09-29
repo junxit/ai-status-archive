@@ -57,3 +57,5 @@
 {"at":"2026-09-29T18:42:55Z","change_type":"component_status","component_id":"01M3Q6W0264T1RJS1YEM47CAQJ","from":null,"incident_id":null,"provider":"openai","to":"degraded_performance"}
 {"at":"2026-09-29T18:42:55Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M3Q4HMNP8SZ27DTZKW6F5BJ4","provider":"openai","to":"investigating"}
 {"at":"2026-09-29T18:42:55Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M3Q4RK1SM4EMK445GGPG7C0N","provider":"openai","to":"investigating"}
+{"at":"2026-09-29T22:39:19Z","change_type":"incident_updated","component_id":null,"from":"investigating","incident_id":"01M3Q4HMNP8SZ27DTZKW6F5BJ4","provider":"openai","to":"monitoring"}
+{"at":"2026-09-29T22:39:19Z","change_type":"incident_updated","component_id":null,"from":"investigating","incident_id":"01M3Q4RK1SM4EMK445GGPG7C0N","provider":"openai","to":"monitoring"}
