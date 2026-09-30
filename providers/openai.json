@@ -4,29 +4,15 @@
       "affected_components": [],
       "id": "01M3R1T4FCR1337FBBYY9K2RPB",
       "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M3REHSA8HTNT9FKGXWZSTVKH",
-      "latest_update_sha12": "7e1d1e3b045c",
+      "latest_update": "All impacted services are recovered, we are continuing to monitor for any reoccurrence.",
+      "latest_update_id": "01M3RY2QNVRHFCQS5EZQW9M06G",
+      "latest_update_sha12": "b234c3cc3b05",
       "name": "Elevated errors in ChatGPT Space Pages",
       "resolved_at": null,
       "started_at": "2026-09-30T02:20:32Z",
       "status": "monitoring",
-      "updated_at": "2026-09-30T06:03:10Z",
+      "updated_at": "2026-09-30T10:34:34Z",
       "url": "https://status.openai.com/incidents/01M3R1T4FCR1337FBBYY9K2RPB"
-    },
-    {
-      "affected_components": [],
-      "id": "01M3RDNY37CAPQGRKPBVMNRT4K",
-      "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M3RE64M00EFV5X0RJH1K8DEP",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "Elevated error rates for ChatGPT Pro and Plus users",
-      "resolved_at": null,
-      "started_at": "2026-09-30T05:47:57Z",
-      "status": "monitoring",
-      "updated_at": "2026-09-30T05:56:48Z",
-      "url": "https://status.openai.com/incidents/01M3RDNY37CAPQGRKPBVMNRT4K"
     }
   ],
   "components": [
@@ -48,7 +34,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -207,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:39974eec8d1ed63d7886283a51998b57d67dda4feafb89a9c88bc28d8ab946b8",
-    "elapsed_ms": 167,
+    "content_hash": "sha256:c51247f98f5c54c6ba691e060d3dc81f54570a1220242a39444c1f1b28c90a8b",
+    "elapsed_ms": 240,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-30T07:20:24Z",
+    "fetched_at": "2026-09-30T13:55:27Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
