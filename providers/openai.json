@@ -1,5 +1,34 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M3R1T4FCR1337FBBYY9K2RPB",
+      "impact": "minor",
+      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
+      "latest_update_id": "01M3REHSA8HTNT9FKGXWZSTVKH",
+      "latest_update_sha12": "7e1d1e3b045c",
+      "name": "Elevated errors in ChatGPT Space Pages",
+      "resolved_at": null,
+      "started_at": "2026-09-30T02:20:32Z",
+      "status": "monitoring",
+      "updated_at": "2026-09-30T06:03:10Z",
+      "url": "https://status.openai.com/incidents/01M3R1T4FCR1337FBBYY9K2RPB"
+    },
+    {
+      "affected_components": [],
+      "id": "01M3RDNY37CAPQGRKPBVMNRT4K",
+      "impact": "minor",
+      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
+      "latest_update_id": "01M3RE64M00EFV5X0RJH1K8DEP",
+      "latest_update_sha12": "7e1d1e3b045c",
+      "name": "Elevated error rates for ChatGPT Pro and Plus users",
+      "resolved_at": null,
+      "started_at": "2026-09-30T05:47:57Z",
+      "status": "monitoring",
+      "updated_at": "2026-09-30T05:56:48Z",
+      "url": "https://status.openai.com/incidents/01M3RDNY37CAPQGRKPBVMNRT4K"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -19,7 +48,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -178,18 +207,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:d1b2c4cc6d7675b724b2795b92770db5ea3612245c54e16b0363db7578859613",
-    "elapsed_ms": 235,
+    "content_hash": "sha256:39974eec8d1ed63d7886283a51998b57d67dda4feafb89a9c88bc28d8ab946b8",
+    "elapsed_ms": 167,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-30T01:33:39Z",
+    "fetched_at": "2026-09-30T07:20:24Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
