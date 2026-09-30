@@ -13,20 +13,6 @@
       "status": "monitoring",
       "updated_at": "2026-09-30T15:00:05Z",
       "url": "https://status.openai.com/incidents/01M3R1T4FCR1337FBBYY9K2RPB"
-    },
-    {
-      "affected_components": [],
-      "id": "01M3SMF1Q0TDCQVNYSXYG37QMR",
-      "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M3SRTE4DMVKG9A369CBW1CWX",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "Elevated latency for some API requests",
-      "resolved_at": null,
-      "started_at": "2026-09-30T17:05:46Z",
-      "status": "monitoring",
-      "updated_at": "2026-09-30T18:21:53Z",
-      "url": "https://status.openai.com/incidents/01M3SMF1Q0TDCQVNYSXYG37QMR"
     }
   ],
   "components": [
@@ -69,7 +55,7 @@
       "group": null,
       "id": "01JMXBRMFE6N2NNT7DG6XZQ6PW",
       "name": "Chat Completions",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -125,7 +111,7 @@
       "group": null,
       "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
       "name": "Responses",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -207,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:1c3a2a63fddc9f3172808932047981d15e94f40753c072fb78be4f2e16e3fb3a",
-    "elapsed_ms": 265,
+    "content_hash": "sha256:14151e5b56808d4806833a83db63384fc0881a61a9164c747d28a2444ddebdc2",
+    "elapsed_ms": 171,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-30T18:46:41Z",
+    "fetched_at": "2026-09-30T22:39:10Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
