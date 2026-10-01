@@ -18,8 +18,22 @@
   "components": [
     {
       "group": null,
+      "id": "01JMXBNJXG1S2D9V65P1ZZTD94",
+      "name": "Login",
+      "status": "operational",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
+      "status": "operational",
+      "updated_at": "2026-09-29T18:29:41Z"
+    },
+    {
+      "group": null,
+      "id": "01JMXBNJXGGT5SR5DB9J7GYY48",
+      "name": "Voice mode",
       "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
@@ -144,22 +158,15 @@
     },
     {
       "group": null,
-      "id": "01K6TVGGGDCP0PPGCHXAG3AQX8",
-      "name": "Connectors/Apps",
+      "id": "01JSYVYQSWMJ9QG35XHP08BHA7",
+      "name": "Deep Research",
       "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
-      "id": "01KMKFAMWKNQ84Z1766MV08ZDE",
-      "name": "CLI",
-      "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
-    },
-    {
-      "group": null,
-      "id": "01KVR95C58GGWHV7RYBT32NP11",
-      "name": "Ads API",
+      "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
+      "name": "Codex in ChatGPT Desktop",
       "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
@@ -167,13 +174,6 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
-    },
-    {
-      "group": null,
-      "id": "01M3Q6NERHVE2WPPAQRHBAC6XB",
-      "name": "dots",
       "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
@@ -193,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:14151e5b56808d4806833a83db63384fc0881a61a9164c747d28a2444ddebdc2",
-    "elapsed_ms": 171,
+    "content_hash": "sha256:431083a114a758954038eef492639eaf1d91066aeaff1546be7b4e1d040d4847",
+    "elapsed_ms": 200,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-09-30T22:39:10Z",
+    "fetched_at": "2026-10-01T14:47:09Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
