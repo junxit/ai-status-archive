@@ -12,3 +12,4 @@
 {"at":"2026-09-22T06:01:34Z","change_type":"component_status","component_id":"yyzkbfz2thpt","from":"partial_outage","incident_id":null,"provider":"anthropic","to":"operational"}
 {"at":"2026-09-22T06:01:34Z","change_type":"incident_resolved","component_id":null,"from":"investigating","incident_id":"7g1qpkyz5gxh","provider":"anthropic","to":"resolved"}
 {"at":"2026-10-01T19:53:33Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"k0h22tsvnydg","provider":"anthropic","to":"monitoring"}
+{"at":"2026-10-01T23:33:47Z","change_type":"incident_resolved","component_id":null,"from":"monitoring","incident_id":"k0h22tsvnydg","provider":"anthropic","to":"resolved"}
