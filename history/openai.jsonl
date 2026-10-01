@@ -108,3 +108,4 @@
 {"at":"2026-10-01T14:47:09Z","change_type":"component_status","component_id":"01KMKFAMWKQ81YWSE1Z18R6VHR","from":null,"incident_id":null,"provider":"openai","to":"operational"}
 {"at":"2026-10-01T14:47:09Z","change_type":"component_status","component_id":"01KVR95C58GGWHV7RYBT32NP11","from":"operational","incident_id":null,"provider":"openai","to":null}
 {"at":"2026-10-01T14:47:09Z","change_type":"component_status","component_id":"01M3Q6NERHVE2WPPAQRHBAC6XB","from":"operational","incident_id":null,"provider":"openai","to":null}
+{"at":"2026-10-01T19:53:32Z","change_type":"incident_updated","component_id":null,"from":"monitoring","incident_id":"01M3R1T4FCR1337FBBYY9K2RPB","provider":"openai","to":"monitoring"}

@@ -4,14 +4,14 @@
       "affected_components": [],
       "id": "01M3R1T4FCR1337FBBYY9K2RPB",
       "impact": "minor",
-      "latest_update": "We have applied mitigations and are monitoring the recovery.",
-      "latest_update_id": "01M3SD8XPS5NZ1EZ1WGWC1V2Y0",
-      "latest_update_sha12": "763c76aef6a0",
+      "latest_update": "We are continuing to monitor our mitigiations. Some users may see slow or timed out results, especially for creating new pages or spaces.",
+      "latest_update_id": "01M3W617A49S8ZS7HPXBRX7VTF",
+      "latest_update_sha12": "478a034ccdf4",
       "name": "Elevated errors in ChatGPT Space Pages",
       "resolved_at": null,
       "started_at": "2026-09-30T02:20:32Z",
       "status": "monitoring",
-      "updated_at": "2026-09-30T15:00:05Z",
+      "updated_at": "2026-10-01T16:51:16Z",
       "url": "https://status.openai.com/incidents/01M3R1T4FCR1337FBBYY9K2RPB"
     }
   ],
@@ -193,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:431083a114a758954038eef492639eaf1d91066aeaff1546be7b4e1d040d4847",
-    "elapsed_ms": 200,
+    "content_hash": "sha256:717dca6acebcf0388445c10d2531ba5a8ca10182873af1be1506ae53b4b54c83",
+    "elapsed_ms": 233,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-01T14:47:09Z",
+    "fetched_at": "2026-10-01T19:53:32Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

@@ -1,12 +1,30 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [
+        "0qbwn08sd68x",
+        "k8w3r06qmzrp"
+      ],
+      "id": "k0h22tsvnydg",
+      "impact": "minor",
+      "latest_update": "We have resolved the issue causing delays in credits being applied after purchase. We are monitoring closely to ensure no further issues.",
+      "latest_update_id": "svgmzqzwyzxk",
+      "latest_update_sha12": "bdbbf5b240c0",
+      "name": "Delayed credits on the Claude Platform",
+      "resolved_at": null,
+      "started_at": "2026-10-01T16:20:40Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-01T18:23:02Z",
+      "url": "https://stspg.io/jg26d0skzh27"
+    }
+  ],
   "components": [
     {
       "group": null,
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
       "status": "operational",
-      "updated_at": "2026-09-02T01:24:22Z"
+      "updated_at": "2026-10-01T18:23:02Z"
     },
     {
       "group": null,
@@ -20,36 +38,36 @@
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-09-22T02:11:43Z"
+      "updated_at": "2026-09-29T15:30:44Z"
     },
     {
       "group": null,
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-09-22T02:11:43Z"
+      "updated_at": "2026-10-01T18:23:02Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "operational",
-      "updated_at": "2026-09-22T02:11:43Z"
+      "updated_at": "2026-09-29T15:30:44Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-09-22T02:11:43Z"
+      "updated_at": "2026-09-29T15:30:44Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
-    "elapsed_ms": 117,
+    "content_hash": "sha256:42cc395568adc3ddb14266fdea988800aa17d49a7b2553d4c34c1e74c42580b1",
+    "elapsed_ms": 68,
     "error": null,
-    "etag": "W/\"0de111deef648030baf15833e044eedb\"",
-    "fetched_at": "2026-09-22T06:01:34Z",
+    "etag": "W/\"830fa52af55feadc00c564e87ba3119d\"",
+    "fetched_at": "2026-10-01T19:53:33Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
