@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
+      "impact": "minor",
+      "latest_update": "We have mitigated the issue, and are monitoring recovery.",
+      "latest_update_id": "01M45QHWEE43K3EBD863D20E6Y",
+      "latest_update_sha12": "d78c7ca2061a",
+      "name": "Elevated Work Mode errors",
+      "resolved_at": null,
+      "started_at": "2026-10-05T07:03:53Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-05T09:50:38Z",
+      "url": "https://status.openai.com/incidents/01M45E0JFFJZ6EQ3BWYPW74R2Z"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -152,14 +167,14 @@
       "group": null,
       "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
       "name": "Codex in ChatGPT Desktop",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
-    "elapsed_ms": 170,
+    "content_hash": "sha256:83894c67c7abb6e8f41941e4a836d552ab8e68a65be6cedf8aa72e39957398ef",
+    "elapsed_ms": 213,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-02T02:32:23Z",
+    "fetched_at": "2026-10-05T12:27:22Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
