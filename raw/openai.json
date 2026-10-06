@@ -114,7 +114,7 @@
       "name": "Login",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 12,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -228,36 +228,6 @@
   ],
   "incidents": [
     {
-      "created_at": "2026-10-06T00:40:32Z",
-      "id": "01M47AFBNRNXKJWN549T3PMYV8",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "We have applied the mitigation and are monitoring the recovery.",
-          "created_at": "2026-10-06T00:40:57Z",
-          "display_at": "2026-10-06T00:40:57Z",
-          "id": "01M47AG4340W7HE26YY9B9A85N",
-          "incident_id": "01M47AFBNRNXKJWN549T3PMYV8",
-          "status": "monitoring",
-          "updated_at": "2026-10-06T00:40:57Z"
-        },
-        {
-          "body": "We are investigating the issue for the listed services.",
-          "created_at": "2026-10-06T00:40:32Z",
-          "display_at": "2026-10-06T00:40:32Z",
-          "id": "01M47AFBNRE83FXXRFQY9JRFVX",
-          "incident_id": "01M47AFBNRNXKJWN549T3PMYV8",
-          "status": "investigating",
-          "updated_at": "2026-10-06T00:40:32Z"
-        }
-      ],
-      "monitoring_at": "2026-10-06T00:40:57Z",
-      "name": "Elevated errors in API Platform login and administration APIs.",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-10-06T00:40:57Z"
-    },
-    {
       "created_at": "2026-10-05T17:58:04Z",
       "id": "01M46KED6KQ6PR195KZYYVNY8W",
       "impact": "none",
@@ -330,7 +300,7 @@
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-06T00:40:57Z",
+    "updated_at": "2026-10-05T18:07:03Z",
     "url": "https://status.openai.com/"
   },
   "status": {

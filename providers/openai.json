@@ -27,20 +27,6 @@
       "status": "monitoring",
       "updated_at": "2026-10-05T18:07:03Z",
       "url": "https://status.openai.com/incidents/01M46KED6KQ6PR195KZYYVNY8W"
-    },
-    {
-      "affected_components": [],
-      "id": "01M47AFBNRNXKJWN549T3PMYV8",
-      "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M47AG4340W7HE26YY9B9A85N",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "Elevated errors in API Platform login and administration APIs.",
-      "resolved_at": null,
-      "started_at": "2026-10-06T00:40:32Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-06T00:40:57Z",
-      "url": "https://status.openai.com/incidents/01M47AFBNRNXKJWN549T3PMYV8"
     }
   ],
   "components": [
@@ -181,7 +167,7 @@
       "group": null,
       "id": "01JSM5RTJWHRWDTS6Q604VEW3B",
       "name": "Login",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -221,11 +207,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:db96bf3c50336cf8c120abbf0b964db8f459819975e330149562f9a1dcf04e9e",
-    "elapsed_ms": 270,
+    "content_hash": "sha256:8abeb63836cf153766a063b5236e2f3653fc96679048735780d77a25dcd51ac0",
+    "elapsed_ms": 316,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-06T01:27:35Z",
+    "fetched_at": "2026-10-06T07:55:25Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
