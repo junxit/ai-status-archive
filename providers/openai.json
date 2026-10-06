@@ -1,34 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M48Y8E81QAFF9XKVGE118E6X",
-      "impact": "minor",
-      "latest_update": "We are implementing the mitigation.",
-      "latest_update_id": "01M491BTZ2KAKS2M8F18N2KJ9R",
-      "latest_update_sha12": "87a3fdcb7e4d",
-      "name": "Errors processing large PDFs in the Responses API",
-      "resolved_at": null,
-      "started_at": "2026-10-06T15:45:31Z",
-      "status": "identified",
-      "updated_at": "2026-10-06T16:39:49Z",
-      "url": "https://status.openai.com/incidents/01M48Y8E81QAFF9XKVGE118E6X"
-    },
-    {
-      "affected_components": [],
-      "id": "01M493CZ0CB14KPC0EER83MNVB",
-      "impact": "minor",
-      "latest_update": "We are investigating issues for agents api and computer use.",
-      "latest_update_id": "01M493CZ0CXZ5VXM6VRRJMQW7G",
-      "latest_update_sha12": "73a4de74bd13",
-      "name": "Computer Use Is Experiencing Issues",
-      "resolved_at": null,
-      "started_at": "2026-10-06T17:15:23Z",
-      "status": "investigating",
-      "updated_at": "2026-10-06T17:15:23Z",
-      "url": "https://status.openai.com/incidents/01M493CZ0CB14KPC0EER83MNVB"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -139,7 +110,7 @@
       "group": null,
       "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
       "name": "Responses",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -202,23 +173,23 @@
       "group": null,
       "id": "01M3Q6W0264T1RJS1YEM47CAQJ",
       "name": "Agents",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:60dddfa63fb76beb4dd49cd0b498a4edd36ebe0e2296ececc39c61442b0a2291",
-    "elapsed_ms": 198,
+    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
+    "elapsed_ms": 169,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-06T19:49:58Z",
+    "fetched_at": "2026-10-06T23:21:41Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
