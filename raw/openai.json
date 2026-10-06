@@ -141,7 +141,7 @@
       "name": "ChatGPT Work",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 15,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -150,7 +150,7 @@
       "name": "Codex in ChatGPT Desktop",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 16,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -226,85 +226,14 @@
       "updated_at": "2026-09-29T18:29:41Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-10-05T17:58:04Z",
-      "id": "01M46KED6KQ6PR195KZYYVNY8W",
-      "impact": "none",
-      "incident_updates": [
-        {
-          "body": "We have applied the mitigation and are monitoring the recovery.",
-          "created_at": "2026-10-05T18:07:03Z",
-          "display_at": "2026-10-05T18:07:03Z",
-          "id": "01M46KYVQ1SFC773JGJ26M4BQ2",
-          "incident_id": "01M46KED6KQ6PR195KZYYVNY8W",
-          "status": "monitoring",
-          "updated_at": "2026-10-05T18:07:03Z"
-        },
-        {
-          "body": "We have identified that users are experiencing elevated errors within Codex Cloud.\n\nWe are working on implementing a mitigation.",
-          "created_at": "2026-10-05T17:58:04Z",
-          "display_at": "2026-10-05T17:58:04Z",
-          "id": "01M46KED6KB3NM92PT7YWKRE8V",
-          "incident_id": "01M46KED6KQ6PR195KZYYVNY8W",
-          "status": "identified",
-          "updated_at": "2026-10-05T17:58:04Z"
-        }
-      ],
-      "monitoring_at": "2026-10-05T18:07:03Z",
-      "name": "Elevated error rates in Codex Cloud",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-10-05T18:07:03Z"
-    },
-    {
-      "created_at": "2026-10-05T07:03:53Z",
-      "id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "We have mitigated the issue, and are monitoring recovery.",
-          "created_at": "2026-10-05T09:50:38Z",
-          "display_at": "2026-10-05T09:50:38Z",
-          "id": "01M45QHWEE43K3EBD863D20E6Y",
-          "incident_id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-          "status": "monitoring",
-          "updated_at": "2026-10-05T09:50:38Z"
-        },
-        {
-          "body": "We are continuing to observe elevated Work Mode errors. Scheduled tasks may also be impacted.",
-          "created_at": "2026-10-05T07:14:08Z",
-          "display_at": "2026-10-05T07:14:08Z",
-          "id": "01M45EKATKX77E0K9C6DJRY862",
-          "incident_id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-          "status": "investigating",
-          "updated_at": "2026-10-05T07:14:08Z"
-        },
-        {
-          "body": "We are observing elevated Work Mode errors. Scheduled tasks may also be impacted.",
-          "created_at": "2026-10-05T07:03:53Z",
-          "display_at": "2026-10-05T07:03:53Z",
-          "id": "01M45E0JFFFHM2AMPAK5S97JE9",
-          "incident_id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-          "status": "investigating",
-          "updated_at": "2026-10-05T07:03:53Z"
-        }
-      ],
-      "monitoring_at": "2026-10-05T09:50:38Z",
-      "name": "Elevated Work Mode errors",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-10-05T09:50:38Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-05T18:07:03Z",
+    "updated_at": "2026-09-29T18:29:41Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }

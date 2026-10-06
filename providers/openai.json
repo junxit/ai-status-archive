@@ -1,34 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-      "impact": "minor",
-      "latest_update": "We have mitigated the issue, and are monitoring recovery.",
-      "latest_update_id": "01M45QHWEE43K3EBD863D20E6Y",
-      "latest_update_sha12": "d78c7ca2061a",
-      "name": "Elevated Work Mode errors",
-      "resolved_at": null,
-      "started_at": "2026-10-05T07:03:53Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-05T09:50:38Z",
-      "url": "https://status.openai.com/incidents/01M45E0JFFJZ6EQ3BWYPW74R2Z"
-    },
-    {
-      "affected_components": [],
-      "id": "01M46KED6KQ6PR195KZYYVNY8W",
-      "impact": "none",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M46KYVQ1SFC773JGJ26M4BQ2",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "Elevated error rates in Codex Cloud",
-      "resolved_at": null,
-      "started_at": "2026-10-05T17:58:04Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-05T18:07:03Z",
-      "url": "https://status.openai.com/incidents/01M46KED6KQ6PR195KZYYVNY8W"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -181,14 +152,14 @@
       "group": null,
       "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
       "name": "Codex in ChatGPT Desktop",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -207,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8abeb63836cf153766a063b5236e2f3653fc96679048735780d77a25dcd51ac0",
-    "elapsed_ms": 316,
+    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
+    "elapsed_ms": 183,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-06T07:55:25Z",
+    "fetched_at": "2026-10-06T14:40:59Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
