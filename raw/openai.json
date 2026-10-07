@@ -222,18 +222,49 @@
       "name": "Agent",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 24,
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
+    }
+  ],
+  "incidents": [
+    {
+      "created_at": "2026-10-07T01:12:57Z",
+      "id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+      "impact": "minor",
+      "incident_updates": [
+        {
+          "body": "We are  implementing the mitigation.",
+          "created_at": "2026-10-07T01:52:03Z",
+          "display_at": "2026-10-07T01:52:03Z",
+          "id": "01M4A0Z0G85YAWD0MTAXVAJJ9V",
+          "incident_id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+          "status": "identified",
+          "updated_at": "2026-10-07T01:52:03Z"
+        },
+        {
+          "body": "We are investigating the issue for workspace agents, users may not see the responses during the issue time.",
+          "created_at": "2026-10-07T01:12:57Z",
+          "display_at": "2026-10-06T22:52:00Z",
+          "id": "01M49YQE6W9PKX7HY9ND61TCJC",
+          "incident_id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+          "status": "investigating",
+          "updated_at": "2026-10-07T01:17:04Z"
+        }
+      ],
+      "name": "Workspace Agents Degraded and Responses Impacted",
+      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
+      "status": "identified",
+      "updated_at": "2026-10-07T01:52:03Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-09-29T18:29:41Z",
+    "updated_at": "2026-10-07T01:52:03Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   }
 }

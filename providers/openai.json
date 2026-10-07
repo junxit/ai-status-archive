@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+      "impact": "minor",
+      "latest_update": "We are implementing the mitigation.",
+      "latest_update_id": "01M4A0Z0G85YAWD0MTAXVAJJ9V",
+      "latest_update_sha12": "87a3fdcb7e4d",
+      "name": "Workspace Agents Degraded and Responses Impacted",
+      "resolved_at": null,
+      "started_at": "2026-10-07T01:12:57Z",
+      "status": "identified",
+      "updated_at": "2026-10-07T01:52:03Z",
+      "url": "https://status.openai.com/incidents/01M49YQE6WZT02WYF0KBXVMQ5G"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -131,7 +146,7 @@
       "group": null,
       "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
       "name": "Agent",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
-    "elapsed_ms": 169,
+    "content_hash": "sha256:de3ff3b28a32a2ac5b88fb42edb55e8162e00cce98cff59ba166c65d628a07ab",
+    "elapsed_ms": 247,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-06T23:21:41Z",
+    "fetched_at": "2026-10-07T02:30:10Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",

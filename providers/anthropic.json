@@ -1,12 +1,29 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [
+        "0qbwn08sd68x"
+      ],
+      "id": "wf2v8ms031sx",
+      "impact": "major",
+      "latest_update": "We are investigating elevated errors loading usage data on the platform.claude.com Usage page and the Admin API usage report endpoint since 5 PM PT. Messages API requests are not affected. We will provide an update as soon as possible.",
+      "latest_update_id": "psnbtphy46b0",
+      "latest_update_sha12": "8824dd1a1079",
+      "name": "Elevated errors loading usage data on platform.claude.com",
+      "resolved_at": null,
+      "started_at": "2026-10-07T01:20:26Z",
+      "status": "investigating",
+      "updated_at": "2026-10-07T01:20:26Z",
+      "url": "https://stspg.io/scdhhnplc2jn"
+    }
+  ],
   "components": [
     {
       "group": null,
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
-      "status": "operational",
-      "updated_at": "2026-10-01T18:23:02Z"
+      "status": "partial_outage",
+      "updated_at": "2026-10-07T01:20:26Z"
     },
     {
       "group": null,
@@ -20,43 +37,43 @@
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-09-29T15:30:44Z"
+      "updated_at": "2026-10-06T12:43:02Z"
     },
     {
       "group": null,
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-10-01T18:23:02Z"
+      "updated_at": "2026-10-06T12:43:02Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "operational",
-      "updated_at": "2026-09-29T15:30:44Z"
+      "updated_at": "2026-10-06T12:43:02Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-09-29T15:30:44Z"
+      "updated_at": "2026-10-06T12:43:02Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
-    "elapsed_ms": 104,
+    "content_hash": "sha256:bd46b188f4387d5674b10179b10a03b17589790add6a928b0bc9b0fecc5e2154",
+    "elapsed_ms": 92,
     "error": null,
-    "etag": "W/\"5822a944651bee5f47393c9202ce651e\"",
-    "fetched_at": "2026-10-01T23:33:47Z",
+    "etag": "W/\"42ebce9b12e13190af11679a88883434\"",
+    "fetched_at": "2026-10-07T02:30:11Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Minor Service Outage",
+    "indicator": "minor"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",
