@@ -120,6 +120,46 @@
               "code": "0qbwn08sd68x",
               "name": "Claude Console (platform.claude.com)",
               "new_status": "partial_outage",
+              "old_status": "partial_outage"
+            }
+          ],
+          "body": "We've identified the cause of errors loading usage data. The Admin API usage report has recovered, and fixes for the platform.claude.com Usage and Rate limits pages are in progress. The most recent 30 minutes of usage may be delayed. Core functionality is not affected.",
+          "created_at": "2026-10-07T17:28:02.568Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-10-07T17:28:02.568Z",
+          "id": "l3390gw3zj8k",
+          "incident_id": "978mjkgw6mh7",
+          "status": "identified",
+          "tweet_id": null,
+          "updated_at": "2026-10-07T17:28:02.568Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "0qbwn08sd68x",
+              "name": "Claude Console (platform.claude.com)",
+              "new_status": "partial_outage",
+              "old_status": "partial_outage"
+            }
+          ],
+          "body": "We are continuing to work on elevated errors affecting usage data on the platform.claude.com Usage and Rate limits pages and the Admin API usage report. A mitigation for the Usage page and the Admin API usage report is rolling out; once it is in place, the most recent usage may take about 30 minutes to appear there. Core functionality is not affected.",
+          "created_at": "2026-10-07T16:36:44.789Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-10-07T16:36:44.789Z",
+          "id": "lkt8xyfbql3f",
+          "incident_id": "978mjkgw6mh7",
+          "status": "investigating",
+          "tweet_id": null,
+          "updated_at": "2026-10-07T16:36:44.789Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "0qbwn08sd68x",
+              "name": "Claude Console (platform.claude.com)",
+              "new_status": "partial_outage",
               "old_status": "operational"
             }
           ],
@@ -142,15 +182,15 @@
       "resolved_at": null,
       "shortlink": "https://stspg.io/sjkw7njwf0mt",
       "started_at": "2026-10-07T13:25:04.155Z",
-      "status": "investigating",
-      "updated_at": "2026-10-07T13:25:04.274Z"
+      "status": "identified",
+      "updated_at": "2026-10-07T17:28:02.570Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-10-07T15:55:02.402Z",
+    "updated_at": "2026-10-07T21:23:29.669Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],

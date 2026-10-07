@@ -6,14 +6,14 @@
       ],
       "id": "978mjkgw6mh7",
       "impact": "major",
-      "latest_update": "We are investigating elevated errors affecting usage data on the platform.claude.com Usage page and the Admin API usage report. Core functionality is not affected. We will provide an update as soon as possible.",
-      "latest_update_id": "c56sq7q6flhm",
-      "latest_update_sha12": "2c8dbd671fcc",
+      "latest_update": "We've identified the cause of errors loading usage data. The Admin API usage report has recovered, and fixes for the platform.claude.com Usage and Rate limits pages are in progress. The most recent 30 minutes of usage may be delayed. Core functionality is not affected.",
+      "latest_update_id": "l3390gw3zj8k",
+      "latest_update_sha12": "595aff58131d",
       "name": "Elevated errors on platform.claude.com",
       "resolved_at": null,
       "started_at": "2026-10-07T13:25:04Z",
-      "status": "investigating",
-      "updated_at": "2026-10-07T13:25:04Z",
+      "status": "identified",
+      "updated_at": "2026-10-07T17:28:02Z",
       "url": "https://stspg.io/sjkw7njwf0mt"
     }
   ],
@@ -62,11 +62,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:46768b435c2c97f103aa7dd24df6eb2ffae959aaaa1b619a02be644365c24f35",
-    "elapsed_ms": 178,
+    "content_hash": "sha256:b88c4f7797893992fa9e0840cedcce1f2a4fff0197282cd54033513fc96c55fb",
+    "elapsed_ms": 180,
     "error": null,
-    "etag": "W/\"a02bd38ec7b9bbd1a5516d2c421700a4\"",
-    "fetched_at": "2026-10-07T16:25:06Z",
+    "etag": "W/\"60fd7497ca81b17f16e8fd48ab3f7305\"",
+    "fetched_at": "2026-10-07T21:26:10Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
