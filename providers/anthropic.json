@@ -1,29 +1,12 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "0qbwn08sd68x"
-      ],
-      "id": "wf2v8ms031sx",
-      "impact": "major",
-      "latest_update": "We are investigating elevated errors loading usage data on the platform.claude.com Usage page and the Admin API usage report endpoint since 5 PM PT. Messages API requests are not affected. We will provide an update as soon as possible.",
-      "latest_update_id": "psnbtphy46b0",
-      "latest_update_sha12": "8824dd1a1079",
-      "name": "Elevated errors loading usage data on platform.claude.com",
-      "resolved_at": null,
-      "started_at": "2026-10-07T01:20:26Z",
-      "status": "investigating",
-      "updated_at": "2026-10-07T01:20:26Z",
-      "url": "https://stspg.io/scdhhnplc2jn"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
-      "status": "partial_outage",
-      "updated_at": "2026-10-07T01:20:26Z"
+      "status": "operational",
+      "updated_at": "2026-10-07T02:33:38Z"
     },
     {
       "group": null,
@@ -62,18 +45,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:bd46b188f4387d5674b10179b10a03b17589790add6a928b0bc9b0fecc5e2154",
-    "elapsed_ms": 92,
+    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
+    "elapsed_ms": 125,
     "error": null,
-    "etag": "W/\"42ebce9b12e13190af11679a88883434\"",
-    "fetched_at": "2026-10-07T02:30:11Z",
+    "etag": "W/\"bf662ce89045dc01f716f81abaa7652a\"",
+    "fetched_at": "2026-10-07T09:08:52Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Minor Service Outage",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

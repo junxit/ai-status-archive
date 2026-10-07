@@ -2,17 +2,17 @@
   "active_incidents": [
     {
       "affected_components": [],
-      "id": "01M49YQE6WZT02WYF0KBXVMQ5G",
-      "impact": "minor",
-      "latest_update": "We are implementing the mitigation.",
-      "latest_update_id": "01M4A0Z0G85YAWD0MTAXVAJJ9V",
-      "latest_update_sha12": "87a3fdcb7e4d",
-      "name": "Workspace Agents Degraded and Responses Impacted",
+      "id": "01M4ADHMMBK7K92NJFJ0DXRYJM",
+      "impact": "major",
+      "latest_update": "we have identified the issue, working on rolling back to the previous version.",
+      "latest_update_id": "01M4AETVTYMX1ATFJAAJ03RXW8",
+      "latest_update_sha12": "1bd3b67a8e04",
+      "name": "Unable to create new ChatGPT Work threads in latest version of desktop app",
       "resolved_at": null,
-      "started_at": "2026-10-07T01:12:57Z",
+      "started_at": "2026-10-07T05:31:56Z",
       "status": "identified",
-      "updated_at": "2026-10-07T01:52:03Z",
-      "url": "https://status.openai.com/incidents/01M49YQE6WZT02WYF0KBXVMQ5G"
+      "updated_at": "2026-10-07T05:54:27Z",
+      "url": "https://status.openai.com/incidents/01M4ADHMMBK7K92NJFJ0DXRYJM"
     }
   ],
   "components": [
@@ -146,7 +146,7 @@
       "group": null,
       "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
       "name": "Agent",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -167,7 +167,7 @@
       "group": null,
       "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
       "name": "Codex in ChatGPT Desktop",
-      "status": "operational",
+      "status": "partial_outage",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -193,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:de3ff3b28a32a2ac5b88fb42edb55e8162e00cce98cff59ba166c65d628a07ab",
-    "elapsed_ms": 247,
+    "content_hash": "sha256:b8d04d8cf861b963c4416343c90c72fbf63829f9bab5aa2ed63f5aba58522286",
+    "elapsed_ms": 276,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-07T02:30:10Z",
+    "fetched_at": "2026-10-07T09:08:50Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "Partial System Outage",
+    "indicator": "major"
   },
   "provider": "openai",
   "provider_name": "OpenAI",

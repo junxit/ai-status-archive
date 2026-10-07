@@ -150,7 +150,7 @@
       "name": "Codex in ChatGPT Desktop",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 16,
-      "status": "operational",
+      "status": "partial_outage",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -222,49 +222,49 @@
       "name": "Agent",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 24,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     }
   ],
   "incidents": [
     {
-      "created_at": "2026-10-07T01:12:57Z",
-      "id": "01M49YQE6WZT02WYF0KBXVMQ5G",
-      "impact": "minor",
+      "created_at": "2026-10-07T05:31:56Z",
+      "id": "01M4ADHMMBK7K92NJFJ0DXRYJM",
+      "impact": "major",
       "incident_updates": [
         {
-          "body": "We are  implementing the mitigation.",
-          "created_at": "2026-10-07T01:52:03Z",
-          "display_at": "2026-10-07T01:52:03Z",
-          "id": "01M4A0Z0G85YAWD0MTAXVAJJ9V",
-          "incident_id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+          "body": "we have identified the issue, working on rolling back to the previous version. ",
+          "created_at": "2026-10-07T05:54:27Z",
+          "display_at": "2026-10-07T05:54:27Z",
+          "id": "01M4AETVTYMX1ATFJAAJ03RXW8",
+          "incident_id": "01M4ADHMMBK7K92NJFJ0DXRYJM",
           "status": "identified",
-          "updated_at": "2026-10-07T01:52:03Z"
+          "updated_at": "2026-10-07T05:54:27Z"
         },
         {
-          "body": "We are investigating the issue for workspace agents, users may not see the responses during the issue time.",
-          "created_at": "2026-10-07T01:12:57Z",
-          "display_at": "2026-10-06T22:52:00Z",
-          "id": "01M49YQE6W9PKX7HY9ND61TCJC",
-          "incident_id": "01M49YQE6WZT02WYF0KBXVMQ5G",
+          "body": "We are investigating the issue. Version 26.1002.51308 is affected",
+          "created_at": "2026-10-07T05:31:56Z",
+          "display_at": "2026-10-07T02:00:00Z",
+          "id": "01M4ADHMMBBBEB2S23W2SXYZK9",
+          "incident_id": "01M4ADHMMBK7K92NJFJ0DXRYJM",
           "status": "investigating",
-          "updated_at": "2026-10-07T01:17:04Z"
+          "updated_at": "2026-10-07T05:44:55Z"
         }
       ],
-      "name": "Workspace Agents Degraded and Responses Impacted",
+      "name": "Unable to create new ChatGPT Work threads in latest version of desktop app",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "status": "identified",
-      "updated_at": "2026-10-07T01:52:03Z"
+      "updated_at": "2026-10-07T05:54:27Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-07T01:52:03Z",
+    "updated_at": "2026-10-07T05:54:27Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "Partial System Outage",
+    "indicator": "major"
   }
 }

@@ -27,8 +27,8 @@
       "position": 2,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "partial_outage",
-      "updated_at": "2026-10-07T01:20:26.734Z"
+      "status": "operational",
+      "updated_at": "2026-10-07T02:33:38.618Z"
     },
     {
       "created_at": "2023-07-11T17:53:10.880Z",
@@ -91,71 +91,17 @@
       "updated_at": "2026-06-30T14:45:50.487Z"
     }
   ],
-  "incidents": [
-    {
-      "components": [
-        {
-          "created_at": "2023-07-11T17:52:49.982Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "0qbwn08sd68x",
-          "name": "Claude Console (platform.claude.com)",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 2,
-          "showcase": true,
-          "start_date": "2023-07-11",
-          "status": "partial_outage",
-          "updated_at": "2026-10-07T01:20:26.734Z"
-        }
-      ],
-      "created_at": "2026-10-07T01:20:26.681Z",
-      "id": "wf2v8ms031sx",
-      "impact": "major",
-      "incident_updates": [
-        {
-          "affected_components": [
-            {
-              "code": "0qbwn08sd68x",
-              "name": "Claude Console (platform.claude.com)",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            }
-          ],
-          "body": "We are investigating elevated errors loading usage data on the platform.claude.com Usage page and the Admin API usage report endpoint since 5 PM PT. Messages API requests are not affected. We will provide an update as soon as possible.",
-          "created_at": "2026-10-07T01:20:26.956Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-10-07T01:20:26.956Z",
-          "id": "psnbtphy46b0",
-          "incident_id": "wf2v8ms031sx",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-10-07T01:20:26.956Z"
-        }
-      ],
-      "monitoring_at": null,
-      "name": "Elevated errors loading usage data on platform.claude.com",
-      "page_id": "tymt9n04zgry",
-      "reminder_intervals": null,
-      "resolved_at": null,
-      "shortlink": "https://stspg.io/scdhhnplc2jn",
-      "started_at": "2026-10-07T01:20:26.673Z",
-      "status": "investigating",
-      "updated_at": "2026-10-07T01:20:26.960Z"
-    }
-  ],
+  "incidents": [],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-10-07T01:25:23.913Z",
+    "updated_at": "2026-10-07T08:48:48.720Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Minor Service Outage",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }
