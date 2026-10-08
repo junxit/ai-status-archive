@@ -6,14 +6,14 @@
       ],
       "id": "978mjkgw6mh7",
       "impact": "major",
-      "latest_update": "We've identified the cause of errors loading usage data. The Admin API usage report has recovered, and fixes for the platform.claude.com Usage and Rate limits pages are in progress. The most recent 30 minutes of usage may be delayed. Core functionality is not affected.",
-      "latest_update_id": "l3390gw3zj8k",
-      "latest_update_sha12": "595aff58131d",
+      "latest_update": "We've mitigated the errors loading usage data on platform.claude.com and in the Admin API usage report. While we work on a full fix, the most recent ~30 minutes of usage may take longer to appear on the platform.claude.com. API requests are not affected, and we will provide additional updates here.",
+      "latest_update_id": "1nnyzdbn2qkg",
+      "latest_update_sha12": "8bc8353b0b8b",
       "name": "Elevated errors on platform.claude.com",
       "resolved_at": null,
       "started_at": "2026-10-07T13:25:04Z",
-      "status": "identified",
-      "updated_at": "2026-10-07T17:28:02Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-07T21:45:27Z",
       "url": "https://stspg.io/sjkw7njwf0mt"
     }
   ],
@@ -22,8 +22,8 @@
       "group": null,
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
-      "status": "partial_outage",
-      "updated_at": "2026-10-07T13:25:04Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-07T21:44:41Z"
     },
     {
       "group": null,
@@ -62,17 +62,17 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:b88c4f7797893992fa9e0840cedcce1f2a4fff0197282cd54033513fc96c55fb",
-    "elapsed_ms": 180,
+    "content_hash": "sha256:6f2ebbb44469d6c9add0e0c429fadbb7c0a00793a49f930a2e2a286c9b7a4f0b",
+    "elapsed_ms": 107,
     "error": null,
-    "etag": "W/\"60fd7497ca81b17f16e8fd48ab3f7305\"",
-    "fetched_at": "2026-10-07T21:26:10Z",
+    "etag": "W/\"8461d366b35c6c81ba72ece733eca656\"",
+    "fetched_at": "2026-10-08T01:10:02Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Minor Service Outage",
+    "description": "Partially Degraded Service",
     "indicator": "minor"
   },
   "provider": "anthropic",
