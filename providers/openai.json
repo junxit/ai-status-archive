@@ -4,15 +4,43 @@
       "affected_components": [],
       "id": "01M4GV1M2A3K38T73JCVCD9G0R",
       "impact": "minor",
-      "latest_update": "Some customers may continue to experience delayed Costs data through the Compliance API. ChatGPT usage and API Platform requests are not affected, and other reporting channels remain available. We have identified the cause and are continuing work to restore normal data freshness. We will provide another update as work progresses.",
-      "latest_update_id": "01M4GZSTQD80N1F9QNVV9MCPFN",
-      "latest_update_sha12": "17812fe76ae0",
+      "latest_update": "We have implemented a mitigation, and delayed Costs data is now processing through the Compliance API. Some customers may continue to see incomplete Costs data while the backlog catches up. We expect this catch-up process to continue through Sunday, October 11. ChatGPT usage and API Platform requests remain unaffected. We are monitoring recovery.",
+      "latest_update_id": "01M4HB3JQR38KYXS3RSAZBT2FC",
+      "latest_update_sha12": "0a1f62c7cefc",
       "name": "Delayed Costs data in the Compliance API",
       "resolved_at": null,
       "started_at": "2026-10-09T17:23:18Z",
-      "status": "identified",
-      "updated_at": "2026-10-09T18:46:25Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-09T22:03:59Z",
       "url": "https://status.openai.com/incidents/01M4GV1M2A3K38T73JCVCD9G0R"
+    },
+    {
+      "affected_components": [],
+      "id": "01M4H7FKXDA425TDNP2CRGEYA3",
+      "impact": "major",
+      "latest_update": "We have identified an issue affecting the ChatGPT Android app where users may see “This content is unavailable in this version of the app” instead of certain content. A fix is rolling out gradually in the latest Android version. Users can use ChatGPT on the web while we work to restore the experience for older app versions.",
+      "latest_update_id": "01M4H7FKXDV7ZDAY7GHXQ6M1DT",
+      "latest_update_sha12": "3e591fb54522",
+      "name": "Some ChatGPT content may be unavailable on Android",
+      "resolved_at": null,
+      "started_at": "2026-10-09T21:00:39Z",
+      "status": "identified",
+      "updated_at": "2026-10-09T21:00:39Z",
+      "url": "https://status.openai.com/incidents/01M4H7FKXDA425TDNP2CRGEYA3"
+    },
+    {
+      "affected_components": [],
+      "id": "01M4HA7BCCXVHTR5DCYMSBQF2H",
+      "impact": "major",
+      "latest_update": "We are seeing recovery in workspace administrators’ ability to view and manage plugin availability and settings. We are monitoring to ensure service remains stable.",
+      "latest_update_id": "01M4HDWHX7QCE0W5MCD456N295",
+      "latest_update_sha12": "ce1c5d5b4b35",
+      "name": "Workspace admins may be unable to manage plugins",
+      "resolved_at": null,
+      "started_at": "2026-10-09T21:48:34Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-09T22:52:35Z",
+      "url": "https://status.openai.com/incidents/01M4HA7BCCXVHTR5DCYMSBQF2H"
     }
   ],
   "components": [
@@ -48,7 +76,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "operational",
+      "status": "partial_outage",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -193,18 +221,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:6f198a4e594fe6671be9645fd1ddf8723173fc063764aed9444d6a1bd1c56307",
-    "elapsed_ms": 173,
+    "content_hash": "sha256:8f16f29f894df0b9da4478fb8e5f35822f2d06487d56947bb254cd7d1df34405",
+    "elapsed_ms": 320,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-09T18:57:09Z",
+    "fetched_at": "2026-10-09T23:02:32Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "Partial System Outage",
+    "indicator": "major"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
