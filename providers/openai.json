@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M4GV1M2A3K38T73JCVCD9G0R",
+      "impact": "minor",
+      "latest_update": "Some customers may continue to experience delayed Costs data through the Compliance API. ChatGPT usage and API Platform requests are not affected, and other reporting channels remain available. We have identified the cause and are continuing work to restore normal data freshness. We will provide another update as work progresses.",
+      "latest_update_id": "01M4GZSTQD80N1F9QNVV9MCPFN",
+      "latest_update_sha12": "17812fe76ae0",
+      "name": "Delayed Costs data in the Compliance API",
+      "resolved_at": null,
+      "started_at": "2026-10-09T17:23:18Z",
+      "status": "identified",
+      "updated_at": "2026-10-09T18:46:25Z",
+      "url": "https://status.openai.com/incidents/01M4GV1M2A3K38T73JCVCD9G0R"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -103,7 +118,7 @@
       "group": null,
       "id": "01JNKS9D9S72PMP1938PVFFQN4",
       "name": "Compliance API",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
-    "elapsed_ms": 324,
+    "content_hash": "sha256:6f198a4e594fe6671be9645fd1ddf8723173fc063764aed9444d6a1bd1c56307",
+    "elapsed_ms": 173,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-07T16:25:04Z",
+    "fetched_at": "2026-10-09T18:57:09Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",

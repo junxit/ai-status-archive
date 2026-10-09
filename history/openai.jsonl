@@ -146,3 +146,6 @@
 {"at":"2026-10-07T16:25:04Z","change_type":"overall_indicator","component_id":null,"from":"major","incident_id":null,"provider":"openai","to":"none"}
 {"at":"2026-10-07T16:25:04Z","change_type":"component_status","component_id":"01KMKFAMWKQ81YWSE1Z18R6VHR","from":"partial_outage","incident_id":null,"provider":"openai","to":"operational"}
 {"at":"2026-10-07T16:25:04Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"01M4ADHMMBK7K92NJFJ0DXRYJM","provider":"openai","to":"resolved"}
+{"at":"2026-10-09T18:57:09Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"openai","to":"minor"}
+{"at":"2026-10-09T18:57:09Z","change_type":"component_status","component_id":"01JNKS9D9S72PMP1938PVFFQN4","from":"operational","incident_id":null,"provider":"openai","to":"degraded_performance"}
+{"at":"2026-10-09T18:57:09Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M4GV1M2A3K38T73JCVCD9G0R","provider":"openai","to":"identified"}
