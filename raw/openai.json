@@ -123,7 +123,7 @@
       "name": "Conversations",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 13,
-      "status": "partial_outage",
+      "status": "operational",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -228,36 +228,6 @@
   ],
   "incidents": [
     {
-      "created_at": "2026-10-09T21:48:34Z",
-      "id": "01M4HA7BCCXVHTR5DCYMSBQF2H",
-      "impact": "major",
-      "incident_updates": [
-        {
-          "body": "We are seeing recovery in workspace administrators’ ability to view and manage plugin availability and settings. We are monitoring to ensure service remains stable.",
-          "created_at": "2026-10-09T22:52:35Z",
-          "display_at": "2026-10-09T22:52:35Z",
-          "id": "01M4HDWHX7QCE0W5MCD456N295",
-          "incident_id": "01M4HA7BCCXVHTR5DCYMSBQF2H",
-          "status": "monitoring",
-          "updated_at": "2026-10-09T22:52:35Z"
-        },
-        {
-          "body": "We are investigating an issue affecting some ChatGPT workspace administrators’ ability to view and manage plugin availability and settings. Some users may also see plugins as unavailable. We will provide another update as soon as we have more information.",
-          "created_at": "2026-10-09T21:48:34Z",
-          "display_at": "2026-10-09T21:48:34Z",
-          "id": "01M4HA7BCC9GN17VS1PHWZJGEG",
-          "incident_id": "01M4HA7BCCXVHTR5DCYMSBQF2H",
-          "status": "investigating",
-          "updated_at": "2026-10-09T21:48:34Z"
-        }
-      ],
-      "monitoring_at": "2026-10-09T22:52:35Z",
-      "name": "Workspace admins may be unable to manage plugins",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-10-09T22:52:35Z"
-    },
-    {
       "created_at": "2026-10-09T17:23:18Z",
       "id": "01M4GV1M2A3K38T73JCVCD9G0R",
       "impact": "minor",
@@ -304,36 +274,16 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "status": "monitoring",
       "updated_at": "2026-10-09T22:03:59Z"
-    },
-    {
-      "created_at": "2026-10-09T21:00:39Z",
-      "id": "01M4H7FKXDA425TDNP2CRGEYA3",
-      "impact": "major",
-      "incident_updates": [
-        {
-          "body": "We have identified an issue affecting the ChatGPT Android app where users may see “This content is unavailable in this version of the app” instead of certain content. A fix is rolling out gradually in the latest Android version. Users can use ChatGPT on the web while we work to restore the experience for older app versions.",
-          "created_at": "2026-10-09T21:00:39Z",
-          "display_at": "2026-10-09T21:00:39Z",
-          "id": "01M4H7FKXDV7ZDAY7GHXQ6M1DT",
-          "incident_id": "01M4H7FKXDA425TDNP2CRGEYA3",
-          "status": "identified",
-          "updated_at": "2026-10-09T21:00:39Z"
-        }
-      ],
-      "name": "Some ChatGPT content may be unavailable on Android",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "identified",
-      "updated_at": "2026-10-09T21:00:39Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-09T22:52:35Z",
+    "updated_at": "2026-10-09T22:03:59Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Partial System Outage",
-    "indicator": "major"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   }
 }
