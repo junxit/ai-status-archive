@@ -27,8 +27,8 @@
       "position": 2,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-07T21:44:41.416Z"
+      "status": "operational",
+      "updated_at": "2026-10-13T18:00:04.315Z"
     },
     {
       "created_at": "2023-07-11T17:53:10.880Z",
@@ -91,131 +91,17 @@
       "updated_at": "2026-06-30T14:45:50.487Z"
     }
   ],
-  "incidents": [
-    {
-      "components": [
-        {
-          "created_at": "2023-07-11T17:52:49.982Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "0qbwn08sd68x",
-          "name": "Claude Console (platform.claude.com)",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 2,
-          "showcase": true,
-          "start_date": "2023-07-11",
-          "status": "degraded_performance",
-          "updated_at": "2026-10-07T21:44:41.416Z"
-        }
-      ],
-      "created_at": "2026-10-07T13:25:04.163Z",
-      "id": "978mjkgw6mh7",
-      "impact": "major",
-      "incident_updates": [
-        {
-          "affected_components": [
-            {
-              "code": "0qbwn08sd68x",
-              "name": "Claude Console (platform.claude.com)",
-              "new_status": "degraded_performance",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We've mitigated the errors loading usage data on platform.claude.com and in the Admin API usage report. While we work on a full fix, the most recent ~30 minutes of usage may take longer to appear on the platform.claude.com. API requests are not affected, and we will provide additional updates here.",
-          "created_at": "2026-10-07T21:44:41.466Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-10-07T21:44:41.466Z",
-          "id": "1nnyzdbn2qkg",
-          "incident_id": "978mjkgw6mh7",
-          "status": "monitoring",
-          "tweet_id": null,
-          "updated_at": "2026-10-07T21:44:41.466Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "0qbwn08sd68x",
-              "name": "Claude Console (platform.claude.com)",
-              "new_status": "partial_outage",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We've identified the cause of errors loading usage data. The Admin API usage report has recovered, and fixes for the platform.claude.com Usage and Rate limits pages are in progress. The most recent 30 minutes of usage may be delayed. Core functionality is not affected.",
-          "created_at": "2026-10-07T17:28:02.568Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-10-07T17:28:02.568Z",
-          "id": "l3390gw3zj8k",
-          "incident_id": "978mjkgw6mh7",
-          "status": "identified",
-          "tweet_id": null,
-          "updated_at": "2026-10-07T17:28:02.568Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "0qbwn08sd68x",
-              "name": "Claude Console (platform.claude.com)",
-              "new_status": "partial_outage",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We are continuing to work on elevated errors affecting usage data on the platform.claude.com Usage and Rate limits pages and the Admin API usage report. A mitigation for the Usage page and the Admin API usage report is rolling out; once it is in place, the most recent usage may take about 30 minutes to appear there. Core functionality is not affected.",
-          "created_at": "2026-10-07T16:36:44.789Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-10-07T16:36:44.789Z",
-          "id": "lkt8xyfbql3f",
-          "incident_id": "978mjkgw6mh7",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-10-07T16:36:44.789Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "0qbwn08sd68x",
-              "name": "Claude Console (platform.claude.com)",
-              "new_status": "partial_outage",
-              "old_status": "operational"
-            }
-          ],
-          "body": "We are investigating elevated errors affecting usage data on the platform.claude.com Usage page and the Admin API usage report. Core functionality is not affected. We will provide an update as soon as possible.",
-          "created_at": "2026-10-07T13:25:04.271Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-10-07T13:25:04.271Z",
-          "id": "c56sq7q6flhm",
-          "incident_id": "978mjkgw6mh7",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-10-07T13:25:04.271Z"
-        }
-      ],
-      "monitoring_at": "2026-10-07T21:44:41.466Z",
-      "name": "Elevated errors on platform.claude.com",
-      "page_id": "tymt9n04zgry",
-      "reminder_intervals": "[]",
-      "resolved_at": null,
-      "shortlink": "https://stspg.io/sjkw7njwf0mt",
-      "started_at": "2026-10-07T13:25:04.155Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-07T21:45:27.699Z"
-    }
-  ],
+  "incidents": [],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-10-07T23:44:53.565Z",
+    "updated_at": "2026-10-13T18:00:04.393Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }

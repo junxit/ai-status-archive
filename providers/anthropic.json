@@ -1,29 +1,12 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "0qbwn08sd68x"
-      ],
-      "id": "978mjkgw6mh7",
-      "impact": "major",
-      "latest_update": "We've mitigated the errors loading usage data on platform.claude.com and in the Admin API usage report. While we work on a full fix, the most recent ~30 minutes of usage may take longer to appear on the platform.claude.com. API requests are not affected, and we will provide additional updates here.",
-      "latest_update_id": "1nnyzdbn2qkg",
-      "latest_update_sha12": "8bc8353b0b8b",
-      "name": "Elevated errors on platform.claude.com",
-      "resolved_at": null,
-      "started_at": "2026-10-07T13:25:04Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-07T21:45:27Z",
-      "url": "https://stspg.io/sjkw7njwf0mt"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-07T21:44:41Z"
+      "status": "operational",
+      "updated_at": "2026-10-13T18:00:04Z"
     },
     {
       "group": null,
@@ -62,18 +45,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:6f2ebbb44469d6c9add0e0c429fadbb7c0a00793a49f930a2e2a286c9b7a4f0b",
-    "elapsed_ms": 107,
+    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
+    "elapsed_ms": 213,
     "error": null,
-    "etag": "W/\"8461d366b35c6c81ba72ece733eca656\"",
-    "fetched_at": "2026-10-08T01:10:02Z",
+    "etag": "W/\"9d4293095d26424855c268fb459de5ee\"",
+    "fetched_at": "2026-10-13T18:14:01Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

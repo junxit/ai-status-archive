@@ -164,3 +164,6 @@
 {"at":"2026-10-13T11:07:33Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"openai","to":"minor"}
 {"at":"2026-10-13T11:07:33Z","change_type":"component_status","component_id":"01KX45G1SH21AX5DT93D4HMF0P","from":"operational","incident_id":null,"provider":"openai","to":"degraded_performance"}
 {"at":"2026-10-13T11:07:33Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M4T4ZCM54D3ZPTQXRSWFG0XS","provider":"openai","to":"monitoring"}
+{"at":"2026-10-13T18:14:00Z","change_type":"overall_indicator","component_id":null,"from":"minor","incident_id":null,"provider":"openai","to":"none"}
+{"at":"2026-10-13T18:14:00Z","change_type":"component_status","component_id":"01KX45G1SH21AX5DT93D4HMF0P","from":"degraded_performance","incident_id":null,"provider":"openai","to":"operational"}
+{"at":"2026-10-13T18:14:00Z","change_type":"incident_resolved","component_id":null,"from":"monitoring","incident_id":"01M4T4ZCM54D3ZPTQXRSWFG0XS","provider":"openai","to":"resolved"}
