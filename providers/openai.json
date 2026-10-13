@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M4T4ZCM54D3ZPTQXRSWFG0XS",
+      "impact": "minor",
+      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
+      "latest_update_id": "01M4T9HW5AVE1TJ3EXBY2YYDY1",
+      "latest_update_sha12": "7e1d1e3b045c",
+      "name": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+      "resolved_at": null,
+      "started_at": "2026-10-13T08:10:00Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-13T09:30:00Z",
+      "url": "https://status.openai.com/incidents/01M4T4ZCM54D3ZPTQXRSWFG0XS"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -159,7 +174,7 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-09-29T18:29:41Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:c5db967e336124a75f96704527973561162544f8c875d4f71fe26a9aa8be8254",
-    "elapsed_ms": 184,
+    "content_hash": "sha256:e27fb1f86fba17c91ae04392ba38c391188d066acf1377ee4d07cf5d6e567bf5",
+    "elapsed_ms": 235,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-12T16:54:21Z",
+    "fetched_at": "2026-10-13T11:07:33Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
