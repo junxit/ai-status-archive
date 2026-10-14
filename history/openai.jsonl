@@ -170,3 +170,4 @@
 {"at":"2026-10-14T17:16:18Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"openai","to":"minor"}
 {"at":"2026-10-14T17:16:18Z","change_type":"component_status","component_id":"01JNKS9D9S72PMP1938PVFFQN4","from":"operational","incident_id":null,"provider":"openai","to":"degraded_performance"}
 {"at":"2026-10-14T17:16:18Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M4XNQX7C6RCBNGX9H711WFSG","provider":"openai","to":"identified"}
+{"at":"2026-10-14T20:45:06Z","change_type":"incident_updated","component_id":null,"from":"identified","incident_id":"01M4XNQX7C6RCBNGX9H711WFSG","provider":"openai","to":"identified"}
