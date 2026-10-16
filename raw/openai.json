@@ -7,7 +7,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 0,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-03-13T18:31:32Z",
@@ -16,7 +16,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 1,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2026-09-29T18:29:41Z",
@@ -25,7 +25,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 2,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2026-09-29T18:29:41Z",
@@ -34,7 +34,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 3,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -43,7 +43,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 4,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -52,7 +52,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 5,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -61,7 +61,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 6,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -70,7 +70,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 7,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -79,7 +79,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 8,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -88,7 +88,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 9,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -97,7 +97,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 10,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:32:55Z",
@@ -106,7 +106,7 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 11,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-04-24T15:13:29Z",
@@ -115,121 +115,121 @@
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 12,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
+    },
+    {
+      "created_at": "2026-10-16T19:53:57Z",
+      "id": "01M534EG9N1SYV22NNJPRGYESP",
+      "name": "Live",
+      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
+      "position": 13,
+      "status": "operational",
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:31:15Z",
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 13,
+      "position": 14,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:31:15Z",
       "id": "01JMXBNJXG1S2D9V65P1ZZTD94",
       "name": "Login",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 14,
+      "position": 15,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2026-07-09T19:25:56Z",
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 15,
+      "position": 16,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2026-03-25T21:45:05Z",
       "id": "01KMKFAMWKQ81YWSE1Z18R6VHR",
       "name": "Codex in ChatGPT Desktop",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 16,
+      "position": 17,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-03-05T18:32:33Z",
       "id": "01JNKS9D9S72PMP1938PVFFQN4",
       "name": "Compliance API",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 17,
+      "position": 18,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:31:15Z",
       "id": "01JMXBNJXGKKP51D4DEJ2HZJ8Q",
       "name": "Search",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 18,
+      "position": 19,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:31:15Z",
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 19,
+      "position": 20,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-02-25T01:31:15Z",
       "id": "01JMXBNJXGGT5SR5DB9J7GYY48",
       "name": "Voice mode",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 20,
+      "position": 21,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-04-22T20:31:32Z",
       "id": "01JSFK5QX36ZRW0TW0ZV0ZYFXQ",
       "name": "GPTs",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 21,
+      "position": 22,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-03-25T20:06:33Z",
       "id": "01JQ7EKW990MSPSWVXC7VPV2ZJ",
       "name": "Image Generation",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 22,
+      "position": 23,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "created_at": "2025-04-28T18:53:36Z",
       "id": "01JSYVYQSWMJ9QG35XHP08BHA7",
       "name": "Deep Research",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "position": 23,
-      "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
-    },
-    {
-      "created_at": "2025-04-23T00:49:15Z",
-      "id": "01JSG1XMJ9RVJJQ0E85NVSJ2AZ",
-      "name": "Agent",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 24,
       "status": "operational",
-      "updated_at": "2026-09-29T18:29:41Z"
+      "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-09-29T18:29:41Z",
+    "updated_at": "2026-10-16T20:01:40Z",
     "url": "https://status.openai.com/"
   },
   "status": {
