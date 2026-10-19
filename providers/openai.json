@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M5A5S1ATN3QB2WCHQ3VDZC81",
-      "impact": "minor",
-      "latest_update": "We have identified that users are experiencing elevated errors for the impacted services.\n\nWe are working on implementing a mitigation.",
-      "latest_update_id": "01M5A5S1ATHAENR6PKGCEWPFCF",
-      "latest_update_sha12": "aeba320ee8c4",
-      "name": "File Download errors",
-      "resolved_at": null,
-      "started_at": "2026-10-19T13:31:52Z",
-      "status": "identified",
-      "updated_at": "2026-10-19T13:31:52Z",
-      "url": "https://status.openai.com/incidents/01M5A5S1ATN3QB2WCHQ3VDZC81"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -27,7 +12,7 @@
       "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -55,7 +40,7 @@
       "group": null,
       "id": "01JMXBRMFE4MAP2BHSJNZ787WX",
       "name": "Images",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -97,7 +82,7 @@
       "group": null,
       "id": "01JMXBRMFESJCBGJR10PDD3WCQ",
       "name": "Files",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -125,14 +110,14 @@
       "group": null,
       "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
       "name": "Responses",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "group": null,
       "id": "01JQ7EKW990MSPSWVXC7VPV2ZJ",
       "name": "Image Generation",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:0b440d4857c3e73df3641a57a2fc974f7c7bd5121f9c11889212b5d331b8a50e",
-    "elapsed_ms": 257,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 231,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-19T13:53:34Z",
+    "fetched_at": "2026-10-19T19:33:26Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
