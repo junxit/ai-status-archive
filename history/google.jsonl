@@ -1,1 +1,2 @@
 {"at":"2026-09-15T12:19:11Z","change_type":"baseline","component_id":null,"from":null,"incident_id":null,"provider":"google","to":"none"}
+{"at":"2026-10-19T23:02:41Z","change_type":"component_renamed","component_id":"s0huLpuA7LiYVMlVc8lv","from":"Vertex AI Agent Engine","incident_id":null,"provider":"google","to":"Agents on Agent Platform"}
