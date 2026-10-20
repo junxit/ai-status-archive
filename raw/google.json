@@ -2,6 +2,298 @@
   {
     "affected_products": [
       {
+        "current_title": "AlloyDB for PostgreSQL",
+        "id": "fPovtKbaWN9UTepMm3kJ",
+        "title": "AlloyDB for PostgreSQL"
+      },
+      {
+        "current_title": "Apigee",
+        "id": "9Y13BNFy4fJydvjdsN3X",
+        "title": "Apigee"
+      },
+      {
+        "current_title": "BigQuery Data Transfer Service",
+        "id": "UdjkJSWTHMj2b11ftW6E",
+        "title": "BigQuery Data Transfer Service"
+      },
+      {
+        "current_title": "Cloud Data Fusion",
+        "id": "rLKDHeeaBiXTeutF1air",
+        "title": "Cloud Data Fusion"
+      },
+      {
+        "current_title": "Cloud Filestore",
+        "id": "jog4nyYkquiLeSK5s26q",
+        "title": "Cloud Filestore"
+      },
+      {
+        "current_title": "Cloud Firestore",
+        "id": "CETSkT92V21G6A1x28me",
+        "title": "Cloud Firestore"
+      },
+      {
+        "current_title": "Cloud Load Balancing",
+        "id": "ix7u9beT8ivBdjApTif3",
+        "title": "Cloud Load Balancing"
+      },
+      {
+        "current_title": "Cloud Memorystore",
+        "id": "LGPLu3M5pcUAKU1z6eP3",
+        "title": "Cloud Memorystore"
+      },
+      {
+        "current_title": "Cloud NAT",
+        "id": "hCNpnTQHkUCCGxJy35Yq",
+        "title": "Cloud NAT"
+      },
+      {
+        "current_title": "Cloud Run",
+        "id": "9D7d2iNBQWN24zc1VamE",
+        "title": "Cloud Run"
+      },
+      {
+        "current_title": "Cloud Spanner",
+        "id": "EcNGGUgBtBLrtm4mWvqC",
+        "title": "Cloud Spanner"
+      },
+      {
+        "current_title": "Cloud Workstations",
+        "id": "5UUXCiH1vfFHXmbDixrB",
+        "title": "Cloud Workstations"
+      },
+      {
+        "current_title": "Datastream",
+        "id": "ibJgP4CNKnFojHHw8L3s",
+        "title": "Datastream"
+      },
+      {
+        "current_title": "Google App Engine",
+        "id": "kchyUtnkMHJWaAva8aYc",
+        "title": "Google App Engine"
+      },
+      {
+        "current_title": "Google BigQuery",
+        "id": "9CcrhHUcFevXPSVaSxkf",
+        "title": "Google BigQuery"
+      },
+      {
+        "current_title": "Google Cloud Bigtable",
+        "id": "LfZSuE3xdQU46YMFV5fy",
+        "title": "Google Cloud Bigtable"
+      },
+      {
+        "current_title": "Google Cloud Dataflow",
+        "id": "T9bFoXPqG8w8g1YbWTKY",
+        "title": "Google Cloud Dataflow"
+      },
+      {
+        "current_title": "Google Cloud Dataproc",
+        "id": "yjXrEg3Yvy26BauMwr69",
+        "title": "Google Cloud Dataproc"
+      },
+      {
+        "current_title": "Google Cloud NetApp Volumes",
+        "id": "vtzMUyQ4z9CbA1x6z85s",
+        "title": "Google Cloud NetApp Volumes"
+      },
+      {
+        "current_title": "Google Cloud Pub/Sub",
+        "id": "dFjdLh2v6zuES6t9ADCB",
+        "title": "Google Cloud Pub/Sub"
+      },
+      {
+        "current_title": "Google Cloud SQL",
+        "id": "hV87iK5DcEXKgWU2kDri",
+        "title": "Google Cloud SQL"
+      },
+      {
+        "current_title": "Google Cloud Storage",
+        "id": "UwaYoXQ5bHYHG6EdiPB8",
+        "title": "Google Cloud Storage"
+      },
+      {
+        "current_title": "Google Compute Engine",
+        "id": "L3ggmi3Jy4xJmgodFA9K",
+        "title": "Google Compute Engine"
+      },
+      {
+        "current_title": "Google Kubernetes Engine",
+        "id": "LCSbT57h59oR4W98NHuz",
+        "title": "Google Kubernetes Engine"
+      },
+      {
+        "current_title": "Looker (Google Cloud core)",
+        "id": "QEyA1YSaAS3rJS6O8wHp",
+        "title": "Looker (Google Cloud core)"
+      },
+      {
+        "current_title": "Managed Airflow",
+        "id": "YxkG5FfcC42cQmvBCk4j",
+        "title": "Google Cloud Composer"
+      },
+      {
+        "current_title": "Managed Service for Apache Kafka",
+        "id": "QMZ3IpyG3Ooxotv7JOKV",
+        "title": "Managed Service for Apache Kafka"
+      },
+      {
+        "current_title": "Memorystore for Memcached",
+        "id": "paC6vmsvnjCHsBkp4Wva",
+        "title": "Memorystore for Memcached"
+      },
+      {
+        "current_title": "Memorystore for Redis",
+        "id": "3yFciKa9NQH7pmbnUYUs",
+        "title": "Memorystore for Redis"
+      },
+      {
+        "current_title": "Memorystore for Redis Cluster",
+        "id": "pAQRwuhqRn7Y1E2we8ds",
+        "title": "Memorystore for Redis Cluster"
+      },
+      {
+        "current_title": "Memorystore for Valkey",
+        "id": "QUDi3IaNvixryrShGpGw",
+        "title": "Memorystore for Valkey"
+      },
+      {
+        "current_title": "Network Connectivity Center",
+        "id": "kFBKMAzrhno1We6f7Ydk",
+        "title": "Network Connectivity Center"
+      },
+      {
+        "current_title": "Persistent Disk",
+        "id": "SzESm2Ux129pjDGKWD68",
+        "title": "Persistent Disk"
+      },
+      {
+        "current_title": "Private Service Connect",
+        "id": "fbzQRKqPfxZ2DUScMGV2",
+        "title": "Private Service Connect"
+      },
+      {
+        "current_title": "Speech-to-Text",
+        "id": "5f5oET9B3whnSFHfwy4d",
+        "title": "Speech-to-Text"
+      },
+      {
+        "current_title": "Storage Transfer Service",
+        "id": "reC3xJSY6Gzc8n9eYmmj",
+        "title": "Storage Transfer Service"
+      },
+      {
+        "current_title": "VMWare engine",
+        "id": "9H6gWUHvb2ZubeoxzQ1Y",
+        "title": "VMWare engine"
+      },
+      {
+        "current_title": "Virtual Private Cloud (VPC)",
+        "id": "BSGtCUnz6ZmyajsjgTKv",
+        "title": "Virtual Private Cloud (VPC)"
+      }
+    ],
+    "begin": "2026-10-20T06:08:00+00:00",
+    "created": "2026-10-20T08:35:37+00:00",
+    "currently_affected_locations": [
+      {
+        "id": "europe-west2",
+        "title": "London (europe-west2)"
+      }
+    ],
+    "external_desc": "Multiple services are experiencing issues in the europe-west2 region.",
+    "id": "Xs2XTHzAVC9YnafnPyzj",
+    "modified": "2026-10-20T11:58:15+00:00",
+    "most_recent_update": {
+      "affected_locations": [
+        {
+          "id": "europe-west2",
+          "title": "London (europe-west2)"
+        }
+      ],
+      "created": "2026-10-20T11:58:15+00:00",
+      "modified": "2026-10-20T11:58:15+00:00",
+      "status": "SERVICE_DISRUPTION",
+      "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nA power event caused an outage within europe-west2-b zone. The power event is mitigated. We are seeing the recovery of services and are prioritizing the recovery of existing workloads.Customers may not be able to yet create new workloads.\nFull recovery of existing workloads should be completed, tentatively by Tuesday, 2026-10-20 06:00.\nWe will provide an update by Tuesday, 2026-10-20 06:00 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nGoogle Cloud services are unavailable in europe-west2-b zone; some services in europe-west2 region may experience elevated errors and intermittent network issues.\n**Workaround**\nIf feasible, the impacted customer may try to migrate their workload impacted to another available location (zone or region).",
+      "when": "2026-10-20T11:58:15+00:00"
+    },
+    "number": "7057439711403861453",
+    "previously_affected_locations": [],
+    "service_key": "zall",
+    "service_name": "Multiple Products",
+    "severity": "medium",
+    "status_impact": "SERVICE_DISRUPTION",
+    "updates": [
+      {
+        "affected_locations": [
+          {
+            "id": "europe-west2",
+            "title": "London (europe-west2)"
+          }
+        ],
+        "created": "2026-10-20T11:58:15+00:00",
+        "modified": "2026-10-20T11:58:15+00:00",
+        "status": "SERVICE_DISRUPTION",
+        "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nA power event caused an outage within europe-west2-b zone. The power event is mitigated. We are seeing the recovery of services and are prioritizing the recovery of existing workloads.Customers may not be able to yet create new workloads.\nFull recovery of existing workloads should be completed, tentatively by Tuesday, 2026-10-20 06:00.\nWe will provide an update by Tuesday, 2026-10-20 06:00 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nGoogle Cloud services are unavailable in europe-west2-b zone; some services in europe-west2 region may experience elevated errors and intermittent network issues.\n**Workaround**\nIf feasible, the impacted customer may try to migrate their workload impacted to another available location (zone or region).",
+        "when": "2026-10-20T11:58:15+00:00"
+      },
+      {
+        "affected_locations": [
+          {
+            "id": "europe-west2",
+            "title": "London (europe-west2)"
+          }
+        ],
+        "created": "2026-10-20T11:12:42+00:00",
+        "modified": "2026-10-20T11:58:15+00:00",
+        "status": "SERVICE_DISRUPTION",
+        "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nDue to a power event we had suffered an outage within europe-west2-b zone. The power event is mitigated. Partial mitigation to infrastructure services will be observed within the next 30 minutes and the remaining services will be mitigated there after.\nWe will provide an update by Tuesday, 2026-10-20 05:00 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nGoogle Cloud services are unavailable in europe-west2-b zone; some services in europe-west2 region may experience elevated errors and intermittent network issues.\n**Workaround**\nIf feasible, the impacted customer may try to migrate their workload impacted to another available location (zone or region).",
+        "when": "2026-10-20T11:12:42+00:00"
+      },
+      {
+        "affected_locations": [
+          {
+            "id": "europe-west2",
+            "title": "London (europe-west2)"
+          }
+        ],
+        "created": "2026-10-20T11:00:28+00:00",
+        "modified": "2026-10-20T11:12:42+00:00",
+        "status": "SERVICE_DISRUPTION",
+        "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2026-10-20 05:00 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nMultiple Google Cloud services are experiencing elevated errors and\nintermittent network failures in europe-west2 region.\nNote: Looker Studio is not impacted by this outage.\n**Workaround**\nIf feasible, the impacted customer may try to migrate their workload impacted to another available location (zone or region).",
+        "when": "2026-10-20T11:00:28+00:00"
+      },
+      {
+        "affected_locations": [
+          {
+            "id": "europe-west2",
+            "title": "London (europe-west2)"
+          }
+        ],
+        "created": "2026-10-20T09:24:19+00:00",
+        "modified": "2026-10-20T11:00:28+00:00",
+        "status": "SERVICE_DISRUPTION",
+        "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2026-10-20 04:00 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nMultiple Google Cloud services are experiencing elevated errors and\nintermittent network failures in europe-west2 region.\nNote: Looker Studio is not impacted by this outage.\n**Workaround**\nIf feasible, the impacted customer may try to migrate their workload impacted to another available location (zone or region).",
+        "when": "2026-10-20T09:24:19+00:00"
+      },
+      {
+        "affected_locations": [
+          {
+            "id": "europe-west2",
+            "title": "London (europe-west2)"
+          }
+        ],
+        "created": "2026-10-20T08:35:37+00:00",
+        "modified": "2026-10-20T09:24:19+00:00",
+        "status": "SERVICE_DISRUPTION",
+        "text": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nOur engineering team continues to investigate the issue.\nWe will provide an update by Tuesday, 2026-10-20 02:30 PDT with current details.\nWe apologize to all who are affected by the disruption.\n**Symptoms**\nMultiple Google Cloud services are experiencing elevated errors and intermittent network failures in europe-west2 region.\n**Workaround**\nNone for now",
+        "when": "2026-10-20T08:35:37+00:00"
+      }
+    ],
+    "uri": "incidents/Xs2XTHzAVC9YnafnPyzj"
+  },
+  {
+    "affected_products": [
+      {
         "current_title": "Google Cloud Storage",
         "id": "UwaYoXQ5bHYHG6EdiPB8",
         "title": "Google Cloud Storage"
