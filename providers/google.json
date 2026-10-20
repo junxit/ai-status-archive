@@ -1,22 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "5f5oET9B3whnSFHfwy4d"
-      ],
-      "id": "Xs2XTHzAVC9YnafnPyzj",
-      "impact": "major",
-      "latest_update": "**Summary**\nMultiple services are experiencing issues in the europe-west2 region.\n**Description**\nWe are experiencing an issue with multiple services in europe-west2 beginning on Monday, 2026-10-19 23:08 PDT.\nA power event caused an outage within europe-west2-b zone. The power event is mitigated. We are seeing the recovery of services and are prioritizing the recovery of existing workloads.Customers may not be able to yet create new workloads.\nFull recovery of existing workloads should be comple…",
-      "latest_update_id": "48c772ff705e",
-      "latest_update_sha12": "ef2e4a54765e",
-      "name": "Multiple services are experiencing issues in the europe-west2 region.",
-      "resolved_at": null,
-      "started_at": "2026-10-20T06:08:00Z",
-      "status": "investigating",
-      "updated_at": "2026-10-20T11:58:15Z",
-      "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -64,8 +47,8 @@
       "group": null,
       "id": "5f5oET9B3whnSFHfwy4d",
       "name": "Speech-to-Text",
-      "status": "partial_outage",
-      "updated_at": "2026-10-20T11:58:15Z"
+      "status": "operational",
+      "updated_at": null
     },
     {
       "group": null,
@@ -419,18 +402,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:087c391058088a711338df7a02c6fa96ef34f61ab2b6bb6531a852eba033a026",
-    "elapsed_ms": 32,
+    "content_hash": "sha256:b9afd1dc797fc31d6e12e37fde19525e7e57d7c9e84c8ff5ab4a70df8d03d272",
+    "elapsed_ms": 161,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-20T12:08:55Z",
+    "fetched_at": "2026-10-20T16:58:25Z",
     "http_status": 200,
-    "last_modified": "Tue, 20 Oct 2026 12:06:51 GMT",
+    "last_modified": "Tue, 20 Oct 2026 16:56:48 GMT",
     "ok": true
   },
   "overall": {
-    "description": "1 of 57 tracked AI products affected",
-    "indicator": "major"
+    "description": "All tracked AI products operational",
+    "indicator": "none"
   },
   "provider": "google",
   "provider_name": "Google Cloud (Vertex AI / Agent Platform)",

@@ -3,3 +3,6 @@
 {"at":"2026-10-20T12:08:55Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"google","to":"major"}
 {"at":"2026-10-20T12:08:55Z","change_type":"component_status","component_id":"5f5oET9B3whnSFHfwy4d","from":"operational","incident_id":null,"provider":"google","to":"partial_outage"}
 {"at":"2026-10-20T12:08:55Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"Xs2XTHzAVC9YnafnPyzj","provider":"google","to":"investigating"}
+{"at":"2026-10-20T16:58:25Z","change_type":"overall_indicator","component_id":null,"from":"major","incident_id":null,"provider":"google","to":"none"}
+{"at":"2026-10-20T16:58:25Z","change_type":"component_status","component_id":"5f5oET9B3whnSFHfwy4d","from":"partial_outage","incident_id":null,"provider":"google","to":"operational"}
+{"at":"2026-10-20T16:58:25Z","change_type":"incident_resolved","component_id":null,"from":"investigating","incident_id":"Xs2XTHzAVC9YnafnPyzj","provider":"google","to":"resolved"}
