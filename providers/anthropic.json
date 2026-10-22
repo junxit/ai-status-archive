@@ -1,23 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "bpp5gb3hpjcl",
-        "rwppv331jlwc"
-      ],
-      "id": "wj6r4t6mxq1r",
-      "impact": "minor",
-      "latest_update": "We are investigating elevated errors affecting connectors. We will provide an update as soon as possible.",
-      "latest_update_id": "5jth50rjvb91",
-      "latest_update_sha12": "b54077ece53c",
-      "name": "Elevated errors affecting Connectors",
-      "resolved_at": null,
-      "started_at": "2026-10-22T03:50:12Z",
-      "status": "investigating",
-      "updated_at": "2026-10-22T03:50:12Z",
-      "url": "https://stspg.io/4dcr8c005yxc"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -37,8 +19,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-22T03:50:12Z"
+      "status": "operational",
+      "updated_at": "2026-10-22T08:07:03Z"
     },
     {
       "group": null,
@@ -51,8 +33,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-22T03:50:12Z"
+      "status": "operational",
+      "updated_at": "2026-10-22T08:07:03Z"
     },
     {
       "group": null,
@@ -63,18 +45,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:52de2e777932c49e029dfad3663c04f4422da4f42f9505da6c00cac14d6dd8f1",
-    "elapsed_ms": 120,
+    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
+    "elapsed_ms": 23,
     "error": null,
-    "etag": "W/\"a321470d0fb19b84be1611f6c26562ae\"",
-    "fetched_at": "2026-10-22T06:40:29Z",
+    "etag": "W/\"a034c1e4f0aead3eb44db0a20dc3c507\"",
+    "fetched_at": "2026-10-22T12:26:25Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

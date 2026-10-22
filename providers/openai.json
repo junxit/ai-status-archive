@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M5GPE9C4E19HE461P8JAMYXD",
-      "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M5GQSZKNN3M28SHB5RMJ75HP",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "ChatGPT conversion failures in India, Japan and Korea. And Response API errors",
-      "resolved_at": null,
-      "started_at": "2026-10-22T02:18:32Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-22T02:42:24Z",
-      "url": "https://status.openai.com/incidents/01M5GPE9C4E19HE461P8JAMYXD"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -48,7 +33,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -125,7 +110,7 @@
       "group": null,
       "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
       "name": "Responses",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:b375b01ef0cabd9d3ec8dfc71dc71f7d5e8704d9c2673ef392bd7da30f60876b",
-    "elapsed_ms": 271,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 193,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-22T06:40:27Z",
+    "fetched_at": "2026-10-22T12:26:23Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
