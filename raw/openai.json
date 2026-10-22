@@ -233,6 +233,15 @@
       "impact": "minor",
       "incident_updates": [
         {
+          "body": "We have identified the issue and are working to implement the mitigation.",
+          "created_at": "2026-10-22T21:30:55Z",
+          "display_at": "2026-10-22T21:30:55Z",
+          "id": "01M5JRCCBJD2524R1XNB38YS3B",
+          "incident_id": "01M5JHVJVC8WAXB4WRYFMKG6HP",
+          "status": "identified",
+          "updated_at": "2026-10-22T21:30:55Z"
+        },
+        {
           "body": "We have identified that new ad accounts are failing to assign their creator admin. We are investigating the issue.",
           "created_at": "2026-10-22T19:36:53Z",
           "display_at": "2026-10-22T19:36:53Z",
@@ -245,42 +254,13 @@
       "name": "New Ad Accounts failing to provision admins",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "status": "identified",
-      "updated_at": "2026-10-22T19:36:53Z"
-    },
-    {
-      "created_at": "2026-10-22T18:51:28Z",
-      "id": "01M5JF8DR3EGQJNTXPZ24AKX2G",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "Our teams have identified the issue and are actively implementing a mitigation. At this time the majority of impact is affecting enterprise customers.",
-          "created_at": "2026-10-22T18:59:18Z",
-          "display_at": "2026-10-22T18:59:18Z",
-          "id": "01M5JFPR66Q0E0HW6M4YHEKY6B",
-          "incident_id": "01M5JF8DR3EGQJNTXPZ24AKX2G",
-          "status": "identified",
-          "updated_at": "2026-10-22T19:03:09Z"
-        },
-        {
-          "body": "Users are experiencing failures sending messages to dots.",
-          "created_at": "2026-10-22T18:51:28Z",
-          "display_at": "2026-10-22T18:51:28Z",
-          "id": "01M5JF8DR3403QWDQW9YYFJDWX",
-          "incident_id": "01M5JF8DR3EGQJNTXPZ24AKX2G",
-          "status": "investigating",
-          "updated_at": "2026-10-22T18:51:28Z"
-        }
-      ],
-      "name": "Degraded Performance of Dots on Enterprise",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "identified",
-      "updated_at": "2026-10-22T18:59:18Z"
+      "updated_at": "2026-10-22T21:30:55Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-22T19:36:53Z",
+    "updated_at": "2026-10-22T21:30:55Z",
     "url": "https://status.openai.com/"
   },
   "status": {

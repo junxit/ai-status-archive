@@ -2,30 +2,16 @@
   "active_incidents": [
     {
       "affected_components": [],
-      "id": "01M5JF8DR3EGQJNTXPZ24AKX2G",
-      "impact": "minor",
-      "latest_update": "Our teams have identified the issue and are actively implementing a mitigation. At this time the majority of impact is affecting enterprise customers.",
-      "latest_update_id": "01M5JFPR66Q0E0HW6M4YHEKY6B",
-      "latest_update_sha12": "4266e7bc22a0",
-      "name": "Degraded Performance of Dots on Enterprise",
-      "resolved_at": null,
-      "started_at": "2026-10-22T18:51:28Z",
-      "status": "identified",
-      "updated_at": "2026-10-22T18:59:18Z",
-      "url": "https://status.openai.com/incidents/01M5JF8DR3EGQJNTXPZ24AKX2G"
-    },
-    {
-      "affected_components": [],
       "id": "01M5JHVJVC8WAXB4WRYFMKG6HP",
       "impact": "minor",
-      "latest_update": "We have identified that new ad accounts are failing to assign their creator admin. We are investigating the issue.",
-      "latest_update_id": "01M5JHVJVC0JQ64EBBNK74VJM3",
-      "latest_update_sha12": "52f97ee63c6c",
+      "latest_update": "We have identified the issue and are working to implement the mitigation.",
+      "latest_update_id": "01M5JRCCBJD2524R1XNB38YS3B",
+      "latest_update_sha12": "a80e16137a14",
       "name": "New Ad Accounts failing to provision admins",
       "resolved_at": null,
       "started_at": "2026-10-22T19:36:53Z",
       "status": "identified",
-      "updated_at": "2026-10-22T19:36:53Z",
+      "updated_at": "2026-10-22T21:30:55Z",
       "url": "https://status.openai.com/incidents/01M5JHVJVC8WAXB4WRYFMKG6HP"
     }
   ],
@@ -207,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:6a0e09b67f54263762449494c07fa1d3fd47515b1d80231f29a951aec6a071c0",
-    "elapsed_ms": 179,
+    "content_hash": "sha256:aa478622b70f9951724ea1c3b64a52e74aab373b28b1751e363bee8f5e9fd8c6",
+    "elapsed_ms": 233,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-22T20:43:12Z",
+    "fetched_at": "2026-10-22T23:37:24Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

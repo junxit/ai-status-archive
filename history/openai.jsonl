@@ -204,3 +204,5 @@
 {"at":"2026-10-22T20:43:12Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"openai","to":"minor"}
 {"at":"2026-10-22T20:43:12Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M5JF8DR3EGQJNTXPZ24AKX2G","provider":"openai","to":"identified"}
 {"at":"2026-10-22T20:43:12Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"01M5JHVJVC8WAXB4WRYFMKG6HP","provider":"openai","to":"identified"}
+{"at":"2026-10-22T23:37:24Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"01M5JF8DR3EGQJNTXPZ24AKX2G","provider":"openai","to":"resolved"}
+{"at":"2026-10-22T23:37:24Z","change_type":"incident_updated","component_id":null,"from":"identified","incident_id":"01M5JHVJVC8WAXB4WRYFMKG6HP","provider":"openai","to":"identified"}
