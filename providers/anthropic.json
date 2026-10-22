@@ -1,5 +1,23 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [
+        "bpp5gb3hpjcl",
+        "rwppv331jlwc"
+      ],
+      "id": "wj6r4t6mxq1r",
+      "impact": "minor",
+      "latest_update": "We are investigating elevated errors affecting connectors. We will provide an update as soon as possible.",
+      "latest_update_id": "5jth50rjvb91",
+      "latest_update_sha12": "b54077ece53c",
+      "name": "Elevated errors affecting Connectors",
+      "resolved_at": null,
+      "started_at": "2026-10-22T03:50:12Z",
+      "status": "investigating",
+      "updated_at": "2026-10-22T03:50:12Z",
+      "url": "https://stspg.io/4dcr8c005yxc"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -19,44 +37,44 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "operational",
-      "updated_at": "2026-10-06T12:43:02Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-22T03:50:12Z"
     },
     {
       "group": null,
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-10-06T12:43:02Z"
+      "updated_at": "2026-10-21T20:29:17Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "operational",
-      "updated_at": "2026-10-06T12:43:02Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-22T03:50:12Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-10-06T12:43:02Z"
+      "updated_at": "2026-10-21T20:29:17Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
-    "elapsed_ms": 213,
+    "content_hash": "sha256:52de2e777932c49e029dfad3663c04f4422da4f42f9505da6c00cac14d6dd8f1",
+    "elapsed_ms": 120,
     "error": null,
-    "etag": "W/\"9d4293095d26424855c268fb459de5ee\"",
-    "fetched_at": "2026-10-13T18:14:01Z",
+    "etag": "W/\"a321470d0fb19b84be1611f6c26562ae\"",
+    "fetched_at": "2026-10-22T06:40:29Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partially Degraded Service",
+    "indicator": "minor"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",
