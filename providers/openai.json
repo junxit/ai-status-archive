@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M5NFF94XCJ6CGTD4S78A9BEB",
-      "impact": "minor",
-      "latest_update": "We have applied the mitigation and are monitoring the recovery.",
-      "latest_update_id": "01M5NGFD866FQXZBPV3D84WFGG",
-      "latest_update_sha12": "7e1d1e3b045c",
-      "name": "Degraded experience with ChatGPT app connections using CIMD",
-      "resolved_at": null,
-      "started_at": "2026-10-23T22:52:56Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-23T23:10:29Z",
-      "url": "https://status.openai.com/incidents/01M5NFF94XCJ6CGTD4S78A9BEB"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8b75326862b438923add14b6d3344ef01723d24f40249fc063d8d3ff2029e2ae",
-    "elapsed_ms": 303,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 161,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-23T23:17:38Z",
+    "fetched_at": "2026-10-24T01:41:02Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
