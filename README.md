@@ -634,7 +634,9 @@ deep archive, so its backfill is thin by upstream design.
 ## Repository layout
 
 ```
-.github/workflows/    poll.yml (5-min cron), ci.yml, keepalive.yml
+.github/
+  dependabot.yml      weekly uv and Actions version updates
+  workflows/          poll.yml (5-min cron), ci.yml, keepalive.yml
 config/providers.yaml the provider registry — adding one is an edit here
 src/aistatus/
   models.py           normalized schema types, all frozen dataclasses

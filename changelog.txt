@@ -11,6 +11,11 @@ and scripts/at.py are for.
 ================================================================================
 ## [Unreleased]
 
+### Added
+- .github/dependabot.yml: weekly version-update pull requests for the uv
+  dependencies and the workflow actions, with minor and patch bumps grouped.
+  Dependabot alerts and security updates are enabled on the repository.
+
 ### Known issues
 - scripts/at.py and scripts/backfill.py have no test coverage. at.py is the
   payoff script for the entire project.
