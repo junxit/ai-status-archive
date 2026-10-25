@@ -45,7 +45,7 @@ jobs:
 
     steps:
       - name: Check out
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.KEEPALIVE_TOKEN || secrets.GITHUB_TOKEN }}
           persist-credentials: true
