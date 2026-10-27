@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M5Y60NQGGN514EB3943V94EN",
+      "impact": "none",
+      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
+      "latest_update_id": "01M5Y75WV5QVD0R1B43HN8BR17",
+      "latest_update_sha12": "b4fcc5292d7c",
+      "name": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
+      "resolved_at": null,
+      "started_at": "2026-10-27T08:00:50Z",
+      "status": "monitoring",
+      "updated_at": "2026-10-27T08:21:10Z",
+      "url": "https://status.openai.com/incidents/01M5Y60NQGGN514EB3943V94EN"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -178,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 161,
+    "content_hash": "sha256:98f4e7a97b9facd167659df44bc96155674759fda13536e00308dd706cc27c95",
+    "elapsed_ms": 279,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-24T01:41:02Z",
+    "fetched_at": "2026-10-27T10:51:50Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

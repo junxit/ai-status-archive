@@ -226,10 +226,42 @@
       "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
+  "incidents": [
+    {
+      "created_at": "2026-10-27T08:00:50Z",
+      "id": "01M5Y60NQGGN514EB3943V94EN",
+      "impact": "none",
+      "incident_updates": [
+        {
+          "body": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
+          "created_at": "2026-10-27T08:21:10Z",
+          "display_at": "2026-10-27T08:21:10Z",
+          "id": "01M5Y75WV5QVD0R1B43HN8BR17",
+          "incident_id": "01M5Y60NQGGN514EB3943V94EN",
+          "status": "monitoring",
+          "updated_at": "2026-10-27T08:21:10Z"
+        },
+        {
+          "body": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
+          "created_at": "2026-10-27T08:00:51Z",
+          "display_at": "2026-10-27T08:00:50Z",
+          "id": "01M5Y60NQGNP7BK0DECAGADQCM",
+          "incident_id": "01M5Y60NQGGN514EB3943V94EN",
+          "status": "investigating",
+          "updated_at": "2026-10-27T08:00:51Z"
+        }
+      ],
+      "monitoring_at": "2026-10-27T08:21:10Z",
+      "name": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
+      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
+      "status": "monitoring",
+      "updated_at": "2026-10-27T08:21:10Z"
+    }
+  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-16T20:01:40Z",
+    "updated_at": "2026-10-27T08:21:10Z",
     "url": "https://status.openai.com/"
   },
   "status": {
