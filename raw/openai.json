@@ -6,7 +6,7 @@
       "name": "Chat Completions",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 0,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -15,7 +15,7 @@
       "name": "Responses",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 1,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Batch",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 7,
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -226,46 +226,14 @@
       "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-10-27T15:02:15Z",
-      "id": "01M5YY4A3TQETEQ53DVSK8SW10",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
-          "created_at": "2026-10-27T15:40:14Z",
-          "display_at": "2026-10-27T15:40:14Z",
-          "id": "01M5Z09TT17P71BB85VFA5Y8HA",
-          "incident_id": "01M5YY4A3TQETEQ53DVSK8SW10",
-          "status": "monitoring",
-          "updated_at": "2026-10-27T15:40:14Z"
-        },
-        {
-          "body": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
-          "created_at": "2026-10-27T15:02:15Z",
-          "display_at": "2026-10-27T15:02:15Z",
-          "id": "01M5YY4A3TJ1QFK7HV9JNF9CW4",
-          "incident_id": "01M5YY4A3TQETEQ53DVSK8SW10",
-          "status": "investigating",
-          "updated_at": "2026-10-27T15:02:15Z"
-        }
-      ],
-      "monitoring_at": "2026-10-27T15:40:14Z",
-      "name": "6.1 Sol Degraded Model Performance",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-10-27T15:40:14Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-27T15:40:14Z",
+    "updated_at": "2026-10-16T20:01:40Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }

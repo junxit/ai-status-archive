@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M5YY4A3TQETEQ53DVSK8SW10",
-      "impact": "minor",
-      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
-      "latest_update_id": "01M5Z09TT17P71BB85VFA5Y8HA",
-      "latest_update_sha12": "b4fcc5292d7c",
-      "name": "6.1 Sol Degraded Model Performance",
-      "resolved_at": null,
-      "started_at": "2026-10-27T15:02:15Z",
-      "status": "monitoring",
-      "updated_at": "2026-10-27T15:40:14Z",
-      "url": "https://status.openai.com/incidents/01M5YY4A3TQETEQ53DVSK8SW10"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -62,14 +47,14 @@
       "group": null,
       "id": "01JMXBRMFE5ESNNV8JDHVCGSRD",
       "name": "Batch",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
       "group": null,
       "id": "01JMXBRMFE6N2NNT7DG6XZQ6PW",
       "name": "Chat Completions",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -125,7 +110,7 @@
       "group": null,
       "id": "01JP8CD9JR3HR6Y7G4Q75N4DVW",
       "name": "Responses",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:a439b959729c8fdbb4f91cbe66b8324469d4823806648c73b9c6ad5801cc7e03",
-    "elapsed_ms": 216,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 261,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-27T16:04:27Z",
+    "fetched_at": "2026-10-27T20:37:48Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
