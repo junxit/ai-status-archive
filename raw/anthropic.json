@@ -12,8 +12,8 @@
       "position": 1,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "operational",
-      "updated_at": "2026-10-22T08:07:03.810Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-28T03:59:32.296Z"
     },
     {
       "created_at": "2023-07-11T17:52:49.982Z",
@@ -43,7 +43,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "operational",
-      "updated_at": "2026-10-21T20:29:17.747Z"
+      "updated_at": "2026-10-27T15:50:17.603Z"
     },
     {
       "created_at": "2025-05-22T21:35:29.822Z",
@@ -57,8 +57,8 @@
       "position": 4,
       "showcase": true,
       "start_date": "2025-02-06",
-      "status": "operational",
-      "updated_at": "2026-10-21T20:29:17.774Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-28T03:59:32.319Z"
     },
     {
       "created_at": "2026-04-01T17:39:47.692Z",
@@ -72,8 +72,8 @@
       "position": 5,
       "showcase": true,
       "start_date": "2026-04-01",
-      "status": "operational",
-      "updated_at": "2026-10-22T08:07:03.836Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-10-28T03:59:32.341Z"
     },
     {
       "created_at": "2026-02-17T23:24:51.249Z",
@@ -91,17 +91,145 @@
       "updated_at": "2026-06-30T14:45:50.487Z"
     }
   ],
-  "incidents": [],
+  "incidents": [
+    {
+      "components": [
+        {
+          "created_at": "2023-07-11T17:52:24.275Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "rwppv331jlwc",
+          "name": "claude.ai",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 1,
+          "showcase": true,
+          "start_date": "2023-07-11",
+          "status": "degraded_performance",
+          "updated_at": "2026-10-28T03:59:32.296Z"
+        },
+        {
+          "created_at": "2025-05-22T21:35:29.822Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "yyzkbfz2thpt",
+          "name": "Claude Code",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 4,
+          "showcase": true,
+          "start_date": "2025-02-06",
+          "status": "degraded_performance",
+          "updated_at": "2026-10-28T03:59:32.319Z"
+        },
+        {
+          "created_at": "2026-04-01T17:39:47.692Z",
+          "description": null,
+          "group": false,
+          "group_id": null,
+          "id": "bpp5gb3hpjcl",
+          "name": "Claude Cowork",
+          "only_show_if_degraded": false,
+          "page_id": "tymt9n04zgry",
+          "position": 5,
+          "showcase": true,
+          "start_date": "2026-04-01",
+          "status": "degraded_performance",
+          "updated_at": "2026-10-28T03:59:32.341Z"
+        }
+      ],
+      "created_at": "2026-10-28T03:59:32.234Z",
+      "id": "9ftx658xtd5z",
+      "impact": "minor",
+      "incident_updates": [
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            },
+            {
+              "code": "yyzkbfz2thpt",
+              "name": "Claude Code",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            },
+            {
+              "code": "bpp5gb3hpjcl",
+              "name": "Claude Cowork",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            }
+          ],
+          "body": "We are investigating elevated errors when searching and reading email with the Gmail connector. This issue does not affect other connectors.",
+          "created_at": "2026-10-28T04:00:18.418Z",
+          "custom_tweet": null,
+          "deliver_notifications": false,
+          "display_at": "2026-10-28T04:00:18.418Z",
+          "id": "2gjjz3wv2pm1",
+          "incident_id": "9ftx658xtd5z",
+          "status": "investigating",
+          "tweet_id": null,
+          "updated_at": "2026-10-28T04:06:55.347Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "operational"
+            },
+            {
+              "code": "yyzkbfz2thpt",
+              "name": "Claude Code",
+              "new_status": "degraded_performance",
+              "old_status": "operational"
+            },
+            {
+              "code": "bpp5gb3hpjcl",
+              "name": "Claude Cowork",
+              "new_status": "degraded_performance",
+              "old_status": "operational"
+            }
+          ],
+          "body": "We are investigating elevated errors when searching and reading email with the Gmail connector. This issue does not affect other connectors. We will provide an update as soon as possible.",
+          "created_at": "2026-10-28T03:59:32.383Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-10-28T03:59:32.383Z",
+          "id": "b85g2b00j9j3",
+          "incident_id": "9ftx658xtd5z",
+          "status": "investigating",
+          "tweet_id": null,
+          "updated_at": "2026-10-28T03:59:32.383Z"
+        }
+      ],
+      "monitoring_at": null,
+      "name": "Elevated errors affecting the Gmail connector",
+      "page_id": "tymt9n04zgry",
+      "reminder_intervals": null,
+      "resolved_at": null,
+      "shortlink": "https://stspg.io/j86c100s8tqm",
+      "started_at": "2026-10-28T03:59:32.227Z",
+      "status": "investigating",
+      "updated_at": "2026-10-28T04:06:55.352Z"
+    }
+  ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-10-22T08:07:03.893Z",
+    "updated_at": "2026-10-28T04:24:38.430Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partially Degraded Service",
+    "indicator": "minor"
   }
 }
