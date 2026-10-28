@@ -1,24 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "bpp5gb3hpjcl",
-        "rwppv331jlwc",
-        "yyzkbfz2thpt"
-      ],
-      "id": "9ftx658xtd5z",
-      "impact": "minor",
-      "latest_update": "We are investigating elevated errors when searching and reading email with the Gmail connector. This issue does not affect other connectors.",
-      "latest_update_id": "2gjjz3wv2pm1",
-      "latest_update_sha12": "726aedf6c5c6",
-      "name": "Elevated errors affecting the Gmail connector",
-      "resolved_at": null,
-      "started_at": "2026-10-28T03:59:32Z",
-      "status": "investigating",
-      "updated_at": "2026-10-28T04:06:55Z",
-      "url": "https://stspg.io/j86c100s8tqm"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -38,8 +19,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T03:59:32Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T05:48:13Z"
     },
     {
       "group": null,
@@ -52,30 +33,30 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T03:59:32Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T05:48:13Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T03:59:32Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T05:48:13Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:d952c1999802965f78a13c7e83aa63ee05e6b0bcbd69fd89889b1a8211f1a8f2",
-    "elapsed_ms": 83,
+    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
+    "elapsed_ms": 186,
     "error": null,
-    "etag": "W/\"9fe18270cde23a5d7a39d0e828666046\"",
-    "fetched_at": "2026-10-28T05:06:51Z",
+    "etag": "W/\"29a189582980a6cc2d088f828a6980ba\"",
+    "fetched_at": "2026-10-28T11:17:07Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",
