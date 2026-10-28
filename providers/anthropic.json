@@ -1,24 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "bpp5gb3hpjcl",
-        "rwppv331jlwc",
-        "yyzkbfz2thpt"
-      ],
-      "id": "phg1y2yh07n2",
-      "impact": "minor",
-      "latest_update": "We are investigating elevated errors affecting the Google Calendar connector. Some requests to list or search calendar events have been failing since October 26. We will provide an update as soon as possible.",
-      "latest_update_id": "gxyb09f375d4",
-      "latest_update_sha12": "89add2515ba3",
-      "name": "Elevated errors affecting the Google Calendar connector",
-      "resolved_at": null,
-      "started_at": "2026-10-28T16:19:09Z",
-      "status": "investigating",
-      "updated_at": "2026-10-28T16:19:10Z",
-      "url": "https://stspg.io/75qq31h8672d"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -38,8 +19,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T16:19:10Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T20:05:18Z"
     },
     {
       "group": null,
@@ -52,30 +33,30 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T16:19:10Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T20:05:18Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
-      "status": "degraded_performance",
-      "updated_at": "2026-10-28T16:19:10Z"
+      "status": "operational",
+      "updated_at": "2026-10-28T20:05:18Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:28fbff32b86cf7540c8b7489a6c9081006b89a61144aab3c804c4e532e6fb328",
-    "elapsed_ms": 92,
+    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
+    "elapsed_ms": 112,
     "error": null,
-    "etag": "W/\"cb09321a407c1a3a5abe3b3f64c8479f\"",
-    "fetched_at": "2026-10-28T17:12:02Z",
+    "etag": "W/\"fc5d24756ab3b5ac545fdef78e4e70ee\"",
+    "fetched_at": "2026-10-28T21:39:23Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",
