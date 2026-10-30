@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M66KSDH67V5BQ73PE8AD2W8S",
+      "impact": "minor",
+      "latest_update": "We are experiencing elevated errors for some GPT Image 2 API image edit requests. We have identified the issue and are working on a fix",
+      "latest_update_id": "01M66KSDH6B9M0BE7798K1TC3B",
+      "latest_update_sha12": "a271d1cd5e75",
+      "name": "Elevated errors for GPT Image 2 API image edits",
+      "resolved_at": null,
+      "started_at": "2026-10-30T14:35:28Z",
+      "status": "identified",
+      "updated_at": "2026-10-30T14:35:28Z",
+      "url": "https://status.openai.com/incidents/01M66KSDH67V5BQ73PE8AD2W8S"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -40,7 +55,7 @@
       "group": null,
       "id": "01JMXBRMFE4MAP2BHSJNZ787WX",
       "name": "Images",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 261,
+    "content_hash": "sha256:3c9202cd059ab314c09ed12ea093048e796a14ddcf0cc141fb6ddf3fe4ed12c1",
+    "elapsed_ms": 225,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-27T20:37:48Z",
+    "fetched_at": "2026-10-30T15:59:35Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",

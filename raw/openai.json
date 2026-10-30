@@ -60,7 +60,7 @@
       "name": "Images",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "position": 6,
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -226,14 +226,36 @@
       "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
+  "incidents": [
+    {
+      "created_at": "2026-10-30T14:35:28Z",
+      "id": "01M66KSDH67V5BQ73PE8AD2W8S",
+      "impact": "minor",
+      "incident_updates": [
+        {
+          "body": "We are experiencing elevated errors for some GPT Image 2 API image edit requests. We have identified the issue and are working on a fix",
+          "created_at": "2026-10-30T14:35:28Z",
+          "display_at": "2026-10-30T14:35:28Z",
+          "id": "01M66KSDH6B9M0BE7798K1TC3B",
+          "incident_id": "01M66KSDH67V5BQ73PE8AD2W8S",
+          "status": "identified",
+          "updated_at": "2026-10-30T14:35:28Z"
+        }
+      ],
+      "name": "Elevated errors for GPT Image 2 API image edits",
+      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
+      "status": "identified",
+      "updated_at": "2026-10-30T14:35:28Z"
+    }
+  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-10-16T20:01:40Z",
+    "updated_at": "2026-10-30T14:35:28Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   }
 }
