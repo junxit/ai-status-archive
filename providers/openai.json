@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M6754SR14HCQ3E9FX426E2N7",
-      "impact": "minor",
-      "latest_update": "We’re aware of issues affecting search in Dots, ChatGPT Work, and some ChatGPT thinking experiences.\n\nWe’re investigating and will share updates here.",
-      "latest_update_id": "01M6754SR1Y1XAWTPR26SJ2XXC",
-      "latest_update_sha12": "771aae2d2fe9",
-      "name": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences",
-      "resolved_at": null,
-      "started_at": "2026-10-30T19:38:47Z",
-      "status": "investigating",
-      "updated_at": "2026-10-30T19:38:47Z",
-      "url": "https://status.openai.com/incidents/01M6754SR14HCQ3E9FX426E2N7"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -167,7 +152,7 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:d5a0ad69313e7a402c6e1d82fa692b7285dc88fc8440b100cc935abc10171f00",
-    "elapsed_ms": 220,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 269,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-10-30T20:37:38Z",
+    "fetched_at": "2026-10-31T00:01:46Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
