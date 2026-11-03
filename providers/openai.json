@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M6FDZ89W4PKDS19K496J307G",
-      "impact": "minor",
-      "latest_update": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
-      "latest_update_id": "01M6FEM347THYMY2JGRQ95YMTZ",
-      "latest_update_sha12": "070635f09437",
-      "name": "File upload errors in ChatGPT",
-      "resolved_at": null,
-      "started_at": "2026-11-03T00:46:58Z",
-      "status": "investigating",
-      "updated_at": "2026-11-03T00:58:21Z",
-      "url": "https://status.openai.com/incidents/01M6FDZ89W4PKDS19K496J307G"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -27,7 +12,7 @@
       "group": null,
       "id": "01JMXBNJXG1YMQPPCPCQX3MPA2",
       "name": "File uploads",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:72eec8aad27d5c62b92f22bc41be5bf8616dab7f0a1b1b3777fb044f4b50afca",
-    "elapsed_ms": 443,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 205,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-03T01:46:19Z",
+    "fetched_at": "2026-11-03T08:37:38Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
