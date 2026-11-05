@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M6P50GPP1V98EF8MJ9SH393R",
+      "impact": "minor",
+      "latest_update": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
+      "latest_update_id": "01M6P8H200ADXGKS008B491ENH",
+      "latest_update_sha12": "070635f09437",
+      "name": "ChatGPT Issues",
+      "resolved_at": null,
+      "started_at": "2026-11-05T15:25:03Z",
+      "status": "investigating",
+      "updated_at": "2026-11-05T16:26:31Z",
+      "url": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -152,7 +167,7 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 205,
+    "content_hash": "sha256:5d3f22d761e0fc1c6662bc0422f6913d355282425997578070640f84870e1903",
+    "elapsed_ms": 240,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-03T08:37:38Z",
+    "fetched_at": "2026-11-05T16:54:00Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
