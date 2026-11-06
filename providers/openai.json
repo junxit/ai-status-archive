@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M6P50GPP1V98EF8MJ9SH393R",
-      "impact": "minor",
-      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
-      "latest_update_id": "01M6PAS7JV5G2XMJDCXPV01EZN",
-      "latest_update_sha12": "b4fcc5292d7c",
-      "name": "ChatGPT Work and Dots Errors",
-      "resolved_at": null,
-      "started_at": "2026-11-05T15:25:03Z",
-      "status": "monitoring",
-      "updated_at": "2026-11-05T17:05:56Z",
-      "url": "https://status.openai.com/incidents/01M6P50GPP1V98EF8MJ9SH393R"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -193,11 +178,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:5bf71f59b5b568d4c26bf5e63235e7eaac374dd0b9fa6d8dd64f44f0c8a8cefe",
-    "elapsed_ms": 213,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 302,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-05T22:27:21Z",
+    "fetched_at": "2026-11-06T09:54:51Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

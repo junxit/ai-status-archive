@@ -226,69 +226,10 @@
       "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-11-05T15:25:03Z",
-      "id": "01M6P50GPP1V98EF8MJ9SH393R",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "body": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
-          "created_at": "2026-11-05T17:05:56Z",
-          "display_at": "2026-11-05T17:05:56Z",
-          "id": "01M6PAS7JV5G2XMJDCXPV01EZN",
-          "incident_id": "01M6P50GPP1V98EF8MJ9SH393R",
-          "status": "monitoring",
-          "updated_at": "2026-11-05T17:05:56Z"
-        },
-        {
-          "body": "We have identified that users are experiencing elevated errors for the impacted services.\n\nWe are working on implementing a mitigation.",
-          "created_at": "2026-11-05T16:57:41Z",
-          "display_at": "2026-11-05T16:57:41Z",
-          "id": "01M6PAA4A19F0EHXFSEXG4AQ83",
-          "incident_id": "01M6P50GPP1V98EF8MJ9SH393R",
-          "status": "identified",
-          "updated_at": "2026-11-05T16:57:41Z"
-        },
-        {
-          "body": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
-          "created_at": "2026-11-05T16:26:31Z",
-          "display_at": "2026-11-05T16:26:31Z",
-          "id": "01M6P8H200ADXGKS008B491ENH",
-          "incident_id": "01M6P50GPP1V98EF8MJ9SH393R",
-          "status": "investigating",
-          "updated_at": "2026-11-05T16:26:31Z"
-        },
-        {
-          "body": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
-          "created_at": "2026-11-05T15:30:00Z",
-          "display_at": "2026-11-05T15:30:00Z",
-          "id": "01M6P59JYX5QR3ZZDW0150PD63",
-          "incident_id": "01M6P50GPP1V98EF8MJ9SH393R",
-          "status": "investigating",
-          "updated_at": "2026-11-05T15:30:00Z"
-        },
-        {
-          "body": "We’re investigating a potential issue for the listed services and checking how it affects users. We’ll share an update when we know more.",
-          "created_at": "2026-11-05T15:25:03Z",
-          "display_at": "2026-11-05T15:25:03Z",
-          "id": "01M6P50GPPTY4J5SZAV55PJ04G",
-          "incident_id": "01M6P50GPP1V98EF8MJ9SH393R",
-          "status": "investigating",
-          "updated_at": "2026-11-05T15:25:03Z"
-        }
-      ],
-      "monitoring_at": "2026-11-05T17:05:56Z",
-      "name": "ChatGPT Work and Dots Errors",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "monitoring",
-      "updated_at": "2026-11-05T17:05:56Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-11-05T17:05:56Z",
+    "updated_at": "2026-10-16T20:01:40Z",
     "url": "https://status.openai.com/"
   },
   "status": {

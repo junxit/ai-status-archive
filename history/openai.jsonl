@@ -246,3 +246,4 @@
 {"at":"2026-11-05T22:27:21Z","change_type":"overall_indicator","component_id":null,"from":"minor","incident_id":null,"provider":"openai","to":"none"}
 {"at":"2026-11-05T22:27:21Z","change_type":"component_status","component_id":"01KX45G1SH21AX5DT93D4HMF0P","from":"degraded_performance","incident_id":null,"provider":"openai","to":"operational"}
 {"at":"2026-11-05T22:27:21Z","change_type":"incident_updated","component_id":null,"from":"investigating","incident_id":"01M6P50GPP1V98EF8MJ9SH393R","provider":"openai","to":"monitoring"}
+{"at":"2026-11-06T09:54:51Z","change_type":"incident_resolved","component_id":null,"from":"monitoring","incident_id":"01M6P50GPP1V98EF8MJ9SH393R","provider":"openai","to":"resolved"}
