@@ -16,40 +16,61 @@
       "updated_at": "2026-06-30T14:45:50Z"
     },
     {
+      "group": "Claude on Cloud Platforms",
+      "id": "69zh8pryjjgp",
+      "name": "Claude in Microsoft Foundry",
+      "status": "operational",
+      "updated_at": "2026-11-09T18:33:58Z"
+    },
+    {
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-10-28T20:05:18Z"
+      "updated_at": "2026-11-08T08:54:43Z"
+    },
+    {
+      "group": "Claude on Cloud Platforms",
+      "id": "csth13wtqbd6",
+      "name": "Claude Models on Google Cloud (Anthropic managed)",
+      "status": "operational",
+      "updated_at": "2026-11-09T18:34:46Z"
     },
     {
       "group": null,
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-10-27T15:50:17Z"
+      "updated_at": "2026-11-08T08:54:43Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "operational",
-      "updated_at": "2026-10-28T20:05:18Z"
+      "updated_at": "2026-11-08T08:54:43Z"
+    },
+    {
+      "group": "Claude on Cloud Platforms",
+      "id": "w14q5j51spbm",
+      "name": "Claude Platform on AWS",
+      "status": "operational",
+      "updated_at": "2026-11-09T18:33:14Z"
     },
     {
       "group": null,
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-10-28T20:05:18Z"
+      "updated_at": "2026-11-08T08:54:43Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8606117a8a21dadc63919c12b37cf1548e59891bb0cdd9a92c01d77026155037",
-    "elapsed_ms": 112,
+    "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
+    "elapsed_ms": 107,
     "error": null,
-    "etag": "W/\"fc5d24756ab3b5ac545fdef78e4e70ee\"",
-    "fetched_at": "2026-10-28T21:39:23Z",
+    "etag": "W/\"816acdd84a01efdddc2877d8d6bf5b5e\"",
+    "fetched_at": "2026-11-09T20:41:35Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
