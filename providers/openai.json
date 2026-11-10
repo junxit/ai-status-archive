@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-      "impact": "none",
-      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery.",
-      "latest_update_id": "01M6ST01JYSBFE12W7MMANHAZ2",
-      "latest_update_sha12": "b4fcc5292d7c",
-      "name": "Elevated error rates with some U.S. business Mastercards",
-      "resolved_at": null,
-      "started_at": "2026-11-06T18:38:43Z",
-      "status": "monitoring",
-      "updated_at": "2026-11-07T01:29:31Z",
-      "url": "https://status.openai.com/incidents/01M6S2FV5TZWQ753NHRB7BF5K7"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -193,11 +178,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:03c311926e4f62068543082cb6cc3958bcc4e6dce3c94a2a7c24f04dcb2dd96d",
-    "elapsed_ms": 307,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 415,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-07T01:47:21Z",
+    "fetched_at": "2026-11-10T18:17:16Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
