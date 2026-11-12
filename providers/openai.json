@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M76CW2D7FM7K7F8NJ4W0G08N",
+      "impact": "critical",
+      "latest_update": "We are investigating an issue preventing users from starting new Workspace Agent runs. We will share another update as more information becomes available.",
+      "latest_update_id": "01M76CW2D72TKM2PQCS209QPFR",
+      "latest_update_sha12": "a0d995143ca3",
+      "name": "Unable to start new Workspace Agent runs",
+      "resolved_at": null,
+      "started_at": "2026-11-11T22:50:17Z",
+      "status": "investigating",
+      "updated_at": "2026-11-11T22:50:17Z",
+      "url": "https://status.openai.com/incidents/01M76CW2D7FM7K7F8NJ4W0G08N"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 415,
+    "content_hash": "sha256:b87f443bda38924bde058e53a7314ab26902f5f56df9e737e9a575c17548197f",
+    "elapsed_ms": 279,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-10T18:17:16Z",
+    "fetched_at": "2026-11-12T00:06:31Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Major System Outage",
+    "indicator": "critical"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
