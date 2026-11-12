@@ -1,5 +1,23 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [
+        "bpp5gb3hpjcl",
+        "rwppv331jlwc"
+      ],
+      "id": "sqn3fg1l96dl",
+      "impact": "major",
+      "latest_update": "We are continuing to work with our upstream provider, who is restarting affected servers. Mail, calendar and search tools in the Microsoft 365 connector are still failing for most requests, and Claude for Outlook remains affected. We will provide another update as soon as we have more information.",
+      "latest_update_id": "11466g495qtb",
+      "latest_update_sha12": "7dbfb912cc35",
+      "name": "Elevated errors affecting the Microsoft 365 connector",
+      "resolved_at": null,
+      "started_at": "2026-11-12T17:52:44Z",
+      "status": "identified",
+      "updated_at": "2026-11-12T21:18:24Z",
+      "url": "https://stspg.io/m0rbx38nmy1c"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -26,8 +44,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "operational",
-      "updated_at": "2026-11-08T08:54:43Z"
+      "status": "partial_outage",
+      "updated_at": "2026-11-12T18:34:20Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -47,8 +65,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "operational",
-      "updated_at": "2026-11-08T08:54:43Z"
+      "status": "partial_outage",
+      "updated_at": "2026-11-12T17:52:44Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -66,18 +84,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
-    "elapsed_ms": 107,
+    "content_hash": "sha256:59577863d957305c1b0b63878acfa263e440ac3c355ad8f627f273f559efb428",
+    "elapsed_ms": 30,
     "error": null,
-    "etag": "W/\"816acdd84a01efdddc2877d8d6bf5b5e\"",
-    "fetched_at": "2026-11-09T20:41:35Z",
+    "etag": "W/\"fa8a5d512cac881e5fd610815e166187\"",
+    "fetched_at": "2026-11-12T21:59:53Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Minor Service Outage",
+    "indicator": "minor"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

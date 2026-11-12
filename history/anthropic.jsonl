@@ -59,3 +59,7 @@
 {"at":"2026-11-09T20:41:35Z","change_type":"component_status","component_id":"69zh8pryjjgp","from":null,"incident_id":null,"provider":"anthropic","to":"operational"}
 {"at":"2026-11-09T20:41:35Z","change_type":"component_status","component_id":"csth13wtqbd6","from":null,"incident_id":null,"provider":"anthropic","to":"operational"}
 {"at":"2026-11-09T20:41:35Z","change_type":"component_status","component_id":"w14q5j51spbm","from":null,"incident_id":null,"provider":"anthropic","to":"operational"}
+{"at":"2026-11-12T21:59:53Z","change_type":"overall_indicator","component_id":null,"from":"none","incident_id":null,"provider":"anthropic","to":"minor"}
+{"at":"2026-11-12T21:59:53Z","change_type":"component_status","component_id":"bpp5gb3hpjcl","from":"operational","incident_id":null,"provider":"anthropic","to":"partial_outage"}
+{"at":"2026-11-12T21:59:53Z","change_type":"component_status","component_id":"rwppv331jlwc","from":"operational","incident_id":null,"provider":"anthropic","to":"partial_outage"}
+{"at":"2026-11-12T21:59:53Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"sqn3fg1l96dl","provider":"anthropic","to":"identified"}

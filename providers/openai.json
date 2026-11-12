@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M78GAT3AK9P9W8Z230KHFVE8",
+      "impact": "minor",
+      "latest_update": "We’re investigating an issue with Microsoft connectors where new connections may be broken and tools are not working as expected. We’ll share an update when we know more.",
+      "latest_update_id": "01M78GAT3A3RJB684K8JWKWBPQ",
+      "latest_update_sha12": "5ef935e7de85",
+      "name": "Elevated errors affecting the Microsoft 365 connector",
+      "resolved_at": null,
+      "started_at": "2026-11-12T18:29:14Z",
+      "status": "investigating",
+      "updated_at": "2026-11-12T18:29:14Z",
+      "url": "https://status.openai.com/incidents/01M78GAT3AK9P9W8Z230KHFVE8"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 317,
+    "content_hash": "sha256:ebb928e548a9e5594a3491f96fd199af36f75bbba8736fce2ded6c9f9bf1cc98",
+    "elapsed_ms": 243,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-12T15:54:52Z",
+    "fetched_at": "2026-11-12T21:59:51Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
