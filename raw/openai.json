@@ -226,36 +226,14 @@
       "updated_at": "2026-10-16T20:01:40Z"
     }
   ],
-  "incidents": [
-    {
-      "created_at": "2026-11-11T22:50:17Z",
-      "id": "01M76CW2D7FM7K7F8NJ4W0G08N",
-      "impact": "critical",
-      "incident_updates": [
-        {
-          "body": "We are investigating an issue preventing users from starting new Workspace Agent runs. We will share another update as more information becomes available.",
-          "created_at": "2026-11-11T22:50:17Z",
-          "display_at": "2026-11-11T22:50:17Z",
-          "id": "01M76CW2D72TKM2PQCS209QPFR",
-          "incident_id": "01M76CW2D7FM7K7F8NJ4W0G08N",
-          "status": "investigating",
-          "updated_at": "2026-11-11T22:50:17Z"
-        }
-      ],
-      "name": "Unable to start new Workspace Agent runs",
-      "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
-      "status": "investigating",
-      "updated_at": "2026-11-11T22:50:17Z"
-    }
-  ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-11-11T22:50:17Z",
+    "updated_at": "2026-10-16T20:01:40Z",
     "url": "https://status.openai.com/"
   },
   "status": {
-    "description": "Major System Outage",
-    "indicator": "critical"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }
