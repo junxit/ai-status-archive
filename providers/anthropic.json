@@ -1,23 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "bpp5gb3hpjcl",
-        "rwppv331jlwc"
-      ],
-      "id": "sqn3fg1l96dl",
-      "impact": "major",
-      "latest_update": "We're seeing signs of recovery for the Microsoft 365 connector. Claude for Outlook is also recovering. Some SharePoint search requests are still returning errors. Microsoft's incident remains open, so errors may return. We're continuing to monitor and will update this post as soon as we have more info.",
-      "latest_update_id": "g4pdrj0yk9g3",
-      "latest_update_sha12": "ce605a4a9335",
-      "name": "Elevated errors affecting the Microsoft 365 connector",
-      "resolved_at": null,
-      "started_at": "2026-11-12T17:52:44Z",
-      "status": "monitoring",
-      "updated_at": "2026-11-13T15:40:53Z",
-      "url": "https://stspg.io/m0rbx38nmy1c"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -44,8 +26,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-12T22:24:27Z"
+      "status": "operational",
+      "updated_at": "2026-11-13T21:49:43Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -65,8 +47,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-13T15:33:14Z"
+      "status": "operational",
+      "updated_at": "2026-11-13T21:49:43Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -84,18 +66,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:06cbbc3cbf682d863fe0a7c3a153469124ca50e6a115a6538a30cf4de345900b",
-    "elapsed_ms": 82,
+    "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
+    "elapsed_ms": 22,
     "error": null,
-    "etag": "W/\"d3ab1d47709c70418d16e78f02d417ab\"",
-    "fetched_at": "2026-11-13T17:26:52Z",
+    "etag": "W/\"d7788cf9725a0f222edc9cf989508f0f\"",
+    "fetched_at": "2026-11-13T22:45:39Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

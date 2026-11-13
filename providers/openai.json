@@ -18,14 +18,14 @@
       "affected_components": [],
       "id": "01M7ATRS6BMZ61E4JDHJGM79Y0",
       "impact": "minor",
-      "latest_update": "We have identified an issue causing delays in publishing Organization cost data through the Costs API. API and ChatGPT usage are not affected. We are working to restore normal data freshness.",
-      "latest_update_id": "01M7ATRS6BXTP5ZVKAXG9DB243",
-      "latest_update_sha12": "f4cd2de9970f",
+      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery. Delays in cost data are still expected.",
+      "latest_update_id": "01M7B49WBWREW6JM1PAKAA1RZ0",
+      "latest_update_sha12": "df598e12b560",
       "name": "Delayed Costs Data in the Compliance API",
       "resolved_at": null,
       "started_at": "2026-11-13T16:10:07Z",
-      "status": "identified",
-      "updated_at": "2026-11-13T16:10:07Z",
+      "status": "monitoring",
+      "updated_at": "2026-11-13T18:56:45Z",
       "url": "https://status.openai.com/incidents/01M7ATRS6BMZ61E4JDHJGM79Y0"
     }
   ],
@@ -207,11 +207,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:9ed662564431fe59ff8567ba23fca7340b47ed5d535ad4d651e2e397b872faa7",
-    "elapsed_ms": 281,
+    "content_hash": "sha256:956a5691eaf4b618773afbf8e42aaf55512c122e4742aacad87f50bd1bceadd1",
+    "elapsed_ms": 217,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-13T17:26:51Z",
+    "fetched_at": "2026-11-13T22:45:37Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
