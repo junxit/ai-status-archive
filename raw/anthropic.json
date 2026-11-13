@@ -13,7 +13,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "degraded_performance",
-      "updated_at": "2026-11-12T22:24:07.620Z"
+      "updated_at": "2026-11-13T15:33:14.842Z"
     },
     {
       "created_at": "2026-11-09T18:33:14.695Z",
@@ -43,7 +43,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "operational",
-      "updated_at": "2026-10-13T18:00:04.315Z"
+      "updated_at": "2026-11-13T11:05:23.576Z"
     },
     {
       "created_at": "2026-11-09T18:33:58.603Z",
@@ -73,7 +73,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "operational",
-      "updated_at": "2026-11-08T08:54:43.585Z"
+      "updated_at": "2026-11-13T15:38:49.294Z"
     },
     {
       "created_at": "2026-11-09T18:34:46.597Z",
@@ -103,7 +103,7 @@
       "showcase": true,
       "start_date": "2025-02-06",
       "status": "operational",
-      "updated_at": "2026-11-08T08:54:43.608Z"
+      "updated_at": "2026-11-13T15:38:49.318Z"
     },
     {
       "created_at": "2026-04-01T17:39:47.692Z",
@@ -172,7 +172,7 @@
           "showcase": true,
           "start_date": "2023-07-11",
           "status": "degraded_performance",
-          "updated_at": "2026-11-12T22:24:07.620Z"
+          "updated_at": "2026-11-13T15:33:14.842Z"
         },
         {
           "created_at": "2026-04-01T17:39:47.692Z",
@@ -194,6 +194,32 @@
       "id": "sqn3fg1l96dl",
       "impact": "major",
       "incident_updates": [
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            },
+            {
+              "code": "bpp5gb3hpjcl",
+              "name": "Claude Cowork",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            }
+          ],
+          "body": "We're seeing signs of recovery for the Microsoft 365 connector. Claude for Outlook is also recovering. Some SharePoint search requests are still returning errors. Microsoft's incident remains open, so errors may return. We're continuing to monitor and will update this post as soon as we have more info.",
+          "created_at": "2026-11-13T15:40:53.613Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-13T15:40:53.613Z",
+          "id": "g4pdrj0yk9g3",
+          "incident_id": "sqn3fg1l96dl",
+          "status": "monitoring",
+          "tweet_id": null,
+          "updated_at": "2026-11-13T15:40:53.613Z"
+        },
         {
           "affected_components": [
             {
@@ -319,22 +345,22 @@
           "updated_at": "2026-11-12T17:52:45.043Z"
         }
       ],
-      "monitoring_at": null,
+      "monitoring_at": "2026-11-13T15:40:53.613Z",
       "name": "Elevated errors affecting the Microsoft 365 connector",
       "page_id": "tymt9n04zgry",
       "reminder_intervals": "[]",
       "resolved_at": null,
       "shortlink": "https://stspg.io/m0rbx38nmy1c",
       "started_at": "2026-11-12T17:52:44.926Z",
-      "status": "identified",
-      "updated_at": "2026-11-12T23:54:26.992Z"
+      "status": "monitoring",
+      "updated_at": "2026-11-13T15:40:53.645Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-13T02:29:56.821Z",
+    "updated_at": "2026-11-13T17:25:18.619Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],

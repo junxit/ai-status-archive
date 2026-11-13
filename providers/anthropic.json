@@ -7,14 +7,14 @@
       ],
       "id": "sqn3fg1l96dl",
       "impact": "major",
-      "latest_update": "This issue is caused by a Microsoft 365 service incident, and mail, calendar and search tools in the Microsoft 365 connector are still failing for most requests. Claude for Outlook remains affected. You can follow Microsoft's progress at https://status.cloud.microsoft. We will update this post when service is restored.",
-      "latest_update_id": "dz5mt91668p1",
-      "latest_update_sha12": "1da40fe0b79f",
+      "latest_update": "We're seeing signs of recovery for the Microsoft 365 connector. Claude for Outlook is also recovering. Some SharePoint search requests are still returning errors. Microsoft's incident remains open, so errors may return. We're continuing to monitor and will update this post as soon as we have more info.",
+      "latest_update_id": "g4pdrj0yk9g3",
+      "latest_update_sha12": "ce605a4a9335",
       "name": "Elevated errors affecting the Microsoft 365 connector",
       "resolved_at": null,
       "started_at": "2026-11-12T17:52:44Z",
-      "status": "identified",
-      "updated_at": "2026-11-12T23:54:26Z",
+      "status": "monitoring",
+      "updated_at": "2026-11-13T15:40:53Z",
       "url": "https://stspg.io/m0rbx38nmy1c"
     }
   ],
@@ -24,7 +24,7 @@
       "id": "0qbwn08sd68x",
       "name": "Claude Console (platform.claude.com)",
       "status": "operational",
-      "updated_at": "2026-10-13T18:00:04Z"
+      "updated_at": "2026-11-13T11:05:23Z"
     },
     {
       "group": null,
@@ -59,14 +59,14 @@
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-11-08T08:54:43Z"
+      "updated_at": "2026-11-13T15:38:49Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "degraded_performance",
-      "updated_at": "2026-11-12T22:24:07Z"
+      "updated_at": "2026-11-13T15:33:14Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -80,15 +80,15 @@
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-11-08T08:54:43Z"
+      "updated_at": "2026-11-13T15:38:49Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:71bfc9feb6b137d93ab3c0b6b72fb6309e8a89674c1b59e5acdc55c361af579d",
-    "elapsed_ms": 87,
+    "content_hash": "sha256:06cbbc3cbf682d863fe0a7c3a153469124ca50e6a115a6538a30cf4de345900b",
+    "elapsed_ms": 82,
     "error": null,
-    "etag": "W/\"d4d9ddc3858ef29dbc653d3b70d300a2\"",
-    "fetched_at": "2026-11-13T02:30:11Z",
+    "etag": "W/\"d3ab1d47709c70418d16e78f02d417ab\"",
+    "fetched_at": "2026-11-13T17:26:52Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
