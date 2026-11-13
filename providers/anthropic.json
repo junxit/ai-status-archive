@@ -7,14 +7,14 @@
       ],
       "id": "sqn3fg1l96dl",
       "impact": "major",
-      "latest_update": "We are continuing to work with our upstream provider, who is restarting affected servers. Mail, calendar and search tools in the Microsoft 365 connector are still failing for most requests, and Claude for Outlook remains affected. We will provide another update as soon as we have more information.",
-      "latest_update_id": "11466g495qtb",
-      "latest_update_sha12": "7dbfb912cc35",
+      "latest_update": "This issue is caused by a Microsoft 365 service incident, and mail, calendar and search tools in the Microsoft 365 connector are still failing for most requests. Claude for Outlook remains affected. You can follow Microsoft's progress at https://status.cloud.microsoft. We will update this post when service is restored.",
+      "latest_update_id": "dz5mt91668p1",
+      "latest_update_sha12": "1da40fe0b79f",
       "name": "Elevated errors affecting the Microsoft 365 connector",
       "resolved_at": null,
       "started_at": "2026-11-12T17:52:44Z",
       "status": "identified",
-      "updated_at": "2026-11-12T21:18:24Z",
+      "updated_at": "2026-11-12T23:54:26Z",
       "url": "https://stspg.io/m0rbx38nmy1c"
     }
   ],
@@ -44,8 +44,8 @@
       "group": null,
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
-      "status": "partial_outage",
-      "updated_at": "2026-11-12T18:34:20Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-11-12T22:24:27Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -65,8 +65,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "partial_outage",
-      "updated_at": "2026-11-12T17:52:44Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-11-12T22:24:07Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -84,17 +84,17 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:59577863d957305c1b0b63878acfa263e440ac3c355ad8f627f273f559efb428",
-    "elapsed_ms": 30,
+    "content_hash": "sha256:71bfc9feb6b137d93ab3c0b6b72fb6309e8a89674c1b59e5acdc55c361af579d",
+    "elapsed_ms": 87,
     "error": null,
-    "etag": "W/\"fa8a5d512cac881e5fd610815e166187\"",
-    "fetched_at": "2026-11-12T21:59:53Z",
+    "etag": "W/\"d4d9ddc3858ef29dbc653d3b70d300a2\"",
+    "fetched_at": "2026-11-13T02:30:11Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Minor Service Outage",
+    "description": "Partially Degraded Service",
     "indicator": "minor"
   },
   "provider": "anthropic",
