@@ -4,14 +4,14 @@
       "affected_components": [],
       "id": "01M7ATRS6BMZ61E4JDHJGM79Y0",
       "impact": "minor",
-      "latest_update": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery. Delays in cost data are still expected.",
-      "latest_update_id": "01M7B49WBWREW6JM1PAKAA1RZ0",
-      "latest_update_sha12": "df598e12b560",
+      "latest_update": "We are monitoring the affected services to confirm recovery. Delays in cost data are still expected.",
+      "latest_update_id": "01M7C8KV75AD3DJ6B0CA5EACSH",
+      "latest_update_sha12": "940766fd17cf",
       "name": "Delayed Costs Data in the Compliance API",
       "resolved_at": null,
       "started_at": "2026-11-13T16:10:07Z",
       "status": "monitoring",
-      "updated_at": "2026-11-13T18:56:45Z",
+      "updated_at": "2026-11-14T05:31:20Z",
       "url": "https://status.openai.com/incidents/01M7ATRS6BMZ61E4JDHJGM79Y0"
     }
   ],
@@ -193,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:b39f4a027fd2d499b27dd57f5973a7d4fc6e825a7f50273fcb3d9619bea2a140",
-    "elapsed_ms": 223,
+    "content_hash": "sha256:09fcf16418d4b8c7e2de338668cc26dc951a6e3e79cb8c114d2e9b9f6e20df98",
+    "elapsed_ms": 209,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-14T02:42:23Z",
+    "fetched_at": "2026-11-14T09:26:22Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

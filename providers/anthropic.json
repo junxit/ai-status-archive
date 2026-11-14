@@ -1,5 +1,22 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [
+        "rwppv331jlwc"
+      ],
+      "id": "ct4c2pwf2xpj",
+      "impact": "major",
+      "latest_update": "We are investigating an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide an update as soon as possible.",
+      "latest_update_id": "ywtdk17vlyf7",
+      "latest_update_sha12": "19b454a9ad1e",
+      "name": "Some users unable to sign up with Apple on the Claude iOS app",
+      "resolved_at": null,
+      "started_at": "2026-11-14T07:11:36Z",
+      "status": "investigating",
+      "updated_at": "2026-11-14T07:11:36Z",
+      "url": "https://stspg.io/4858wf40dx89"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -47,8 +64,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "operational",
-      "updated_at": "2026-11-13T21:49:43Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-11-14T07:36:11Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -66,18 +83,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
-    "elapsed_ms": 22,
+    "content_hash": "sha256:779a95a6dc20a369ceee1fae4c291f15ca2ea48cdce154f2fd8d2c6f7b189ab9",
+    "elapsed_ms": 108,
     "error": null,
-    "etag": "W/\"d7788cf9725a0f222edc9cf989508f0f\"",
-    "fetched_at": "2026-11-13T22:45:39Z",
+    "etag": "W/\"8e90a6df6ee714f38a5c5b56981be741\"",
+    "fetched_at": "2026-11-14T09:26:24Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partially Degraded Service",
+    "indicator": "minor"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",

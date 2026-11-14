@@ -233,6 +233,15 @@
       "impact": "minor",
       "incident_updates": [
         {
+          "body": "We are monitoring the affected services to confirm recovery. Delays in cost data are still expected.",
+          "created_at": "2026-11-14T05:31:20Z",
+          "display_at": "2026-11-14T05:31:20Z",
+          "id": "01M7C8KV75AD3DJ6B0CA5EACSH",
+          "incident_id": "01M7ATRS6BMZ61E4JDHJGM79Y0",
+          "status": "monitoring",
+          "updated_at": "2026-11-14T05:31:20Z"
+        },
+        {
           "body": "We’ve applied a mitigation and are monitoring the affected services to confirm recovery. Delays in cost data are still expected.",
           "created_at": "2026-11-13T18:56:44Z",
           "display_at": "2026-11-13T18:56:44Z",
@@ -255,13 +264,13 @@
       "name": "Delayed Costs Data in the Compliance API",
       "page_id": "01JMDK9XYNY6RXSED6SDWW50WY",
       "status": "monitoring",
-      "updated_at": "2026-11-13T18:56:45Z"
+      "updated_at": "2026-11-14T05:31:20Z"
     }
   ],
   "page": {
     "id": "01JMDK9XYNY6RXSED6SDWW50WY",
     "name": "OpenAI",
-    "updated_at": "2026-11-13T18:56:44Z",
+    "updated_at": "2026-11-14T05:31:20Z",
     "url": "https://status.openai.com/"
   },
   "status": {

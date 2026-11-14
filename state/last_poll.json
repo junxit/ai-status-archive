@@ -1,25 +1,25 @@
 {
-  "heartbeat_committed_at": "2026-11-14T02:42:22Z",
-  "polled_at": "2026-11-14T02:42:22Z",
+  "heartbeat_committed_at": "2026-11-14T09:26:22Z",
+  "polled_at": "2026-11-14T09:26:22Z",
   "providers": {
     "anthropic": {
       "consecutive_failures": 0,
-      "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
-      "fetched_at": "2026-11-14T02:42:24Z",
-      "last_outcome": "unchanged",
+      "content_hash": "sha256:779a95a6dc20a369ceee1fae4c291f15ca2ea48cdce154f2fd8d2c6f7b189ab9",
+      "fetched_at": "2026-11-14T09:26:24Z",
+      "last_outcome": "changed",
       "ok": true
     },
     "google": {
       "consecutive_failures": 0,
       "content_hash": "sha256:b9afd1dc797fc31d6e12e37fde19525e7e57d7c9e84c8ff5ab4a70df8d03d272",
-      "fetched_at": "2026-11-14T02:42:26Z",
+      "fetched_at": "2026-11-14T09:26:25Z",
       "last_outcome": "unchanged",
       "ok": true
     },
     "openai": {
       "consecutive_failures": 0,
-      "content_hash": "sha256:b39f4a027fd2d499b27dd57f5973a7d4fc6e825a7f50273fcb3d9619bea2a140",
-      "fetched_at": "2026-11-14T02:42:23Z",
+      "content_hash": "sha256:09fcf16418d4b8c7e2de338668cc26dc951a6e3e79cb8c114d2e9b9f6e20df98",
+      "fetched_at": "2026-11-14T09:26:22Z",
       "last_outcome": "changed",
       "ok": true
     }
