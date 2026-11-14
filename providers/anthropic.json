@@ -6,14 +6,14 @@
       ],
       "id": "ct4c2pwf2xpj",
       "impact": "major",
-      "latest_update": "We are investigating an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide an update as soon as possible.",
-      "latest_update_id": "ywtdk17vlyf7",
-      "latest_update_sha12": "19b454a9ad1e",
+      "latest_update": "We are continuing to investigate an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide another update as soon as possible.",
+      "latest_update_id": "w3f723prkh25",
+      "latest_update_sha12": "730d182f04f6",
       "name": "Some users unable to sign up with Apple on the Claude iOS app",
       "resolved_at": null,
       "started_at": "2026-11-14T07:11:36Z",
       "status": "investigating",
-      "updated_at": "2026-11-14T07:11:36Z",
+      "updated_at": "2026-11-14T20:12:05Z",
       "url": "https://stspg.io/4858wf40dx89"
     }
   ],
@@ -83,11 +83,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:779a95a6dc20a369ceee1fae4c291f15ca2ea48cdce154f2fd8d2c6f7b189ab9",
-    "elapsed_ms": 108,
+    "content_hash": "sha256:b1010c2c5b4a67f6d24429083e7fed4fab2e49e4bd9145d6aa36411edb8ee9f2",
+    "elapsed_ms": 95,
     "error": null,
-    "etag": "W/\"8e90a6df6ee714f38a5c5b56981be741\"",
-    "fetched_at": "2026-11-14T09:26:24Z",
+    "etag": "W/\"ec6135d6bd0e4e056ba52d67f4b94537\"",
+    "fetched_at": "2026-11-14T20:24:03Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
