@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: Check out
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           # fetch-depth 1 is fine and intentional: committed state is read with
           # `git show HEAD:<path>`, which only needs the tip. Nothing in this
@@ -47,7 +47,7 @@ jobs:
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
