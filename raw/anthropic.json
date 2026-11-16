@@ -12,8 +12,8 @@
       "position": 1,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "partial_outage",
-      "updated_at": "2026-11-16T07:49:55.222Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-11-16T16:42:19.765Z"
     },
     {
       "created_at": "2026-11-09T18:33:14.695Z",
@@ -171,12 +171,12 @@
           "position": 1,
           "showcase": true,
           "start_date": "2023-07-11",
-          "status": "partial_outage",
-          "updated_at": "2026-11-16T07:49:55.222Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-11-16T16:42:19.765Z"
         }
       ],
-      "created_at": "2026-11-14T07:11:36.117Z",
-      "id": "ct4c2pwf2xpj",
+      "created_at": "2026-11-16T15:10:15.167Z",
+      "id": "b5cq662qf2wm",
       "impact": "major",
       "incident_updates": [
         {
@@ -188,16 +188,16 @@
               "old_status": "degraded_performance"
             }
           ],
-          "body": "We are continuing to investigate an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide another update as soon as possible.",
-          "created_at": "2026-11-14T20:12:05.565Z",
+          "body": "Claude may still be unable to join some calls in Claude Meetings (beta), and Auto-join remains paused. Calls already in progress and other Claude features are not affected. We expect this to take some time to fully resolve and will post an update when the status changes.",
+          "created_at": "2026-11-16T18:10:10.240Z",
           "custom_tweet": null,
           "deliver_notifications": true,
-          "display_at": "2026-11-14T20:12:05.565Z",
-          "id": "w3f723prkh25",
-          "incident_id": "ct4c2pwf2xpj",
+          "display_at": "2026-11-16T18:10:10.240Z",
+          "id": "rq8n1dwxvw7k",
+          "incident_id": "b5cq662qf2wm",
           "status": "investigating",
           "tweet_id": null,
-          "updated_at": "2026-11-14T20:12:05.565Z"
+          "updated_at": "2026-11-16T18:10:10.240Z"
         },
         {
           "affected_components": [
@@ -205,42 +205,82 @@
               "code": "rwppv331jlwc",
               "name": "claude.ai",
               "new_status": "partial_outage",
-              "old_status": "operational"
+              "old_status": "partial_outage"
             }
           ],
-          "body": "We are investigating an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide an update as soon as possible.",
-          "created_at": "2026-11-14T07:11:36.218Z",
+          "body": "We have temporarily paused Auto-join while we work on this. Adding Claude to a call by hand is also affected. Calls already in progress are not affected. We will provide another update as soon as possible.",
+          "created_at": "2026-11-16T16:27:03.835Z",
           "custom_tweet": null,
           "deliver_notifications": true,
-          "display_at": "2026-11-14T07:11:36.218Z",
-          "id": "ywtdk17vlyf7",
-          "incident_id": "ct4c2pwf2xpj",
+          "display_at": "2026-11-16T16:27:03.835Z",
+          "id": "xf4fg7rhhsbk",
+          "incident_id": "b5cq662qf2wm",
           "status": "investigating",
           "tweet_id": null,
-          "updated_at": "2026-11-14T07:11:36.218Z"
+          "updated_at": "2026-11-16T16:27:03.835Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "partial_outage",
+              "old_status": "partial_outage"
+            }
+          ],
+          "body": "We are continuing to investigate an issue preventing Claude from joining new calls in Claude Meetings (beta).",
+          "created_at": "2026-11-16T15:12:56.268Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-16T15:12:56.268Z",
+          "id": "cknf7f0qymmq",
+          "incident_id": "b5cq662qf2wm",
+          "status": "investigating",
+          "tweet_id": null,
+          "updated_at": "2026-11-16T16:26:30.164Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "partial_outage",
+              "old_status": "partial_outage"
+            }
+          ],
+          "body": "We are investigating an issue preventing Claude from joining new calls in Claude Meetings (beta). Calls already in progress are not affected, and core functionality is not impacted. We will provide an update as soon as possible.",
+          "created_at": "2026-11-16T15:10:15.235Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-16T15:10:15.235Z",
+          "id": "177nx45nsdvg",
+          "incident_id": "b5cq662qf2wm",
+          "status": "investigating",
+          "tweet_id": null,
+          "updated_at": "2026-11-16T15:10:15.235Z"
         }
       ],
       "monitoring_at": null,
-      "name": "Some users unable to sign up with Apple on the Claude iOS app",
+      "name": "Claude unable to join meetings",
       "page_id": "tymt9n04zgry",
-      "reminder_intervals": "[]",
+      "reminder_intervals": null,
       "resolved_at": null,
-      "shortlink": "https://stspg.io/4858wf40dx89",
-      "started_at": "2026-11-14T07:11:36.111Z",
+      "shortlink": "https://stspg.io/01qq3kzyyqzl",
+      "started_at": "2026-11-16T15:10:15.160Z",
       "status": "investigating",
-      "updated_at": "2026-11-15T02:10:54.568Z"
+      "updated_at": "2026-11-16T18:10:10.242Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-16T09:04:39.808Z",
+    "updated_at": "2026-11-16T19:52:36.622Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Minor Service Outage",
+    "description": "Partially Degraded Service",
     "indicator": "minor"
   }
 }

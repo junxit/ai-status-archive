@@ -4,17 +4,17 @@
       "affected_components": [
         "rwppv331jlwc"
       ],
-      "id": "ct4c2pwf2xpj",
+      "id": "b5cq662qf2wm",
       "impact": "major",
-      "latest_update": "We are continuing to investigate an issue with Sign in with Apple on the Claude iOS app, which is mainly affecting new accounts. New users can sign up with Google or email instead. We will provide another update as soon as possible.",
-      "latest_update_id": "w3f723prkh25",
-      "latest_update_sha12": "730d182f04f6",
-      "name": "Some users unable to sign up with Apple on the Claude iOS app",
+      "latest_update": "Claude may still be unable to join some calls in Claude Meetings (beta), and Auto-join remains paused. Calls already in progress and other Claude features are not affected. We expect this to take some time to fully resolve and will post an update when the status changes.",
+      "latest_update_id": "rq8n1dwxvw7k",
+      "latest_update_sha12": "fc3406e1349f",
+      "name": "Claude unable to join meetings",
       "resolved_at": null,
-      "started_at": "2026-11-14T07:11:36Z",
+      "started_at": "2026-11-16T15:10:15Z",
       "status": "investigating",
-      "updated_at": "2026-11-15T02:10:54Z",
-      "url": "https://stspg.io/4858wf40dx89"
+      "updated_at": "2026-11-16T18:10:10Z",
+      "url": "https://stspg.io/01qq3kzyyqzl"
     }
   ],
   "components": [
@@ -64,8 +64,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "partial_outage",
-      "updated_at": "2026-11-16T07:49:55Z"
+      "status": "degraded_performance",
+      "updated_at": "2026-11-16T16:42:19Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -83,17 +83,17 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:02eacee35854e3fdffa2ac9058591a96811b10a564ebba9fac1f6d3047ca0dd7",
-    "elapsed_ms": 33,
+    "content_hash": "sha256:91503ba01ff0e4ed68d8e0e53c9b689c437d78ea483828b53482117b6aa792ea",
+    "elapsed_ms": 116,
     "error": null,
-    "etag": "W/\"67d7a04ebc15465da183473086af1214\"",
-    "fetched_at": "2026-11-16T10:42:39Z",
+    "etag": "W/\"5323ef52384c66d506156ee5922e67de\"",
+    "fetched_at": "2026-11-16T20:40:33Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Minor Service Outage",
+    "description": "Partially Degraded Service",
     "indicator": "minor"
   },
   "provider": "anthropic",
