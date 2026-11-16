@@ -13,7 +13,7 @@
       "resolved_at": null,
       "started_at": "2026-11-14T07:11:36Z",
       "status": "investigating",
-      "updated_at": "2026-11-14T20:12:05Z",
+      "updated_at": "2026-11-15T02:10:54Z",
       "url": "https://stspg.io/4858wf40dx89"
     }
   ],
@@ -44,7 +44,7 @@
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-11-13T21:49:43Z"
+      "updated_at": "2026-11-16T09:04:39Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -58,14 +58,14 @@
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-11-13T15:38:49Z"
+      "updated_at": "2026-11-16T09:04:39Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-14T07:36:11Z"
+      "status": "partial_outage",
+      "updated_at": "2026-11-16T07:49:55Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -79,21 +79,21 @@
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-11-13T15:38:49Z"
+      "updated_at": "2026-11-16T09:04:39Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:b1010c2c5b4a67f6d24429083e7fed4fab2e49e4bd9145d6aa36411edb8ee9f2",
-    "elapsed_ms": 95,
+    "content_hash": "sha256:02eacee35854e3fdffa2ac9058591a96811b10a564ebba9fac1f6d3047ca0dd7",
+    "elapsed_ms": 33,
     "error": null,
-    "etag": "W/\"ec6135d6bd0e4e056ba52d67f4b94537\"",
-    "fetched_at": "2026-11-14T20:24:03Z",
+    "etag": "W/\"67d7a04ebc15465da183473086af1214\"",
+    "fetched_at": "2026-11-16T10:42:39Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
+    "description": "Minor Service Outage",
     "indicator": "minor"
   },
   "provider": "anthropic",

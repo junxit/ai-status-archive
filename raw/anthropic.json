@@ -12,8 +12,8 @@
       "position": 1,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-14T07:36:11.569Z"
+      "status": "partial_outage",
+      "updated_at": "2026-11-16T07:49:55.222Z"
     },
     {
       "created_at": "2026-11-09T18:33:14.695Z",
@@ -73,7 +73,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "operational",
-      "updated_at": "2026-11-13T15:38:49.294Z"
+      "updated_at": "2026-11-16T09:04:39.679Z"
     },
     {
       "created_at": "2026-11-09T18:34:46.597Z",
@@ -103,7 +103,7 @@
       "showcase": true,
       "start_date": "2025-02-06",
       "status": "operational",
-      "updated_at": "2026-11-13T15:38:49.318Z"
+      "updated_at": "2026-11-16T09:04:39.711Z"
     },
     {
       "created_at": "2026-04-01T17:39:47.692Z",
@@ -118,7 +118,7 @@
       "showcase": true,
       "start_date": "2026-04-01",
       "status": "operational",
-      "updated_at": "2026-11-13T21:49:43.995Z"
+      "updated_at": "2026-11-16T09:04:39.737Z"
     },
     {
       "created_at": "2026-02-17T23:24:51.249Z",
@@ -171,8 +171,8 @@
           "position": 1,
           "showcase": true,
           "start_date": "2023-07-11",
-          "status": "degraded_performance",
-          "updated_at": "2026-11-14T07:36:11.569Z"
+          "status": "partial_outage",
+          "updated_at": "2026-11-16T07:49:55.222Z"
         }
       ],
       "created_at": "2026-11-14T07:11:36.117Z",
@@ -223,24 +223,24 @@
       "monitoring_at": null,
       "name": "Some users unable to sign up with Apple on the Claude iOS app",
       "page_id": "tymt9n04zgry",
-      "reminder_intervals": null,
+      "reminder_intervals": "[]",
       "resolved_at": null,
       "shortlink": "https://stspg.io/4858wf40dx89",
       "started_at": "2026-11-14T07:11:36.111Z",
       "status": "investigating",
-      "updated_at": "2026-11-14T20:12:05.568Z"
+      "updated_at": "2026-11-15T02:10:54.568Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-14T20:12:05.592Z",
+    "updated_at": "2026-11-16T09:04:39.808Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Partially Degraded Service",
+    "description": "Minor Service Outage",
     "indicator": "minor"
   }
 }
