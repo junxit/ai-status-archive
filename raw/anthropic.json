@@ -188,6 +188,26 @@
               "old_status": "degraded_performance"
             }
           ],
+          "body": "Claude Meetings (beta) saw higher than expected demand today, and Claude was unable to join many calls. We have put mitigations in place and are continuing to monitor and improve join reliability.\n\nClaude Meetings is now re-enabled for all Enterprise customers, though Claude may take a little longer than usual to join. Adding Claude to new calls and Auto-join remain paused for Team customers. We will share more updates as we expand capacity and begin restoring the feature for Team customers.",
+          "created_at": "2026-11-17T02:02:57.704Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-17T02:02:57.704Z",
+          "id": "7njxwk3s0rln",
+          "incident_id": "b5cq662qf2wm",
+          "status": "identified",
+          "tweet_id": null,
+          "updated_at": "2026-11-17T02:02:57.704Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            }
+          ],
           "body": "Claude may still be unable to join some calls in Claude Meetings (beta), and Auto-join remains paused. Calls already in progress and other Claude features are not affected. We expect this to take some time to fully resolve and will post an update when the status changes.",
           "created_at": "2026-11-16T18:10:10.240Z",
           "custom_tweet": null,
@@ -267,15 +287,15 @@
       "resolved_at": null,
       "shortlink": "https://stspg.io/01qq3kzyyqzl",
       "started_at": "2026-11-16T15:10:15.160Z",
-      "status": "investigating",
-      "updated_at": "2026-11-16T18:10:10.242Z"
+      "status": "identified",
+      "updated_at": "2026-11-17T02:02:57.707Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-16T19:52:36.622Z",
+    "updated_at": "2026-11-17T02:39:53.720Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],

@@ -6,14 +6,14 @@
       ],
       "id": "b5cq662qf2wm",
       "impact": "major",
-      "latest_update": "Claude may still be unable to join some calls in Claude Meetings (beta), and Auto-join remains paused. Calls already in progress and other Claude features are not affected. We expect this to take some time to fully resolve and will post an update when the status changes.",
-      "latest_update_id": "rq8n1dwxvw7k",
-      "latest_update_sha12": "fc3406e1349f",
+      "latest_update": "Claude Meetings (beta) saw higher than expected demand today, and Claude was unable to join many calls. We have put mitigations in place and are continuing to monitor and improve join reliability.\n\nClaude Meetings is now re-enabled for all Enterprise customers, though Claude may take a little longer than usual to join. Adding Claude to new calls and Auto-join remain paused for Team customers. We will share more updates as we expand capacity and begin restoring the feature for Team customers.",
+      "latest_update_id": "7njxwk3s0rln",
+      "latest_update_sha12": "b4d504f8ef19",
       "name": "Claude unable to join meetings",
       "resolved_at": null,
       "started_at": "2026-11-16T15:10:15Z",
-      "status": "investigating",
-      "updated_at": "2026-11-16T18:10:10Z",
+      "status": "identified",
+      "updated_at": "2026-11-17T02:02:57Z",
       "url": "https://stspg.io/01qq3kzyyqzl"
     }
   ],
@@ -83,11 +83,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:91503ba01ff0e4ed68d8e0e53c9b689c437d78ea483828b53482117b6aa792ea",
-    "elapsed_ms": 116,
+    "content_hash": "sha256:8fcd2fb84d7c3d335cdcdb1d7f59ee4a41a40900ab679bd0b5a6520e81700b9c",
+    "elapsed_ms": 32,
     "error": null,
-    "etag": "W/\"5323ef52384c66d506156ee5922e67de\"",
-    "fetched_at": "2026-11-16T20:40:33Z",
+    "etag": "W/\"076415280625198778e499c2286ec228\"",
+    "fetched_at": "2026-11-17T03:10:07Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
