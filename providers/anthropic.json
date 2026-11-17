@@ -4,6 +4,22 @@
       "affected_components": [
         "rwppv331jlwc"
       ],
+      "id": "1lglzf469c0z",
+      "impact": "major",
+      "latest_update": "We have identified the cause of the issue affecting claude.ai and are working on a fix. We will provide an update as soon as possible.",
+      "latest_update_id": "2pk5xndqtq7j",
+      "latest_update_sha12": "40e659585807",
+      "name": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
+      "resolved_at": null,
+      "started_at": "2026-11-17T18:55:53Z",
+      "status": "identified",
+      "updated_at": "2026-11-17T18:56:06Z",
+      "url": "https://stspg.io/3tl6h35nnzwm"
+    },
+    {
+      "affected_components": [
+        "rwppv331jlwc"
+      ],
       "id": "b5cq662qf2wm",
       "impact": "major",
       "latest_update": "Claude Meetings (beta) saw higher than expected demand today, and Claude was unable to join many calls. We have put mitigations in place and are continuing to monitor and improve join reliability.\n\nClaude Meetings is now re-enabled for all Enterprise customers, though Claude may take a little longer than usual to join. Adding Claude to new calls and Auto-join remain paused for Team customers. We will share more updates as we expand capacity and begin restoring the feature for Team customers.",
@@ -65,7 +81,7 @@
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "degraded_performance",
-      "updated_at": "2026-11-16T16:42:19Z"
+      "updated_at": "2026-11-17T18:56:06Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -83,11 +99,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:8fcd2fb84d7c3d335cdcdb1d7f59ee4a41a40900ab679bd0b5a6520e81700b9c",
-    "elapsed_ms": 32,
+    "content_hash": "sha256:da12980a12354bb02b6d5ebc9e3141119e4d9d903c70188f75fc256e79306855",
+    "elapsed_ms": 27,
     "error": null,
-    "etag": "W/\"076415280625198778e499c2286ec228\"",
-    "fetched_at": "2026-11-17T03:10:07Z",
+    "etag": "W/\"72f8f64fc7317333e9160d2a0f65a79b\"",
+    "fetched_at": "2026-11-17T20:03:37Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
