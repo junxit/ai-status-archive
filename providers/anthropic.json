@@ -4,32 +4,16 @@
       "affected_components": [
         "rwppv331jlwc"
       ],
-      "id": "1lglzf469c0z",
-      "impact": "major",
-      "latest_update": "We have identified the cause of the issue affecting claude.ai and are working on a fix. We will provide an update as soon as possible.",
-      "latest_update_id": "2pk5xndqtq7j",
-      "latest_update_sha12": "40e659585807",
-      "name": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
-      "resolved_at": null,
-      "started_at": "2026-11-17T18:55:53Z",
-      "status": "identified",
-      "updated_at": "2026-11-17T18:56:06Z",
-      "url": "https://stspg.io/3tl6h35nnzwm"
-    },
-    {
-      "affected_components": [
-        "rwppv331jlwc"
-      ],
       "id": "b5cq662qf2wm",
-      "impact": "major",
-      "latest_update": "Claude Meetings (beta) saw higher than expected demand today, and Claude was unable to join many calls. We have put mitigations in place and are continuing to monitor and improve join reliability.\n\nClaude Meetings is now re-enabled for all Enterprise customers, though Claude may take a little longer than usual to join. Adding Claude to new calls and Auto-join remain paused for Team customers. We will share more updates as we expand capacity and begin restoring the feature for Team customers.",
-      "latest_update_id": "7njxwk3s0rln",
-      "latest_update_sha12": "b4d504f8ef19",
+      "impact": "minor",
+      "latest_update": "Claude Meetings (beta) is joining calls more reliably, and we are monitoring it. It remains enabled for all Enterprise customers. Team customers can again add Claude to new calls manually, and Auto-join is being restored gradually for Team customers.",
+      "latest_update_id": "qyyn9x1x5gpf",
+      "latest_update_sha12": "11141cd8329b",
       "name": "Claude unable to join meetings",
       "resolved_at": null,
       "started_at": "2026-11-16T15:10:15Z",
       "status": "identified",
-      "updated_at": "2026-11-17T02:02:57Z",
+      "updated_at": "2026-11-18T01:29:51Z",
       "url": "https://stspg.io/01qq3kzyyqzl"
     }
   ],
@@ -99,11 +83,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:da12980a12354bb02b6d5ebc9e3141119e4d9d903c70188f75fc256e79306855",
-    "elapsed_ms": 27,
+    "content_hash": "sha256:26fa7f6cd620c9b104656c35bd0577bd90fec977385418abee9e5528397b63bc",
+    "elapsed_ms": 26,
     "error": null,
-    "etag": "W/\"72f8f64fc7317333e9160d2a0f65a79b\"",
-    "fetched_at": "2026-11-17T20:03:37Z",
+    "etag": "W/\"a49762f4467be5b2aebb2481588909f2\"",
+    "fetched_at": "2026-11-18T02:20:05Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
