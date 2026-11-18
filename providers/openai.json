@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M7N9VNR6X5SEC90M1YCDB36D",
-      "impact": "minor",
-      "latest_update": "We've pushed a fix and are monitoring the recovery.",
-      "latest_update_id": "01M7NH58SV54X72PG2MG628MBV",
-      "latest_update_sha12": "62ee4fe76ad6",
-      "name": "Costs API data is delayed",
-      "resolved_at": null,
-      "started_at": "2026-11-17T17:46:15Z",
-      "status": "monitoring",
-      "updated_at": "2026-11-17T19:53:49Z",
-      "url": "https://status.openai.com/incidents/01M7N9VNR6X5SEC90M1YCDB36D"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -118,7 +103,7 @@
       "group": null,
       "id": "01JNKS9D9S72PMP1938PVFFQN4",
       "name": "Compliance API",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:7712b8d17c25da15d61fcbf3ce51bb4f4183ebe737cd2d3aed50c5e2c44d77ea",
-    "elapsed_ms": 221,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 171,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-17T20:03:35Z",
+    "fetched_at": "2026-11-18T18:54:59Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
