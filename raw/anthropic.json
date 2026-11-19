@@ -12,8 +12,8 @@
       "position": 1,
       "showcase": true,
       "start_date": "2023-07-11",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-17T18:56:06.152Z"
+      "status": "operational",
+      "updated_at": "2026-11-19T02:15:05.788Z"
     },
     {
       "created_at": "2026-11-09T18:33:14.695Z",
@@ -156,171 +156,17 @@
       "updated_at": "2026-11-09T18:33:14.270Z"
     }
   ],
-  "incidents": [
-    {
-      "components": [
-        {
-          "created_at": "2023-07-11T17:52:24.275Z",
-          "description": null,
-          "group": false,
-          "group_id": null,
-          "id": "rwppv331jlwc",
-          "name": "claude.ai",
-          "only_show_if_degraded": false,
-          "page_id": "tymt9n04zgry",
-          "position": 1,
-          "showcase": true,
-          "start_date": "2023-07-11",
-          "status": "degraded_performance",
-          "updated_at": "2026-11-17T18:56:06.152Z"
-        }
-      ],
-      "created_at": "2026-11-16T15:10:15.167Z",
-      "id": "b5cq662qf2wm",
-      "impact": "minor",
-      "incident_updates": [
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "degraded_performance",
-              "old_status": "degraded_performance"
-            }
-          ],
-          "body": "Claude Meetings (beta) is joining calls more reliably, and we are monitoring it. It remains enabled for all Enterprise customers. Team customers can again add Claude to new calls manually, and Auto-join is being restored gradually for Team customers.",
-          "created_at": "2026-11-17T23:39:43.919Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-17T23:39:43.919Z",
-          "id": "qyyn9x1x5gpf",
-          "incident_id": "b5cq662qf2wm",
-          "status": "identified",
-          "tweet_id": null,
-          "updated_at": "2026-11-17T23:39:43.919Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "degraded_performance",
-              "old_status": "degraded_performance"
-            }
-          ],
-          "body": "Claude Meetings (beta) saw higher than expected demand today, and Claude was unable to join many calls. We have put mitigations in place and are continuing to monitor and improve join reliability.\n\nClaude Meetings is now re-enabled for all Enterprise customers, though Claude may take a little longer than usual to join. Adding Claude to new calls and Auto-join remain paused for Team customers. We will share more updates as we expand capacity and begin restoring the feature for Team customers.",
-          "created_at": "2026-11-17T02:02:57.704Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-17T02:02:57.704Z",
-          "id": "7njxwk3s0rln",
-          "incident_id": "b5cq662qf2wm",
-          "status": "identified",
-          "tweet_id": null,
-          "updated_at": "2026-11-17T02:02:57.704Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "degraded_performance",
-              "old_status": "degraded_performance"
-            }
-          ],
-          "body": "Claude may still be unable to join some calls in Claude Meetings (beta), and Auto-join remains paused. Calls already in progress and other Claude features are not affected. We expect this to take some time to fully resolve and will post an update when the status changes.",
-          "created_at": "2026-11-16T18:10:10.240Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-16T18:10:10.240Z",
-          "id": "rq8n1dwxvw7k",
-          "incident_id": "b5cq662qf2wm",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-11-16T18:10:10.240Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "partial_outage",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We have temporarily paused Auto-join while we work on this. Adding Claude to a call by hand is also affected. Calls already in progress are not affected. We will provide another update as soon as possible.",
-          "created_at": "2026-11-16T16:27:03.835Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-16T16:27:03.835Z",
-          "id": "xf4fg7rhhsbk",
-          "incident_id": "b5cq662qf2wm",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-11-16T16:27:03.835Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "partial_outage",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We are continuing to investigate an issue preventing Claude from joining new calls in Claude Meetings (beta).",
-          "created_at": "2026-11-16T15:12:56.268Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-16T15:12:56.268Z",
-          "id": "cknf7f0qymmq",
-          "incident_id": "b5cq662qf2wm",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-11-16T16:26:30.164Z"
-        },
-        {
-          "affected_components": [
-            {
-              "code": "rwppv331jlwc",
-              "name": "claude.ai",
-              "new_status": "partial_outage",
-              "old_status": "partial_outage"
-            }
-          ],
-          "body": "We are investigating an issue preventing Claude from joining new calls in Claude Meetings (beta). Calls already in progress are not affected, and core functionality is not impacted. We will provide an update as soon as possible.",
-          "created_at": "2026-11-16T15:10:15.235Z",
-          "custom_tweet": null,
-          "deliver_notifications": true,
-          "display_at": "2026-11-16T15:10:15.235Z",
-          "id": "177nx45nsdvg",
-          "incident_id": "b5cq662qf2wm",
-          "status": "investigating",
-          "tweet_id": null,
-          "updated_at": "2026-11-16T15:10:15.235Z"
-        }
-      ],
-      "monitoring_at": null,
-      "name": "Claude unable to join meetings",
-      "page_id": "tymt9n04zgry",
-      "reminder_intervals": "[]",
-      "resolved_at": null,
-      "shortlink": "https://stspg.io/01qq3kzyyqzl",
-      "started_at": "2026-11-16T15:10:15.160Z",
-      "status": "identified",
-      "updated_at": "2026-11-18T01:29:51.981Z"
-    }
-  ],
+  "incidents": [],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-18T01:54:51.169Z",
+    "updated_at": "2026-11-19T08:05:08.375Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
   "status": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   }
 }

@@ -83,3 +83,6 @@
 {"at":"2026-11-17T20:03:37Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"1lglzf469c0z","provider":"anthropic","to":"identified"}
 {"at":"2026-11-18T02:20:05Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"1lglzf469c0z","provider":"anthropic","to":"resolved"}
 {"at":"2026-11-18T02:20:05Z","change_type":"incident_updated","component_id":null,"from":"identified","incident_id":"b5cq662qf2wm","provider":"anthropic","to":"identified"}
+{"at":"2026-11-19T08:12:57Z","change_type":"overall_indicator","component_id":null,"from":"minor","incident_id":null,"provider":"anthropic","to":"none"}
+{"at":"2026-11-19T08:12:57Z","change_type":"component_status","component_id":"rwppv331jlwc","from":"degraded_performance","incident_id":null,"provider":"anthropic","to":"operational"}
+{"at":"2026-11-19T08:12:57Z","change_type":"incident_resolved","component_id":null,"from":"identified","incident_id":"b5cq662qf2wm","provider":"anthropic","to":"resolved"}

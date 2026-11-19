@@ -1,22 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [
-        "rwppv331jlwc"
-      ],
-      "id": "b5cq662qf2wm",
-      "impact": "minor",
-      "latest_update": "Claude Meetings (beta) is joining calls more reliably, and we are monitoring it. It remains enabled for all Enterprise customers. Team customers can again add Claude to new calls manually, and Auto-join is being restored gradually for Team customers.",
-      "latest_update_id": "qyyn9x1x5gpf",
-      "latest_update_sha12": "11141cd8329b",
-      "name": "Claude unable to join meetings",
-      "resolved_at": null,
-      "started_at": "2026-11-16T15:10:15Z",
-      "status": "identified",
-      "updated_at": "2026-11-18T01:29:51Z",
-      "url": "https://stspg.io/01qq3kzyyqzl"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -64,8 +47,8 @@
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
-      "status": "degraded_performance",
-      "updated_at": "2026-11-17T18:56:06Z"
+      "status": "operational",
+      "updated_at": "2026-11-19T02:15:05Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -83,18 +66,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:26fa7f6cd620c9b104656c35bd0577bd90fec977385418abee9e5528397b63bc",
-    "elapsed_ms": 26,
+    "content_hash": "sha256:92779bde296e27ec36555a9cbff6b9073f8d37f8f9048d846929a49858920e4e",
+    "elapsed_ms": 52,
     "error": null,
-    "etag": "W/\"a49762f4467be5b2aebb2481588909f2\"",
-    "fetched_at": "2026-11-18T02:20:05Z",
+    "etag": "W/\"9e7cd2f24e05bfbf215f2f80d99237dc\"",
+    "fetched_at": "2026-11-19T08:12:57Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partially Degraded Service",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "anthropic",
   "provider_name": "Anthropic",
