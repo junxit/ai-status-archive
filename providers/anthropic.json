@@ -5,7 +5,7 @@
         "rwppv331jlwc"
       ],
       "id": "3vbyqgnswwxq",
-      "impact": "minor",
+      "impact": "major",
       "latest_update": "We are continuing to investigate an issue causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. Work and school accounts do not appear affected. We will provide another update as soon as possible.",
       "latest_update_id": "xptdjq6st8lw",
       "latest_update_sha12": "f28805dc5749",
@@ -13,7 +13,7 @@
       "resolved_at": null,
       "started_at": "2026-11-24T00:10:40Z",
       "status": "investigating",
-      "updated_at": "2026-11-24T05:05:21Z",
+      "updated_at": "2026-11-24T17:19:32Z",
       "url": "https://stspg.io/ffdq2qfv8frk"
     }
   ],
@@ -44,7 +44,7 @@
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-11-23T10:07:23Z"
+      "updated_at": "2026-11-24T17:27:14Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -58,14 +58,14 @@
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-11-23T10:07:23Z"
+      "updated_at": "2026-11-24T17:27:14Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "degraded_performance",
-      "updated_at": "2026-11-24T00:10:40Z"
+      "updated_at": "2026-11-24T17:27:14Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -79,15 +79,15 @@
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-11-23T10:07:23Z"
+      "updated_at": "2026-11-24T17:27:14Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:db00f88acb7ffda804c5d296bf644ab45849cafa07cd86d517350c33271639b2",
-    "elapsed_ms": 27,
+    "content_hash": "sha256:1f33b19bb6feec4148856e9d056166e46fc5201ec8ef1338b5248a412fa1817a",
+    "elapsed_ms": 11,
     "error": null,
-    "etag": "W/\"43e82c86ec0890631195a7b77dfb259c\"",
-    "fetched_at": "2026-11-24T09:42:29Z",
+    "etag": "W/\"e81db2f71221982a4c47fb13369ff16c\"",
+    "fetched_at": "2026-11-24T20:20:57Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
