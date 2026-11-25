@@ -1,5 +1,20 @@
 {
-  "active_incidents": [],
+  "active_incidents": [
+    {
+      "affected_components": [],
+      "id": "01M898HVZGXFV2XC4775CG9GF8",
+      "impact": "minor",
+      "latest_update": "We have applied mitigations and are seeing recovery across ChatGPT, ChatGPT Work, and Codex cloud threads. We are monitoring the affected services to ensure continued stability. Our investigation into the underlying cause remains ongoing.",
+      "latest_update_id": "01M89DYKK1HQ3BY50DZA1EH775",
+      "latest_update_sha12": "56759f857d58",
+      "name": "ChatGPT, ChatGPT Work, and Codex Cloud are experiencing elevated conversation errors",
+      "resolved_at": null,
+      "started_at": "2026-11-25T11:48:13Z",
+      "status": "monitoring",
+      "updated_at": "2026-11-25T13:22:34Z",
+      "url": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8"
+    }
+  ],
   "components": [
     {
       "group": null,
@@ -33,7 +48,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -152,7 +167,7 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "operational",
+      "status": "degraded_performance",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -178,18 +193,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
-    "elapsed_ms": 171,
+    "content_hash": "sha256:21845e244b5b64a6caa5f6709fe61be54744986011dd2f72b73cc30610b4284d",
+    "elapsed_ms": 228,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-18T18:54:59Z",
+    "fetched_at": "2026-11-25T13:26:50Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "All Systems Operational",
-    "indicator": "none"
+    "description": "Partial System Degradation",
+    "indicator": "minor"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
