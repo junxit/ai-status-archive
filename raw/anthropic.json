@@ -188,6 +188,26 @@
               "old_status": "degraded_performance"
             }
           ],
+          "body": "We have identified an issue with an upstream provider that is causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. We are in contact with them. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. We will provide another update as soon as possible.",
+          "created_at": "2026-11-25T20:21:12.137Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-25T20:21:12.137Z",
+          "id": "nkf17x170x9n",
+          "incident_id": "3vbyqgnswwxq",
+          "status": "identified",
+          "tweet_id": null,
+          "updated_at": "2026-11-25T20:21:12.137Z"
+        },
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            }
+          ],
           "body": "We are continuing to investigate an issue causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. Work and school accounts do not appear affected. We will provide another update as soon as possible.",
           "created_at": "2026-11-24T01:31:04.494Z",
           "custom_tweet": null,
@@ -227,15 +247,15 @@
       "resolved_at": null,
       "shortlink": "https://stspg.io/ffdq2qfv8frk",
       "started_at": "2026-11-24T00:10:40.012Z",
-      "status": "investigating",
-      "updated_at": "2026-11-24T17:19:32.218Z"
+      "status": "identified",
+      "updated_at": "2026-11-25T20:21:12.140Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-24T20:04:45.864Z",
+    "updated_at": "2026-11-25T20:21:12.162Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],

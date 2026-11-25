@@ -2,17 +2,17 @@
   "active_incidents": [
     {
       "affected_components": [],
-      "id": "01M898HVZGXFV2XC4775CG9GF8",
+      "id": "01M89RGC3STKK2MT53TXHFMY4H",
       "impact": "minor",
-      "latest_update": "We have applied mitigations and are seeing recovery across ChatGPT, ChatGPT Work, and Codex cloud threads. We are monitoring the affected services to ensure continued stability. Our investigation into the underlying cause remains ongoing.",
-      "latest_update_id": "01M89DYKK1HQ3BY50DZA1EH775",
-      "latest_update_sha12": "56759f857d58",
-      "name": "ChatGPT, ChatGPT Work, and Codex Cloud are experiencing elevated conversation errors",
+      "latest_update": "GitHub reports that the service disruption affecting pull requests and webhooks has been mitigated. We are monitoring Codex automated pull request reviews and merge operations to confirm recovery and stability.",
+      "latest_update_id": "01M89TAN16YY6103ERER7Z8976",
+      "latest_update_sha12": "f5a01fa4e638",
+      "name": "Elevated errors with Codex GitHub reviews and pull request merges",
       "resolved_at": null,
-      "started_at": "2026-11-25T11:48:13Z",
+      "started_at": "2026-11-25T16:27:02Z",
       "status": "monitoring",
-      "updated_at": "2026-11-25T13:22:34Z",
-      "url": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8"
+      "updated_at": "2026-11-25T16:58:51Z",
+      "url": "https://status.openai.com/incidents/01M89RGC3STKK2MT53TXHFMY4H"
     }
   ],
   "components": [
@@ -48,7 +48,7 @@
       "group": null,
       "id": "01JMXBNJXGV1T5GT2M9XA83XNG",
       "name": "Conversations",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -167,7 +167,7 @@
       "group": null,
       "id": "01KX45G1SH21AX5DT93D4HMF0P",
       "name": "ChatGPT Work",
-      "status": "degraded_performance",
+      "status": "operational",
       "updated_at": "2026-10-16T20:01:40Z"
     },
     {
@@ -193,11 +193,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:21845e244b5b64a6caa5f6709fe61be54744986011dd2f72b73cc30610b4284d",
-    "elapsed_ms": 228,
+    "content_hash": "sha256:af82dfc424995d533a3d21b93c74230929337a82c030fd052c7e54af4788ded2",
+    "elapsed_ms": 162,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-25T13:26:50Z",
+    "fetched_at": "2026-11-25T22:39:36Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

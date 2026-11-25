@@ -6,14 +6,14 @@
       ],
       "id": "3vbyqgnswwxq",
       "impact": "major",
-      "latest_update": "We are continuing to investigate an issue causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. Work and school accounts do not appear affected. We will provide another update as soon as possible.",
-      "latest_update_id": "xptdjq6st8lw",
-      "latest_update_sha12": "f28805dc5749",
+      "latest_update": "We have identified an issue with an upstream provider that is causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. We are in contact with them. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. We will provide another update as soon as possible.",
+      "latest_update_id": "nkf17x170x9n",
+      "latest_update_sha12": "93a39502bf1d",
       "name": "Claude for Microsoft 365 add-in missing for some users",
       "resolved_at": null,
       "started_at": "2026-11-24T00:10:40Z",
-      "status": "investigating",
-      "updated_at": "2026-11-24T17:19:32Z",
+      "status": "identified",
+      "updated_at": "2026-11-25T20:21:12Z",
       "url": "https://stspg.io/ffdq2qfv8frk"
     }
   ],
@@ -83,11 +83,11 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:1f33b19bb6feec4148856e9d056166e46fc5201ec8ef1338b5248a412fa1817a",
-    "elapsed_ms": 11,
+    "content_hash": "sha256:d63cc9de4294947d9875853cf2851c7b4f26ef843f12e4cd0a3ae165bc7e28d6",
+    "elapsed_ms": 87,
     "error": null,
-    "etag": "W/\"e81db2f71221982a4c47fb13369ff16c\"",
-    "fetched_at": "2026-11-24T20:20:57Z",
+    "etag": "W/\"7cc5ee54f161bdf01791f852492d8174\"",
+    "fetched_at": "2026-11-25T22:39:38Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
