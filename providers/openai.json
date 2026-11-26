@@ -1,20 +1,5 @@
 {
-  "active_incidents": [
-    {
-      "affected_components": [],
-      "id": "01M89RGC3STKK2MT53TXHFMY4H",
-      "impact": "minor",
-      "latest_update": "GitHub reports that the service disruption affecting pull requests and webhooks has been mitigated. We are monitoring Codex automated pull request reviews and merge operations to confirm recovery and stability.",
-      "latest_update_id": "01M89TAN16YY6103ERER7Z8976",
-      "latest_update_sha12": "f5a01fa4e638",
-      "name": "Elevated errors with Codex GitHub reviews and pull request merges",
-      "resolved_at": null,
-      "started_at": "2026-11-25T16:27:02Z",
-      "status": "monitoring",
-      "updated_at": "2026-11-25T16:58:51Z",
-      "url": "https://status.openai.com/incidents/01M89RGC3STKK2MT53TXHFMY4H"
-    }
-  ],
+  "active_incidents": [],
   "components": [
     {
       "group": null,
@@ -193,18 +178,18 @@
     }
   ],
   "fetch": {
-    "content_hash": "sha256:af82dfc424995d533a3d21b93c74230929337a82c030fd052c7e54af4788ded2",
-    "elapsed_ms": 162,
+    "content_hash": "sha256:622cd046df373224afaa878fa14cbe3b559b7bb04ca8264557fadeac6606f18e",
+    "elapsed_ms": 294,
     "error": null,
     "etag": null,
-    "fetched_at": "2026-11-25T22:39:36Z",
+    "fetched_at": "2026-11-26T22:56:20Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true
   },
   "overall": {
-    "description": "Partial System Degradation",
-    "indicator": "minor"
+    "description": "All Systems Operational",
+    "indicator": "none"
   },
   "provider": "openai",
   "provider_name": "OpenAI",
