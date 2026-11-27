@@ -6,14 +6,14 @@
       ],
       "id": "3vbyqgnswwxq",
       "impact": "major",
-      "latest_update": "We have identified an issue with an upstream provider that is causing the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account. We are in contact with them. In the meantime, we recommend using the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. We will provide another update as soon as possible.",
-      "latest_update_id": "nkf17x170x9n",
-      "latest_update_sha12": "93a39502bf1d",
+      "latest_update": "Our upstream provider has applied a mitigation for the issue that caused the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account, and we are monitoring for recovery. If Claude is still missing, try adding it again from Microsoft Marketplace, or use the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. We will provide another update as soon as possible.",
+      "latest_update_id": "7d8r8dpq7ymm",
+      "latest_update_sha12": "a1894055e90a",
       "name": "Claude for Microsoft 365 add-in missing for some users",
       "resolved_at": null,
       "started_at": "2026-11-24T00:10:40Z",
-      "status": "identified",
-      "updated_at": "2026-11-25T20:21:12Z",
+      "status": "monitoring",
+      "updated_at": "2026-11-27T19:48:22Z",
       "url": "https://stspg.io/ffdq2qfv8frk"
     }
   ],
@@ -44,7 +44,7 @@
       "id": "bpp5gb3hpjcl",
       "name": "Claude Cowork",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14Z"
+      "updated_at": "2026-11-27T10:40:12Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -58,14 +58,14 @@
       "id": "k8w3r06qmzrp",
       "name": "Claude API (api.anthropic.com)",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14Z"
+      "updated_at": "2026-11-27T10:40:12Z"
     },
     {
       "group": null,
       "id": "rwppv331jlwc",
       "name": "claude.ai",
       "status": "degraded_performance",
-      "updated_at": "2026-11-24T17:27:14Z"
+      "updated_at": "2026-11-27T10:40:12Z"
     },
     {
       "group": "Claude on Cloud Platforms",
@@ -79,15 +79,15 @@
       "id": "yyzkbfz2thpt",
       "name": "Claude Code",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14Z"
+      "updated_at": "2026-11-27T10:40:12Z"
     }
   ],
   "fetch": {
-    "content_hash": "sha256:d63cc9de4294947d9875853cf2851c7b4f26ef843f12e4cd0a3ae165bc7e28d6",
-    "elapsed_ms": 87,
+    "content_hash": "sha256:966fa191f8e686056c8feb67e88f5ab74153e359ea07dd65f26beda3a05c905e",
+    "elapsed_ms": 65,
     "error": null,
-    "etag": "W/\"7cc5ee54f161bdf01791f852492d8174\"",
-    "fetched_at": "2026-11-25T22:39:38Z",
+    "etag": "W/\"eb882d8139fc85407098dbcc9e3a3f9c\"",
+    "fetched_at": "2026-11-27T22:50:06Z",
     "http_status": 200,
     "last_modified": null,
     "ok": true

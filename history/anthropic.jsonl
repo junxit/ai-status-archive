@@ -90,3 +90,4 @@
 {"at":"2026-11-24T09:42:29Z","change_type":"component_status","component_id":"rwppv331jlwc","from":"operational","incident_id":null,"provider":"anthropic","to":"degraded_performance"}
 {"at":"2026-11-24T09:42:29Z","change_type":"incident_opened","component_id":null,"from":null,"incident_id":"3vbyqgnswwxq","provider":"anthropic","to":"investigating"}
 {"at":"2026-11-25T22:39:38Z","change_type":"incident_updated","component_id":null,"from":"investigating","incident_id":"3vbyqgnswwxq","provider":"anthropic","to":"identified"}
+{"at":"2026-11-27T22:50:06Z","change_type":"incident_updated","component_id":null,"from":"identified","incident_id":"3vbyqgnswwxq","provider":"anthropic","to":"monitoring"}

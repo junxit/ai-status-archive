@@ -13,7 +13,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "degraded_performance",
-      "updated_at": "2026-11-24T17:27:14.640Z"
+      "updated_at": "2026-11-27T10:40:12.334Z"
     },
     {
       "created_at": "2026-11-09T18:33:14.695Z",
@@ -73,7 +73,7 @@
       "showcase": true,
       "start_date": "2023-07-11",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14.670Z"
+      "updated_at": "2026-11-27T10:40:12.367Z"
     },
     {
       "created_at": "2026-11-09T18:34:46.597Z",
@@ -103,7 +103,7 @@
       "showcase": true,
       "start_date": "2025-02-06",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14.696Z"
+      "updated_at": "2026-11-27T10:40:12.396Z"
     },
     {
       "created_at": "2026-04-01T17:39:47.692Z",
@@ -118,7 +118,7 @@
       "showcase": true,
       "start_date": "2026-04-01",
       "status": "operational",
-      "updated_at": "2026-11-24T17:27:14.723Z"
+      "updated_at": "2026-11-27T10:40:12.511Z"
     },
     {
       "created_at": "2026-02-17T23:24:51.249Z",
@@ -172,13 +172,33 @@
           "showcase": true,
           "start_date": "2023-07-11",
           "status": "degraded_performance",
-          "updated_at": "2026-11-24T17:27:14.640Z"
+          "updated_at": "2026-11-27T10:40:12.334Z"
         }
       ],
       "created_at": "2026-11-24T00:10:40.018Z",
       "id": "3vbyqgnswwxq",
       "impact": "major",
       "incident_updates": [
+        {
+          "affected_components": [
+            {
+              "code": "rwppv331jlwc",
+              "name": "claude.ai",
+              "new_status": "degraded_performance",
+              "old_status": "degraded_performance"
+            }
+          ],
+          "body": "Our upstream provider has applied a mitigation for the issue that caused the Claude add-in to disappear from Excel, Word, and PowerPoint on Mac for users signed in to Microsoft Office with a personal Microsoft account, and we are monitoring for recovery. If Claude is still missing, try adding it again from Microsoft Marketplace, or use the web versions of Excel, Word, and PowerPoint at office.com, where Claude remains available for many users. We will provide another update as soon as possible.",
+          "created_at": "2026-11-27T19:48:22.149Z",
+          "custom_tweet": null,
+          "deliver_notifications": true,
+          "display_at": "2026-11-27T19:48:22.149Z",
+          "id": "7d8r8dpq7ymm",
+          "incident_id": "3vbyqgnswwxq",
+          "status": "monitoring",
+          "tweet_id": null,
+          "updated_at": "2026-11-27T19:48:22.149Z"
+        },
         {
           "affected_components": [
             {
@@ -240,22 +260,22 @@
           "updated_at": "2026-11-24T01:33:45.555Z"
         }
       ],
-      "monitoring_at": null,
+      "monitoring_at": "2026-11-27T19:48:22.149Z",
       "name": "Claude for Microsoft 365 add-in missing for some users",
       "page_id": "tymt9n04zgry",
       "reminder_intervals": "[]",
       "resolved_at": null,
       "shortlink": "https://stspg.io/ffdq2qfv8frk",
       "started_at": "2026-11-24T00:10:40.012Z",
-      "status": "identified",
-      "updated_at": "2026-11-25T20:21:12.140Z"
+      "status": "monitoring",
+      "updated_at": "2026-11-27T19:48:22.177Z"
     }
   ],
   "page": {
     "id": "tymt9n04zgry",
     "name": "Claude",
     "time_zone": "Etc/UTC",
-    "updated_at": "2026-11-25T20:21:12.162Z",
+    "updated_at": "2026-11-27T21:44:51.121Z",
     "url": "https://status.claude.com"
   },
   "scheduled_maintenances": [],
